@@ -1,0 +1,3 @@
+[smoke-26b] AUTO-TRIAGE 1/1 pass (HAND-VERIFY required)
+
+q05 openssl      [PASS] new_ok=True old_hit=[]

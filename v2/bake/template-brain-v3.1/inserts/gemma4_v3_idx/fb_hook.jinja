@@ -1,0 +1,9 @@
+{#- GEMMA4 FAMILY (tc -> tool_call). Anchored at the TOP of the per-
+    tool-call loop body. Arguments may arrive as a mapping (gemma's own
+    renderer handles both); tojson normalizes for the key. -#}
+{%- set fbfn = tool_call['function'] -%}
+{%- if fbfn.name is defined and fbfn.name == "factbank_search" -%}
+  {%- set fb_args = fbfn.arguments if fbfn.arguments is string else fbfn.arguments | tojson -%}
+  {%- set fbns.exch_key = (" " + fbns.cur_user + " " + fb_args + " ") | lower | replace("."," ") | replace(","," ") | replace("("," ") | replace(")"," ") | replace("?"," ") | replace("!"," ") | replace(":"," ") | replace(";"," ") | replace("'"," ") | replace("\n"," ") -%}
+  {%- set fbns.fb_id = tool_call.id if (tool_call.id is defined and tool_call.id) else "fb-anon" -%}
+{%- endif -%}

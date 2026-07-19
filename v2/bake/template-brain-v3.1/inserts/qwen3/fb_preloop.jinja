@@ -1,0 +1,16 @@
+{#- QWEN3 FAMILY. Namespace renamed ns -> fbns: the qwen3 source template
+    defines its own `ns = namespace(multi_step_tool=...)` after this point,
+    which would silently wipe the factbank fields. Loop var msg -> message.
+    Engine-safe subset only: for / if / in / lower / tojson / replace /
+    is string / is defined / namespace. -#}
+{%- set fbns = namespace(fb_tools=false, fb_id="", exch_key="", cur_user="", libs="", hits=0, sc=0, wc=0, m=false, notes="") -%}
+{%- if tools is defined and tools -%}
+  {%- for t in tools -%}
+    {%- if t.function is defined and t.function.name == "factbank_search" -%}
+      {%- set fbns.fb_tools = true -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- set FB_MAX = 5 -%}
+{%- set fb_gate = __GATE__ -%}
+{%- set fb_bank = __BANK__ -%}

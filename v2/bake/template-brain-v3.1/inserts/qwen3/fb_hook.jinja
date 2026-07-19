@@ -1,0 +1,11 @@
+{#- QWEN3 FAMILY (tc -> tool_call). Anchored at the TOP of the per-tool-
+    call loop, BEFORE the source's own `set tool_call = tool_call.function`
+    normalization, so tool_call.id is still reachable. fbtc normalizes the
+    two shapes (full call object vs bare function dict) the same way the
+    source does two lines later. -#}
+{%- set fbtc = tool_call.function if (tool_call.function is defined and tool_call.function) else tool_call -%}
+{%- if fbtc.name is defined and fbtc.name == "factbank_search" -%}
+  {%- set fb_args = fbtc.arguments if fbtc.arguments is string else fbtc.arguments | tojson -%}
+  {%- set fbns.exch_key = (" " + fbns.cur_user + " " + fb_args + " ") | lower | replace("."," ") | replace(","," ") | replace("("," ") | replace(")"," ") | replace("?"," ") | replace("!"," ") | replace(":"," ") | replace(";"," ") | replace("'"," ") | replace("\n"," ") -%}
+  {%- set fbns.fb_id = tool_call.id if (tool_call.id is defined and tool_call.id) else "fb-anon" -%}
+{%- endif -%}

@@ -1,0 +1,8 @@
+{#- Place inside the family's per-tool-call loop in the ASSISTANT branch.
+    `tc` = the family's tool-call loop variable. Records the exchange key
+    (this exchange's user text + this slip) and the call id for pairing. -#}
+{%- if tc.function.name == "factbank_search" -%}
+  {%- set fb_args = tc.function.arguments if tc.function.arguments is string else tc.function.arguments | tojson -%}
+  {%- set ns.exch_key = (" " + ns.cur_user + " " + fb_args + " ") | lower | replace("."," ") | replace(","," ") | replace("("," ") | replace(")"," ") | replace("?"," ") | replace("!"," ") | replace(":"," ") | replace(";"," ") | replace("'"," ") | replace("\n"," ") -%}
+  {%- set ns.fb_id = tc.id if tc.id is defined and tc.id else "fb-anon" -%}
+{%- endif -%}

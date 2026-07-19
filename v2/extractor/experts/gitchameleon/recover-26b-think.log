@@ -1,0 +1,5 @@
+ex   0 torch        reach=False  ans[:60]='import torch\n\ndef log_ndtr(input_tensor: torch.Tensor) -> to'
+ex   1 torch        reach=False  ans[:60]='import torch\n\ndef gamma_ln(input_tensor: torch.Tensor) -> to'
+ex   2 torch        reach=False  ans[:60]='import torch\ndef erf(input_tensor: torch.Tensor) -> torch.Te'
+ex   3 torch        reach=False  ans[:60]='import torch\n\ndef erfc(input_tensor: torch.Tensor) -> torch.'
+ex   6 torch        reach=False  ans[:60]='import torch\ndef gamma_ln(input_tensor: torch.Tensor) -> tor'

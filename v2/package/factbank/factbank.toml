@@ -1,0 +1,33 @@
+# factbank.toml — sample configuration for `factbank serve`.
+# Precedence: CLI flags > this file > built-in defaults. Unknown keys are
+# refused loudly. Copy, edit, and pass with --config or set FACTBANK_CONFIG.
+
+[serve]
+# --- network ---
+host = "127.0.0.1"
+port = 8000
+served-name = "factbank"
+
+# --- upstream model (you load it; factbank only uses it — never JIT-loads) ---
+upstream = "http://127.0.0.1:1234/v1"
+model = "google/gemma-4-12b-qat"
+
+# --- the fact bank ---
+bank = "facts_v2.jsonl"          # ships with the package; or point at your own
+channel = "native"               # native | natural
+
+# --- retrieval / generation ---
+k-prompt = 5
+k-draft = 3
+temperature = 0.2
+max-tokens = 16384
+draft-max-tokens = 512
+
+# --- auth (STRONGLY recommended if the port is reachable by anything else) ---
+# api-key = "change-me"          # bearer token required on /v1/* and /admin/*
+
+# --- serving ---
+concurrency = 2
+sem-timeout = 120.0
+max-body = 1048576
+log = "serve_runs.jsonl"

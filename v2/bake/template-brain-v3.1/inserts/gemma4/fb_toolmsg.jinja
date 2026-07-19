@@ -1,0 +1,111 @@
+{#- GEMMA4 FAMILY. Anchored right after the forward-scan's
+    `{%- set tool_body = follow.get('content') -%}`. For the paired
+    factbank response this insert REBINDS tool_body to the matched facts,
+    and the SOURCE then renders them itself through its own
+    format_tool_response_block - one clean native-format response block,
+    no echo, no duplicate. Other tools' bodies pass through untouched.
+    Pairs strictly by tool_call_id.
+    v3.4.0: GROUPED bank (outer loop skips an unmatched library with one
+    check) + the v3.3.0 weighted rank (dead-name +10 / strong +4 / weak +1;
+    tie band uncapped, then descending bands, then floor filler). See
+    fb_gen.jinja for the full rationale. Keyed on fbns.exch_key. -#}
+{%- if fbns.fb_id and follow.get('tool_call_id') == fbns.fb_id -%}
+{%- set fbns.libs = "" -%}
+{%- for g in fb_gate -%}
+  {%- set fbns.m = false -%}
+  {%- for k in g.trig -%}{%- if k in fbns.exch_key -%}{%- set fbns.m = true -%}{%- endif -%}{%- endfor -%}
+  {%- if fbns.m -%}{%- set fbns.libs = fbns.libs + g.lib -%}{%- endif -%}
+{%- endfor -%}
+{%- set fbns.hits = 0 -%}
+{%- set fbns.best = 0 -%}
+{%- set fbns.notes = "factbank_search results (verified; versions and sources included; use only where they apply):" -%}
+{#- pass 0: best score among question-specific facts -#}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}{%- set fbns.score = 0 -%}
+  {%- for k in f.s -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 4 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fbns.exch_key -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.d -%}{%- if k in fbns.exch_key -%}{%- set fbns.score = fbns.score + 10 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 1 or fbns.wc > 0) and fbns.score > fbns.best -%}
+    {%- set fbns.best = fbns.score -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{#- pass 1: tie band, UNCAPPED - finish the band -#}
+{%- if fbns.best > 0 -%}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}{%- set fbns.score = 0 -%}
+  {%- for k in f.s -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 4 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fbns.exch_key -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.d -%}{%- if k in fbns.exch_key -%}{%- set fbns.score = fbns.score + 10 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 1 or fbns.wc > 0) and fbns.score == fbns.best and fbns.hits < FB_TIE_MAX -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + f.txt -%}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{#- pass 2: upper band, capped -#}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- if fbns.hits < FB_MAX -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}{%- set fbns.score = 0 -%}
+  {%- for k in f.s -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 4 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fbns.exch_key -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.d -%}{%- if k in fbns.exch_key -%}{%- set fbns.score = fbns.score + 10 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 1 or fbns.wc > 0) and fbns.score < fbns.best and fbns.score + 5 >= fbns.best -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + f.txt -%}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{#- pass 3: lower band, capped -#}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- if fbns.hits < FB_MAX -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}{%- set fbns.score = 0 -%}
+  {%- for k in f.s -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 4 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fbns.exch_key -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.d -%}{%- if k in fbns.exch_key -%}{%- set fbns.score = fbns.score + 10 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 1 or fbns.wc > 0) and fbns.score > 0 and fbns.score + 5 < fbns.best -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + f.txt -%}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{#- pass 4: floor filler, capped -#}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- if fbns.hits < FB_MAX -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}
+  {%- for k in f.s -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fbns.exch_key -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- if fbns.sc == 1 and fbns.wc == 0 -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + f.txt -%}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{%- if fbns.hits == 0 -%}{%- set fbns.notes = fbns.notes + " no matching entries; proceed with standard best practices." -%}{%- endif -%}
+{%- set tool_body = fbns.notes -%}
+{%- set fbns.fb_id = "" -%}
+{%- endif -%}

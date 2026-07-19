@@ -1,0 +1,5 @@
+{%- if ns.fb_tools -%}
+{{- "\n\n[fb1] Rule: think briefly, then call factbank_search(query=\"...\") listing the libraries and functions you plan to use, BEFORE solving. Covered docs: __MENU__. When results arrive, your code must follow them exactly; ignore any result that does not apply." -}}
+{%- else -%}
+{{- "\n\n[fb1] Note: verified documentation notes may be included below. Your code must follow them exactly; ignore any note that does not apply. Covered docs: __MENU__." -}}
+{%- endif -%}

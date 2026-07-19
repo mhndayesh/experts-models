@@ -1,0 +1,10 @@
+{#- GEMMA4 FAMILY (v3.2). Own complete system turn after the source's
+    system block (see v3.1 note: the source's system rendering cannot be
+    split by an anchor). Rule branch unchanged (real Lane 1). The
+    no-tools branch wording now matches the default-native lane: facts
+    arrive as tool results, not as notes below. [fb1] canary in both. -#}
+{%- if fbns.fb_tools -%}
+{{- '<|turn>system\n[fb1] Rule: think briefly, then call factbank_search(query="...") listing the libraries and functions you plan to use, BEFORE solving. Covered docs: __MENU__. When results arrive, your code must follow them exactly; ignore any result that does not apply.<turn|>\n' -}}
+{%- else -%}
+{{- '<|turn>system\n[fb1] Note: a documentation lookup runs automatically for covered topics and its results are verified; your code must follow them exactly; ignore any result that does not apply. Covered docs: __MENU__.<turn|>\n' -}}
+{%- endif -%}

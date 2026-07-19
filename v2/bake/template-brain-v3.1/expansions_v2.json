@@ -1,0 +1,3104 @@
+{
+"numpy2-001": [
+"why is my numpy code crashing after the update?",
+"how do i fix the \"np.float_ is not defined\" error?",
+"what replaced np.float in the new numpy version?",
+"is there a new way to write float types in numpy 2.0?",
+"how do i fix the float error in my python script?",
+"what is the correct way to call a double precision float in numpy now?"
+],
+"numpy2-002": [
+"why is my code crashing after updating to numpy 2.0?",
+"how do i fix the complex number error in numpy?",
+"what replaced np.complex_ in the new version?",
+"how to declare a complex number in numpy 2.0?",
+"why is np.complex_ no longer working?",
+"how do i fix the \"attributeerror\" for complex types in numpy?"
+],
+"numpy2-003": [
+"why is my numpy code crashing after updating",
+"how to handle missing values in numpy 2.0",
+"why is np.nan not working anymore",
+"how to fix \"attributeerror\" with numpy nan",
+"what replaced np.nan in the new version",
+"how do i fix my null values in numpy"
+],
+"numpy2-004": [
+"why is my numpy code breaking after updating to version 2.0",
+"how do i write infinity in numpy now",
+"what happened to np.infty",
+"why is np.inf giving me an error",
+"how do i fix \"attribute error\" for infinity in numpy",
+"is there a new way to use infinity in numpy 2.0"
+],
+"numpy2-005": [
+"why is my code crashing with an attribute error on np.ninf",
+"how do i fix the numpy infinity error after upgrading",
+"what replaced np.ninf in the new version",
+"how do i represent negative infinity in numpy 2.0",
+"why is np.pinf suddenly undefined",
+"how do i fix the infinity constant error in my script"
+],
+"numpy2-006": [
+"why is my code crashing after updating numpy?",
+"how do i fix np.pzero error?",
+"what replaced np.nzero in the new version?",
+"why is np.pzero not defined anymore?",
+"how do i replace old numpy constants?",
+"how to fix \"attributeerror\" for np.pzero?"
+],
+"numpy2-007": [
+"why is my numpy code crashing after updating to version 2.0?",
+"how do i fix the \"np.string_ is not defined\" error?",
+"what replaced np.string_ in the new numpy version?",
+"how do i handle strings in numpy 2.0?",
+"why is my numpy string array code breaking?",
+"what is the new way to declare a byte string in numpy?"
+],
+"numpy2-008": [
+"why is my code crashing after updating to numpy 2.0?",
+"how do i fix the np.unicode_ error?",
+"what is the new way to handle strings in numpy?",
+"why is np.unicode_ no longer working?",
+"how do i replace np.unicode_ in my script?",
+"numpy 2.0 string error fix?"
+],
+"numpy2-009": [
+"why is my code crashing after updating to numpy 2.0?",
+"how do i fix the \"np.round_ is not defined\" error?",
+"what replaced the underscore version of round in numpy?",
+"why did my rounding function stop working?",
+"how do i update my numpy rounding code for the new version?",
+"is there a new way to round numbers in numpy 2.0?"
+],
+"numpy2-010": [
+"why is my numpy code breaking after the update",
+"how do i multiply all numbers in an array now",
+"numpy product function missing error",
+"how to fix np.product not found",
+"how to multiply elements in a numpy array",
+"why did np.product get removed"
+],
+"numpy2-011": [
+"why is my code crashing after updating to numpy 2.0?",
+"how do i do a cumulative product in numpy now?",
+"what replaced the cumproduct function?",
+"fixing attributeerror: module 'numpy' has no attribute 'cumproduct'",
+"how do i fix the numpy cumproduct error?",
+"how do i calculate a running product in the new version of numpy?"
+],
+"numpy2-012": [
+"why is my numpy code throwing an error after updating",
+"how do i check if all elements in an array are true now",
+"what replaced alltrue in numpy 20",
+"numpy alltrue is missing how do i fix it",
+"how to check if every value in a list is true in numpy",
+"why is np.alltrue not working anymore"
+],
+"numpy2-013": [
+"how to check if any value in a numpy array is true",
+"numpy sometrue removed error",
+"why is my numpy code breaking after update",
+"how to replace sometrue in numpy",
+"how to see if a numpy array has any true values",
+"numpy 2.0 sometrue deprecated"
+],
+"numpy2-014": [
+"why is my numpy code crashing after updating to version 2.0?",
+"how do i fix the \"np.mat is not defined\" error?",
+"what happened to the matrix type in numpy?",
+"how do i replace np.mat in my old scripts?",
+"is there a new way to create matrices in numpy 2.0?",
+"how do i fix the error where np.mat was removed?"
+],
+"numpy2-015": [
+"why is np.asfarray giving me an error in numpy 2.0",
+"how to convert an array to float in numpy 2.0",
+"numpy asfarray removed how to fix",
+"how do i cast an array to float without asfarray",
+"why did my numpy code break after updating",
+"how to replace asfarray in new numpy version"
+],
+"numpy2-016": [
+"why is my numpy code crashing after updating to version 2",
+"how do i fix the np.longfloat error",
+"what replaced longfloat in numpy 2.0",
+"how do i use high precision floats in numpy now",
+"what is the new way to do long doubles in numpy",
+"why is np.longfloat deprecated"
+],
+"numpy2-017": [
+"why is my numpy code crashing after updating?",
+"how do i fix the np.cfloat error?",
+"what should i use instead of np.cfloat?",
+"how do i handle complex numbers in numpy 2.0?",
+"why is my complex array type missing?",
+"how do i replace cfloat in my script?"
+],
+"numpy2-018": [
+"why is my numpy code breaking after updating to 2.0",
+"how to fix np.singlecomplex error",
+"what replaced np.singlecomplex in numpy 2.0",
+"why is np.singlecomplex missing in the new numpy",
+"how do i declare a single precision complex number in numpy 2.0",
+"what is the new way to use single precision complex numbers"
+],
+"numpy2-019": [
+"why is my numpy code breaking after upgrading to 2.0",
+"how to fix np.clongfloat error in numpy 2.0",
+"what replaced np.clongfloat?",
+"how do i use long doubles in numpy 2.0",
+"why is np.longcomplex missing?",
+"numpy 2.0 long complex replacement"
+],
+"numpy2-020": [
+"how to fix numpy issubsctype error after upgrade",
+"why is my numpy code breaking with issubsctype",
+"what replaced issubsctype in numpy 2",
+"how to check if a dtype is a subclass in numpy 2",
+"how to fix numpy attribute error on issubsctype",
+"is there a new way to check numpy types?"
+],
+"numpy2-021": [
+"how to check if a class is a subclass in numpy 2.0",
+"why is my code crashing on numpy upgrade",
+"how to fix issubclass_ error in numpy",
+"what replaced np.issubclass_",
+"how to check types in numpy 2.0",
+"why did np.issubclass_ get removed"
+],
+"numpy2-022": [
+"how to check if a type is a numpy type in version 2.0",
+"why is my code failing with an error about np.issctype",
+"how to replace np.sctypes for checking numeric types",
+"what is the new way to check if a class is a numpy scalar",
+"how to get the allowed dtypes for maximum in numpy 2.0",
+"how do i check if a data type is a numpy generic type"
+],
+"numpy2-023": [
+"how to get the character code for a numpy dtype in version 2",
+"why is np.sctype2char giving me an attribute error",
+"how to check if a variable is an integer or float in numpy 2.0",
+"how to get the type of a numpy object without using sctype2char",
+"numpy 2.0 removed sctype2char what should i use instead",
+"how to convert a python object to its numpy type string now"
+],
+"numpy2-024": [
+"why is my numpy code crashing after updating to version 2.0?",
+"how do i change how numpy arrays look when i print them?",
+"how do i fix the error saying set_string_function was removed?",
+"how do i customize the output format of a numpy array?",
+"what replaced set_string_function in the new numpy?",
+"how do i format numpy numbers in the console now?"
+],
+"numpy2-025": [
+"how do i fix the error about set_numeric_ops being removed in numpy 2.0?",
+"why is my custom array class breaking after updating to numpy 2.0?",
+"how do i make my own array class work with numpy functions in version 2.0?",
+"what replaced set_numeric_ops for ndarray subclasses?",
+"how do i handle numpy ufuncs on my custom array class without set_numeric_ops?",
+"my code won't run on numpy 2.0 because of a missing numeric ops function, how do i fix it?"
+],
+"numpy2-026": [
+"why is my numpy code crashing after the 2.0 update?",
+"how do i see the source code of a function in numpy now?",
+"what replaced np.source in the new version?",
+"why is np.source giving me an attribute error?",
+"how do i print a function's source code without numpy?",
+"how do i fix the \"module has no attribute source\" error?"
+],
+"numpy2-027": [
+"how do i see all variables in my numpy script",
+"how to check what variables are defined in numpy",
+"why is np.who giving me an error",
+"how to list all current variables in my workspace",
+"how to see my active variables after numpy update",
+"how do i replace np.lookfor in numpy 2.0"
+],
+"numpy2-028": [
+"how do i handle division by zero warnings in numpy 2.0?",
+"why is my code crashing with an error about geterrobj?",
+"how do i turn off numpy warnings globally?",
+"how do i catch and handle floating point errors in the new numpy version?",
+"how do i replace seterrobj in numpy 2.0?",
+"what is the new way to manage numpy error states?"
+],
+"numpy2-029": [
+"why is my numpy code breaking after updating to version 2.0?",
+"how do i fix the deprecation warning for old numpy functions?",
+"what replaced the old numpy deprecation helpers?",
+"how do i manually trigger a deprecation warning in numpy 2.0?",
+"why is my script throwing an error on np.deprecate?",
+"how to use warnings.warn with numpy instead of the old way?"
+],
+"numpy2-030": [
+"why is my numpy code crashing after updating to version 2.0?",
+"how do i fix the error saying safe_eval is missing in numpy?",
+"what replaced numpy.safe_eval?",
+"how do i evaluate a string as a python object in numpy 2?",
+"what should i use instead of safe_eval for strings?",
+"how do i fix the removed safe_eval error in my script?"
+],
+"numpy2-031": [
+"how do i load a csv file in numpy 2.0?",
+"why is np.recfromcsv giving me an error?",
+"how to read a comma separated file into a record array now?",
+"what replaced recfromcsv in the new numpy version?",
+"how do i import data from a csv if recfromcsv is gone?",
+"how to fix \"attributeerror: module 'numpy' has no attribute 'recfromcsv'\"?"
+],
+"numpy2-032": [
+"why is my numpy code crashing after updating",
+"how to print numpy arrays in new version",
+"numpy display function missing error",
+"how to fix np.disp error",
+"how do i print arrays in numpy 2.0",
+"what replaced np.disp in the latest numpy"
+],
+"numpy2-033": [
+"how do i get the size of a numpy array in bytes?",
+"why is np.nbytes giving me an error in numpy 2.0?",
+"how do i check how much memory a numpy array is using?",
+"what replaced np.nbytes after the update?",
+"how to get the memory size of a numpy array without using nbytes?",
+"how do i fix \"attributeerror: module 'numpy' has no attribute 'nbytes'\"?"
+],
+"numpy2-034": [
+"why is np.byte_bounds giving me an attributeerror in numpy 2.0?",
+"how do i fix byte_bounds missing error after upgrading numpy?",
+"where did byte_bounds go in the new version of numpy?",
+"how to import byte_bounds in numpy 2.0?",
+"why is my code breaking on byte_bounds after the update?",
+"what replaced np.byte_bounds?"
+],
+"numpy2-035": [
+"why is my string comparison code crashing after updating numpy?",
+"how do i compare two arrays of strings in numpy 2.0?",
+"where did compare_chararrays go in the new numpy version?",
+"numpy 2.0 error: module has no attribute compare_chararrays",
+"how to check if two string arrays are equal in numpy",
+"fix for numpy.compare_chararrays removed error"
+],
+"numpy2-036": [
+"why is my numpy code crashing after updating to version 2.0?",
+"how do i fix the \"format_parser is not defined\" error in numpy?",
+"what happened to np.format_parser in the new version?",
+"where did the numpy format parser function go?",
+"how do i use the old numpy format parser now?",
+"how do i fix the numpy attribute error for parsing data?"
+],
+"numpy2-037": [
+"why is my numpy code crashing after updating to version 2",
+"how do i sort a numpy array along rows",
+"how to fix np.msort removed error",
+"how to sort columns in a numpy array",
+"what replaced np.msort in numpy 2.0",
+"how to sort a 2d array by its first axis"
+],
+"numpy2-038": [
+"why is np.datasource not found in numpy 2.0?",
+"how do i fix the datasource error after updating numpy?",
+"where did np.datasource go in the new version?",
+"how do i access datasource in numpy 2.0?",
+"what replaced np.datasource in the latest numpy?",
+"why is my code crashing on np.datasource after the upgrade?"
+],
+"numpy2-039": [
+"why is my code breaking after upgrading to numpy 2.0?",
+"where did add_docstring go in the new numpy version?",
+"how do i update my code to use the new location for adding docstrings?",
+"is add_docstring deprecated or removed in numpy 2.0?",
+"why is np.add_docstring giving me an attributeerror?",
+"how do i access the old docstring functions in numpy 2.0?"
+],
+"numpy2-040": [
+"why is my numpy code crashing after updating to version 2.0?",
+"how do i change the data type of a numpy array now?",
+"what replaced np.cast in the new numpy version?",
+"how do i fix \"attributeerror: module 'numpy' has no attribute 'cast'\"?",
+"how do i convert an array to a specific type in numpy 2.0?",
+"why did my array conversion code stop working?"
+],
+"numpy2-041": [
+"why is my code crashing after updating to numpy 2.0?",
+"how do i figure out the resulting type of two different arrays?",
+"what replaced find_common_type in the new version?",
+"how do i check what type a calculation will result in?",
+"how do i get the same behavior as find_common_type now?",
+"how do i find the common type of a list of numbers in numpy 2?"
+],
+"numpy2-042": [
+"why is my numpy code crashing after updating to version 2.0?",
+"how do i copy and transpose a numpy array now?",
+"what replaced fastcopyandtranspose in numpy?",
+"how do i fix the \"fastcopyandtranspose is not defined\" error?",
+"is there a new way to do a transposed copy in numpy?",
+"how do i copy a transposed array in the latest numpy version?"
+],
+"numpy2-043": [
+"why is my memory tracing code failing after updating to numpy 2.0?",
+"where did tracemalloc_domain go in the new numpy version?",
+"how do i access the memory domain tool in numpy 2.0?",
+"numpy tracemalloc_domain error after upgrade",
+"how to fix \"module 'numpy' has no attribute 'tracemalloc_domain'\"",
+"where is the memory tracking function in numpy 2.0?"
+],
+"numpy2-044": [
+"how to fix numpy import error after updating to 2.0",
+"why is np.compat missing in my new numpy version",
+"how to fix \"module 'numpy.compat' has no attribute\"",
+"did numpy remove the compat module",
+"how to update code for numpy 2.0 compatibility",
+"why is my code breaking after upgrading numpy"
+],
+"numpy2-045": [
+"why is my numpy code crashing after updating to version 2?",
+"what happened to the int0 and bool8 types in the new numpy?",
+"how do i fix \"typeerror: dtype 'int0' is not defined\"?",
+"did numpy remove some of the old shorthand types?",
+"why are my old numpy array types throwing errors now?",
+"how do i replace int0 and str0 in numpy 2.0?"
+],
+"numpy2-046": [
+"why is my numpy code breaking after the 2.0 update",
+"how to fix dtype \"a\" error in numpy",
+"numpy 2.0 string dtype change",
+"how do i define a bytes string in numpy now",
+"what replaced dtype \"a\" in numpy",
+"numpy 2.0 dtype error fix"
+],
+"numpy2-047": [
+"why is my code crashing after updating to numpy 2.0?",
+"where did the array_api stuff go in the new numpy version?",
+"how do i fix \"modulenotfounderror: no module named 'numpy.array_api'\"?",
+"what replaced the array_api submodule in numpy 2.0?",
+"how do i use the array api standard with the latest numpy?",
+"did numpy remove some of the array api functions?"
+],
+"numpy2-048": [
+"why is my code throwing an error about complexwarning after updating numpy?",
+"how do i fix the deprecation warning for visibledeprecationwarning in numpy 2.0?",
+"where did the warnings go in the new numpy version?",
+"how do i import warnings from numpy 2.0 now?",
+"why is my script breaking because of a missing warning class?",
+"how do i fix \"complexwarning is not defined\" in my numpy project?"
+],
+"numpy2-049": [
+"why is my code crashing after updating to numpy 2.0?",
+"how do i fix the \"numpy.core\" deprecation warning?",
+"is numpy.core still available in the new version?",
+"why did my imports stop working after the numpy upgrade?",
+"how do i update my code to be compatible with numpy 2.0?",
+"what happened to the numpy.core module?"
+],
+"numpy2-050": [
+"why is my array.ptp code throwing an attribute error",
+"how do i get the range of values in a numpy array now",
+"numpy 2.0 ptp removed",
+"how to replace arr.ptp in new numpy version",
+"why is ptp no longer a method of ndarray",
+"how do i calculate peak to peak with numpy 2.0"
+],
+"numpy2-051": [
+"why is my numpy code crashing after updating to version 2.0?",
+"how do i change the byte order of a numpy array now?",
+"what replaced ndarray.newbyteorder in numpy?",
+"how do i fix the \"attributeerror: 'ndarray' object has no attribute 'newbyteorder'\" error?",
+"how do i swap endianness in numpy 2.0?",
+"how do i convert array byte order without using the old method?"
+],
+"numpy2-052": [
+"why is my code crashing after updating numpy",
+"how to check if elements are in a list in numpy",
+"what replaced np.in1d",
+"how to fix \"np.in1d is not defined\" error",
+"how do i check multiple values against a set in numpy",
+"what is the new way to do membership testing in numpy"
+],
+"numpy2-053": [
+"why is np.row_stack giving me an error in numpy 2.0",
+"how do i stack arrays on top of each other in numpy",
+"how to fix row_stack deprecated warning",
+"how to combine two arrays vertically in numpy",
+"what replaced row_stack in the new numpy version",
+"how do i join arrays row wise after upgrading numpy"
+],
+"numpy2-054": [
+"how to fix np.trapz error after updating numpy",
+"what replaced np.trapz in the new version",
+"why is my trapezoid integration code breaking",
+"how to calculate area under a curve in numpy 2.0",
+"how to replace old trapezoid function",
+"numpy trapezoid error fix"
+],
+"numpy2-055": [
+"how to convert numpy array to bytes",
+"why is my numpy array to string code breaking",
+"how to get raw data from a numpy array",
+"numpy array to bytes error",
+"how to export numpy array as a string of bytes",
+"what replaced tostring in numpy 2.0"
+],
+"numpy2-056": [
+"why is my code failing after updating to numpy 2.4?",
+"how do i replace np.fix in my project?",
+"what is the new way to round towards zero in numpy?",
+"how do i fix the \"np.fix is deprecated\" error?",
+"is there a replacement for np.fix?",
+"how do i handle the numpy fix deprecation?"
+],
+"numpy2-057": [
+"why is my numpy reshape code crashing after the update?",
+"how do i fix the \"newshape\" error in numpy?",
+"what happened to the newshape argument in numpy?",
+"why is numpy complaining about my reshape dimensions?",
+"how do i fix the positional argument error in numpy reshape?",
+"how do i change the shape of an array in the new numpy version?"
+],
+"numpy2-058": [
+"why is my percentile calculation code crashing after the update?",
+"how do i fix the interpolation error in numpy?",
+"what replaced the interpolation argument in numpy?",
+"how do i change the way numpy calculates percentiles now?",
+"why is the interpolation parameter missing in the new version?",
+"how do i fix my quantile calculation code?"
+],
+"numpy2-059": [
+"why is my np.save code crashing after updating numpy?",
+"how to fix numpy save import errors in version 2.4?",
+"why did my numpy file saving stop working?",
+"is np.save still compatible with old files in numpy 2.4?",
+"how to fix the \"fix_imports\" error in numpy?",
+"what happened to the import fixing in np.save?"
+],
+"numpy2-060": [
+"how to fix numpy warning errors after updating to version 2.4",
+"what is the new way to check for warnings in numpy",
+"why is my assert_warns giving me a deprecation error",
+"how do i catch warnings in numpy 2.4",
+"what should i use instead of np.testing.assert_warns",
+"how to handle suppressed warnings in the new numpy version"
+],
+"numpy2-061": [
+"why is my code crashing after upgrading to numpy 2.4",
+"how to fix the ndarray strides deprecation warning",
+"how do i change the memory layout of an array safely",
+"how to replace .strides with something that works",
+"why is setting strides not allowed anymore",
+"how do i create a view with custom spacing in new numpy"
+],
+"numpy2-062": [
+"why is my code failing after updating numpy",
+"how to change the shape of a numpy array",
+"how do i change array dimensions without getting a warning",
+"how to fix \"in-place modification of shape is deprecated\"",
+"how to resize a numpy array",
+"how do i change the size of a numpy array"
+],
+"numpy2-063": [
+"why is np.sum failing on my generator?",
+"how to sum a generator in numpy 2.4?",
+"np.sum error generator type error",
+"how to fix np.sum not accepting generators?",
+"why can't i sum a generator with numpy anymore?",
+"how to convert a generator for numpy sum?"
+],
+"numpy2-064": [
+"why is my correlation code throwing an error after updating numpy?",
+"how do i calculate correlation with a specific degrees of freedom now?",
+"did numpy remove the bias option for correlation?",
+"why is my script breaking on np.corrcoef with extra arguments?",
+"how do i handle the removed arguments in the new numpy version?",
+"what replaced the bias and ddof settings in the correlation function?"
+],
+"numpy2-065": [
+"why is my bincount code crashing after updating numpy?",
+"how do i fix the bincount error in numpy 2.3?",
+"why does np.bincount say minlength is not allowed?",
+"how do i handle the bincount error when i don't want a specific length?",
+"what is the new way to set the size in np.bincount?",
+"how do i fix \"typeerror\" in my numpy bincount code?"
+],
+"numpy2-066": [
+"why is my numpy code crashing on binary files?",
+"how to read a binary file in numpy 2.3?",
+"numpy fromstring error binary mode",
+"how to fix numpy fromstring error?",
+"numpy binary file reading changed",
+"how to load raw bytes into a numpy array?"
+],
+"numpy2-067": [
+"why is np.dtype(np.floating) crashing in numpy 2.3",
+"how to fix dtype error when using abstract types",
+"numpy 2.3 error converting float to dtype",
+"why can't i use np.integer as a dtype anymore",
+"numpy upgrade broke my dtype conversion",
+"how to fix np.dtype(np.inexact) error"
+],
+"numpy2-068": [
+"why is my code breaking after updating to numpy 2.4?",
+"how do i fix the \"module not found\" error for linalg and fft?",
+"where did the linalg and fft submodules go in the new version?",
+"how do i fix my imports if they are no longer working in numpy?",
+"is there a new way to access the linalg and fft tools?",
+"what is the correct way to import linalg and fft in numpy 2.4?"
+],
+"numpy2-069": [
+"how do i fix the numpy 2.2 deprecation warning for updating documentation?",
+"why is my code throwing a warning about adding new docs to a ufunc?",
+"how do i update a numpy ufunc docstring without using the deprecated method?",
+"what is the new way to change the docstring of a numpy ufunc?",
+"how to fix \"add_newdoc_ufunc is deprecated\" error?",
+"is there a different way to assign a new docstring to a numpy function?"
+],
+"numpy2-070": [
+"why did my float precision change after updating numpy?",
+"why is my float32 plus int8 becoming float32 instead of float64?",
+"why did my calculation lose accuracy after the numpy 2.0 upgrade?",
+"how does numpy decide which type to use when adding different numbers?",
+"why is my array result less precise than it was before?",
+"does numpy 2.0 change how types are promoted during math?"
+],
+"numpy2-071": [
+"why is my numpy array suddenly throwing a valueerror when i try to create one?",
+"how do i stop numpy from complaining when it has to make a copy of my data?",
+"why did my code break after updating to numpy 2.0?",
+"how do i make sure my array doesn't get copied every time i load it?",
+"is there a way to force numpy to stay on the original memory without an error?",
+"how do i fix the \"copy needed\" error in my array creation?"
+],
+"numpy2-072": [
+"how do i fix the copy error in numpy 2.0?",
+"why is my custom array object failing after upgrading to numpy 2?",
+"how to handle the new copy argument in numpy arrays?",
+"my array conversion is breaking, what changed in numpy 2.0?",
+"how do i make my class compatible with numpy 2.0?",
+"is there a new parameter for converting objects to numpy arrays?"
+],
+"numpy2-073": [
+"why is my array now int64 instead of int32 on windows",
+"did numpy change the default integer size",
+"how to get int32 arrays in numpy 2.0",
+"why is my code crashing after updating numpy on 64-bit windows",
+"how do i force numpy to use 32-bit integers by default",
+"why did np.array([1]) change its type?"
+],
+"numpy2-074": [
+"why does my numpy float now show the type name in the output?",
+"how do i get rid of the \"np.float64\" prefix in my print statements?",
+"why did my strings change from 3.0 to np.float64(3.0) after updating?",
+"how to make numpy print numbers like it used to in version 1.x?",
+"why is my log output showing the class name instead of just the value?",
+"how do i turn off the new numpy 2.0 scalar formatting?"
+],
+"numpy2-075": [
+"why is my code crashing when i try to check if an int can be converted to a float?",
+"how do i check if a number can be cast to a different type in numpy 2.0?",
+"why does np.can_cast fail when i pass it a regular python number?",
+"is there a way to check type compatibility for scalars in the new numpy?",
+"how do i fix the error when checking if a float can be cast to a complex number?",
+"why does numpy 2.0 raise an error for checking if a python int fits in a numpy array?"
+],
+"numpy2-076": [
+"why did my sign function change for complex numbers",
+"why is np.sign returning a complex number instead of 1",
+"how to get the sign of the real part of a complex number in numpy",
+"numpy sign returning 0.6+0.8j for 3+4j",
+"why did my code break after upgrading to numpy 2",
+"how to get the sign of a complex number like it used to be"
+],
+"numpy2-077": [
+"why is my np.any returning a single boolean instead of a list of results?",
+"how do i fix np.all not working on object arrays in numpy 2.0?",
+"why did my array logic change after updating to numpy 2.0?",
+"how to do a logical and reduction on a list of objects in numpy?",
+"why is np.any returning a single true/false for my object array?",
+"how to get the old behavior of np.all on mixed type arrays?"
+],
+"numpy2-078": [
+"why is my array becoming a tuple instead of a list",
+"why does my code break after updating numpy to 2.0",
+"how to get a list back from these numpy shape functions",
+"why is np.atleast_2d returning a tuple now",
+"numpy 2.0 changed return types for multi_array functions?",
+"is there a way to keep the list format for meshgrid results"
+],
+"numpy2-079": [
+"why did my least squares solver start giving different results after the update?",
+"how do i get the old behavior for linear regression in numpy 2.0?",
+"why is my matrix solver suddenly throwing errors or changing values?",
+"how do i fix the rcond change in the new numpy version?",
+"what setting do i use to keep the old least squares results?",
+"how do i revert to the numpy 1.x default for solving linear equations?"
+],
+"numpy2-080": [
+"why is my numpy array of zeros becoming true?",
+"why does np.array([\"0\"]).astype(bool) return true?",
+"how to convert string numbers to boolean in numpy 2.0?",
+"numpy array string to bool not working like before",
+"how to fix numpy boolean casting after update?",
+"why are non-empty strings true in numpy?"
+],
+"numpy2-081": [
+"why is my cross product code failing after updating to numpy 2.0?",
+"how do i do a cross product with 2d arrays in the new numpy?",
+"why does cross product only work for 3d vectors now?",
+"is there a way to use cross product on 2d vectors in numpy 2?",
+"why is my cross product throwing an error on 2d inputs?",
+"how do i fix the cross product error in numpy 2.0?"
+],
+"numpy2-082": [
+"why is my data loading as unicode instead of bytes?",
+"how do i get bytes back when reading a text file in numpy?",
+"why did my file reader start throwing encoding errors after the update?",
+"how do i fix the string type change in numpy 2.0?",
+"why is my text file loader treating everything as strings?",
+"how do i keep the old behavior for reading encoded files?"
+],
+"numpy2-083": [
+"why is my numpy array check crashing",
+"how to check if numpy array is empty",
+"numpy array boolean check error",
+"why does bool(np.array([])) fail",
+"how to check if numpy array has elements",
+"numpy empty array truthy check error"
+],
+"numpy2-084": [
+"why is my rounding result an integer instead of a float?",
+"why did my math operations suddenly start throwing type errors after updating numpy?",
+"how do i get a decimal result when rounding a whole number in numpy?",
+"why is numpy not converting my numbers to floats when i use floor or ceil?",
+"how do i force a float output when rounding an array of integers?",
+"why did my code break after upgrading to numpy 2.1?"
+],
+"numpy2-085": [
+"why is my code crashing when i try to find indices of a single number?",
+"how do i get the position of a value in a 0-d array?",
+"why does nonzero throw an error on a scalar?",
+"how to fix \"nonzero() received an array with 0 dimensions\"?",
+"is it still okay to use nonzero on a single number in numpy?",
+"why did my index lookup break after updating to numpy 2.1?"
+],
+"numpy2-086": [
+"why is my numpy code crashing when i try to copy a large number into a small array?",
+"why does numpy now throw an error when i try to put a big integer into a byte array?",
+"how do i fix the overflow error i got after updating to numpy 2.1?",
+"how can i make numpy allow the old behavior of cutting off numbers that are too big?",
+"why is my array copy failing with a cast safety error?"
+],
+"numpy2-087": [
+"why is my unique list out of order?",
+"how to sort results from numpy unique?",
+"why did my code break after updating numpy?",
+"is numpy unique still sorted by default?",
+"how to get sorted unique values in numpy 2.3?",
+"why are the unique items coming back shuffled?"
+],
+"numpy2-088": [
+"why is my array changing when i round it?",
+"did rounding start creating new arrays instead of modifying the original?",
+"why doesn't my rounding operation update the source data anymore?",
+"how do i make rounding modify the array in place?",
+"why is my code failing after updating to numpy 2.4?",
+"is rounding still returning a view for integers?"
+],
+"numpy2-089": [
+"how to select indices from a multi-dimensional array?",
+"why is my array indexing suddenly changing after updating numpy?",
+"how do i grab specific elements along the last dimension?",
+"how to map indices to a multi-dimensional array?",
+"why did my array shape change after the numpy upgrade?",
+"how to pick elements from an array using a list of indices?"
+],
+"numpy2-090": [
+"why does my norm calculation return 0 for empty arrays?",
+"how to handle empty arrays in numpy linalg?",
+"numpy norm returning zero instead of error on empty input",
+"did numpy change how it handles empty array norms?",
+"why is my norm always 0 when the input is empty?",
+"numpy linalg norm behavior for empty arrays"
+],
+"numpy2-091": [
+"why does my array comparison return a numpy bool instead of a normal python bool",
+"why did comparing a number array to a string array stop working like it used to",
+"how to convert numpy boolean result to python bool in numpy 2.3",
+"why is `array == array` giving me a numpy.bool_ instead of true or false",
+"numpy 2.3 array comparison type change",
+"how to fix type error when comparing different types in numpy arrays"
+],
+"numpy2-092": [
+"why is my code crashing when i try to turn a numpy array into a single number?",
+"how do i get a single value out of a numpy array without a typeerror?",
+"why does my numpy array not convert to a float anymore?",
+"how do i fix the error when converting a numpy array to a python scalar?",
+"why is numpy throwing a typeerror when i access an array element?",
+"how do i convert a 1d numpy array to a single number in numpy 2.4?"
+],
+"numpy2-093": [
+"is numpy thread safe in python 3.13?",
+"why is my numpy array crashing with multi-threading?",
+"can i update a numpy array from multiple threads at once?",
+"does numpy support free-threaded python?",
+"how do i handle concurrent writes to a numpy array?",
+"is it safe to share a numpy array between threads?"
+],
+"numpy2-094": [
+"how to do string operations in numpy 2.0",
+"why is numpy.char deprecated",
+"how to use the new string functions in numpy",
+"numpy strings changed after upgrade",
+"how do i do fast string manipulation in numpy",
+"where did numpy.char go in version 2.0"
+],
+"numpy2-095": [
+"how do i change text to uppercase in a numpy array?",
+"how to remove whitespace from the start and end of strings in numpy?",
+"is there a way to capitalize the first letter of every word in a numpy array?",
+"how do i replace one substring with another in a numpy string array?",
+"what is the numpy equivalent of python's .strip() and .lower()?",
+"how can i find the index of a character in a numpy string array?"
+],
+"numpy2-096": [
+"how do i slice string arrays faster in numpy?",
+"why is my string slicing code slow in numpy?",
+"how to use negative indices for slicing strings in numpy?",
+"is there a way to slice numpy strings with a step?",
+"how do i do efficient string slicing in numpy 2.3?",
+"why is my string slicing not working after the numpy update?"
+],
+"numpy2-097": [
+"how do i store strings in numpy without using object arrays?",
+"why did my string array change to object type in numpy 2.0?",
+"is there a better way to handle text data in numpy than object dtype?",
+"how to use native strings in numpy 2.0?",
+"why is my memory usage high for strings in numpy?",
+"how do i fix the string array error after upgrading to numpy 2.0?"
+],
+"numpy2-098": [
+"how do i use long integers in numpy 2.0?",
+"why is my code failing because of numpy.long?",
+"what is the new way to use long types in numpy?",
+"does numpy 2.0 still have the old long type?",
+"how do i fix the \"numpy.long is not defined\" error?",
+"what replaced the old long and ulong in the new numpy?"
+],
+"numpy2-099": [
+"how do i fix the \"numpy.bool is deprecated\" error?",
+"what is the new way to call boolean types in numpy 2.0?",
+"why is my code breaking after updating to numpy 2.0?",
+"is numpy.bool still available in the new version?",
+"how do i fix the numpy.bool_ alias warning?",
+"what should i use instead of numpy.bool?"
+],
+"numpy2-100": [
+"how do i check if a dtype is a standard type in numpy 2.0?",
+"why is my code breaking when calling .astype on an array?",
+"is there a new way to check data types in the new numpy version?",
+"how do i use the array api version of astype?",
+"how do i check if a type is canonical in numpy 2.0?",
+"what is the new way to convert array types for array api compatibility?"
+],
+"numpy2-101": [
+"how do i get unique values and their counts in numpy 2.0?",
+"why is my unique function throwing an array api error?",
+"is there a standard way to get the inverse indices for unique values?",
+"how do i get the unique values from an array in a way that follows the new standard?",
+"what replaced the old unique behavior in the new numpy version?",
+"how do i get unique elements and their counts using the array api?"
+],
+"numpy2-102": [
+"how to transpose last two axes in numpy 2.0",
+"how to swap last two dimensions of an array",
+"numpy matrix transpose shortcut",
+"how to transpose array without using transpose()",
+"numpy 2.0 array transpose last two dims",
+"why is my numpy transpose code breaking"
+],
+"numpy2-103": [
+"how do i do a dot product on multidimensional arrays in numpy 2.0",
+"numpy vecdot vs dot difference",
+"why is my dot product code failing after numpy update",
+"how to compute dot product over specific axes",
+"is there a new way to do vector dot products in numpy",
+"how to use the new numpy dot product function for tensors"
+],
+"numpy2-104": [
+"how to do matrix vector multiplication in numpy 2.2",
+"why is my matrix vector product giving different results after the update",
+"does numpy matvec conjugate the vector automatically",
+"how to multiply a matrix by a vector with complex numbers",
+"numpy matrix vector product vs matmul difference",
+"how to do vector matrix product with complex conjugates"
+],
+"numpy2-105": [
+"how to count set bits in a numpy array",
+"how to get population count for integers in numpy",
+"numpy bit count function",
+"how to count 1s in binary representation numpy",
+"numpy 2.0 bitwise count",
+"how to count active bits in an integer array"
+],
+"numpy2-106": [
+"how do i use the new array api aliases in numpy 2.0?",
+"why is my code breaking after updating to numpy 2.0?",
+"what are the new math functions in the numpy 2.0 array api?",
+"did numpy 2.0 change how i do bitwise shifts and inverses?",
+"how do i call acos or atan using the new array api standard?",
+"what replaced the old way of joining and rearranging arrays in numpy 2.0?"
+],
+"numpy2-107": [
+"how do i calculate the norm of a matrix in a way that follows the array api?",
+"which linear algebra functions in numpy 2.0 are now strictly array api compatible?",
+"is there a standard-compliant way to get the singular values of a matrix?",
+"which numpy linalg functions were updated to meet the new array api standards?",
+"how do i get the diagonal of a matrix using the new strict numpy 2.0 rules?"
+],
+"numpy2-108": [
+"how to handle weights in numpy quantiles",
+"numpy quantile weights error after update",
+"how to do weighted percentiles in numpy",
+"why did my numpy quantile code break on upgrade",
+"numpy 2.0 weighted percentile example",
+"how to calculate weighted median with numpy"
+],
+"numpy2-109": [
+"how do i change the degrees of freedom in numpy variance?",
+"why did my numpy variance calculation change after updating?",
+"how do i use a custom mean for standard deviation in numpy?",
+"is there a way to specify ddof in the new numpy version?",
+"how to calculate variance with a pre-calculated mean?",
+"numpy variance error after 2.0 update."
+],
+"numpy2-110": [
+"how do i specify the device when creating a numpy array in 2.0?",
+"why is my numpy array creation failing after the update?",
+"is there a way to move a numpy array to a specific device?",
+"how do i check which device a numpy array is on?",
+"what changed with numpy devices in version 2.0?",
+"how do i make my numpy code compatible with the new array api?"
+],
+"numpy2-111": [
+"how to split an array into a list of arrays along a dimension",
+"how to do the opposite of np.stack",
+"how to unpack a multi-dimensional array into separate arrays",
+"how to remove a dimension while keeping the data split",
+"how to turn a single array into a tuple of arrays",
+"why is my array not splitting the way i expected after the update"
+],
+"numpy2-112": [
+"how to do a cumulative sum with a starting value in numpy",
+"numpy cumsum with initial value",
+"how to start a cumulative product at one",
+"numpy cumulative sum starting at zero",
+"why did my cumsum code break after updating numpy",
+"how to add an initial value to np.cumsum"
+],
+"numpy2-113": [
+"how do i make reshape return a copy instead of a view?",
+"why is my reshaped array changing when i modify the original?",
+"how do i move an array to a specific device while converting it?",
+"can i force asarray to create a new copy of the data?",
+"how do i prevent a reshape from modifying the underlying data?",
+"is there a way to specify a device for asanyarray?"
+],
+"numpy2-114": [
+"how do i cap values in a numpy array?",
+"why is my clip function returning a copy instead of an error?",
+"how to limit a range of numbers in numpy?",
+"numpy clip min max arguments changed?",
+"how to fix numpy clip error after update?",
+"how to keep numbers between a minimum and maximum?"
+],
+"numpy2-115": [
+"how do i keep the order the same for equal values in numpy",
+"why did my sort order change after updating numpy",
+"how to sort array and keep original positions for ties",
+"numpy sort same order every time",
+"how to make numpy sorting consistent for duplicate values",
+"is there a way to keep stable sorting in numpy 2.0"
+],
+"numpy2-116": [
+"how do i handle the new cholesky error after updating numpy?",
+"what's the new tolerance setting for matrix rank?",
+"how to fix the pinv argument error in numpy 2.0?",
+"how do i specify the upper triangle in cholesky now?",
+"why is my matrix rank code breaking on the new numpy version?",
+"how do i set relative tolerance for pseudo inverse?"
+],
+"numpy2-117": [
+"how do i get unique values without sorting them in numpy?",
+"why did my unique results change order after the update?",
+"is there a faster way to find unique items than sorting?",
+"how can i keep the original order of items in a numpy array?",
+"can i use a hash table for unique values in numpy?",
+"how to get unique elements without the overhead of sorting?"
+],
+"numpy2-118": [
+"why is my code returning a scalar instead of an array for 0-d inputs?",
+"how do i force a numpy ufunc to always return an array?",
+"why did my code break after updating to numpy 2.3?",
+"how can i make a ufunc output an array even if the input is a single number?",
+"is there a way to keep the output as an array without specifying an output variable?",
+"why am i getting a 0-d array instead of a scalar in numpy 2.3?"
+],
+"numpy2-119": [
+"how do i check if converting an array to float loses any precision?",
+"why is my numpy array cast failing with a valueerror?",
+"is there a way to ensure numbers don't change when changing types?",
+"how to make numpy throw an error if data gets rounded during a cast?",
+"how do i validate that an array can be converted without losing information?",
+"why does my numpy code break when changing types on version 2.4?"
+],
+"numpy2-120": [
+"what python versions does numpy 2.4 support?",
+"why is my code breaking on python 3.13 with numpy 2.1?",
+"does numpy 2.4 work with python 3.14?",
+"which numpy version do i need for python 3.13?",
+"did numpy drop support for python 3.9?",
+"is numpy 2.4 compatible with my python version?"
+],
+"pandas3-001": [
+"why is pandas making copies of my data every time i modify it?",
+"how do i turn off copy on write in pandas 3.0?",
+"why did my code start running so much slower after the update?",
+"is there a way to stop pandas from creating extra copies of my dataframes?",
+"why is pandas 3.0 throwing errors when i try to modify a slice?",
+"how can i disable the automatic copying behavior in the new pandas version?"
+],
+"pandas3-002": [
+"why is my pandas code throwing a chained assignment error",
+"how to update a column based on a condition in pandas",
+"why can't i update a dataframe value using two brackets",
+"pandas setting value on a slice of a dataframe",
+"how to fix chained assignment error after upgrade",
+"how do i change values in a row based on a filter"
+],
+"pandas3-003": [
+"why is my pandas code crashing after the 3.0 update?",
+"how do i fix the error when changing a value in a dataframe subset?",
+"why does my data not update when i try to modify a slice?",
+"how do i stop getting errors when assigning values to a filtered dataframe?",
+"what replaced the settingwithcopywarning in the new pandas version?",
+"why is pandas throwing an error instead of just giving me a warning?"
+],
+"pandas3-004": [
+"why is my dataframe not updating after using replace",
+"how to update a column value without reassignment",
+"pandas replace not working on single column",
+"why is inplace=true doing nothing on a series",
+"how to change values in a column in pandas 3",
+"why did my column replace stop working after the update"
+],
+"pandas3-005": [
+"why isn't my dataframe updating when i change a value in a slice?",
+"why did my code stop working after updating to pandas 3.0?",
+"how do i modify a value in a dataframe without it being a copy?",
+"why is my subsetted dataframe not reflecting changes back to the original?",
+"is pandas 3.0 changing how dataframe assignments work?",
+"how do i fix the \"settingwithcopy\" behavior in the new pandas version?"
+],
+"pandas3-006": [
+"why is my dataframe taking up so much memory after i dropped a column?",
+"does resetting the index create a new copy of my data?",
+"is renaming a column going to double my memory usage?",
+"why is my original dataframe changing when i modify the renamed version?",
+"does dropping a column actually copy the data or just a view?",
+"how do i avoid memory spikes when manipulating columns in pandas 3.0?"
+],
+"pandas3-007": [
+"why is my dataframe array read only",
+"how to make a numpy array from a dataframe writable",
+"pandas to_numpy assignment error",
+"why can't i edit the array from my dataframe",
+"how to fix assignment destination is read-only error",
+"why did my dataframe to numpy code break after the update"
+],
+"pandas3-008": [
+"why is my original numpy array changing when i update my dataframe?",
+"why does my data keep changing after i create a series?",
+"how do i stop pandas from copying my data automatically?",
+"why did my code stop working after upgrading to pandas 3.0?",
+"how do i keep the original array linked to my dataframe?",
+"how do i fix the \"mutating source array\" issue in pandas?"
+],
+"pandas3-009": [
+"why is my dataframe being copied when i just reassign it?",
+"does pandas 3.0 copy data if i keep two variables pointing to the same df?",
+"how to avoid extra memory usage when resetting index?",
+"why is my memory spiking when i create new variables from my dataframe?",
+"does df = df.something() create a copy in copy-on-write?",
+"how do i prevent pandas from making a new copy when i rename a variable?"
+],
+"pandas3-010": [
+"why is my pandas code failing after the 3.0 update?",
+"how do i fix the copy= argument error in pandas?",
+"is copy still a valid parameter for changing dataframe types?",
+"why is pandas ignoring the copy flag in my dataframe?",
+"did they remove the copy option from rename and reindex?",
+"how to handle the deprecated copy parameter in pandas 3.0?"
+],
+"pandas3-011": [
+"why is my merge not updating the original dataframe?",
+"does pd.merge create a new dataframe or modify the old one?",
+"how do i stop merge from making a copy of my data?",
+"merge copy parameter error pandas 3.0",
+"is pd.merge copy still a valid argument?",
+"why did my merge code stop working after the update?"
+],
+"pandas3-012": [
+"why is my pandas series dtype showing as str instead of object",
+"why did pandas change the default string type",
+"how to get object dtype back for strings in pandas 3.0",
+"why is my code breaking after updating pandas to 3.0",
+"does pandas 3.0 use pyarrow for strings by default",
+"how do i stop pandas from automatically using the new str type"
+],
+"pandas3-013": [
+"why is my string column still showing nan instead of <na>",
+"how to fix null values in pandas 3.0 strings",
+"does pandas 3.0 string type use np.nan or pd.na",
+"why is my string column not using the new nullable type",
+"how to change the missing value for the new string dtype",
+"pandas 3.0 string column nan vs pd.na difference"
+],
+"pandas3-014": [
+"why is my string column showing as object in pandas 3.0?",
+"how do i check if a column is a string in the new pandas?",
+"why did my string type check stop working after the update?",
+"is `dtype == \"object\"` still the right way to find strings?",
+"how do i check for strings in pandas 3.0 without it breaking?",
+"how do i verify a column is text in pandas 3.0?"
+],
+"pandas3-015": [
+"why is my string column showing nan instead of none",
+"how to check for nulls in a pandas string series",
+"why is my none value turning into nan in pandas 3",
+"pandas string column none vs nan",
+"how to check if a value is missing in a string column",
+"why does my string column have nan values"
+],
+"pandas3-016": [
+"why is pandas giving me a typeerror when i try to put a number into a string column?",
+"how do i mix numbers and strings in a pandas series?",
+"why did my code break after updating pandas when assigning a float to a string column?",
+"how do i allow a column to hold different types of data?",
+"how do i fix \"value should be a string or missing value\" error?",
+"can i put a decimal into a column that is set to string type?"
+],
+"pandas3-017": [
+"why is my pandas string series returning an arrow array instead of a numpy array",
+"how do i convert a pandas series to a numpy array in version 3",
+"why did my code break after updating pandas to 3.0",
+"how do i get a numpy array from a series of strings",
+"is series.values still returning a numpy array",
+"how to fix arrow string array error when using .values"
+],
+"pandas3-018": [
+"why is my nan still showing up as nan after converting to string",
+"how to turn all values into strings but keep nan as null",
+"why did my nan values stop turning into the string 'nan'",
+"how to make pandas convert everything to string including nulls",
+"why is astype(str) not changing my missing values",
+"how do i stringify a column but keep the empty spots empty"
+],
+"pandas3-019": [
+"how to select all text columns in pandas 3.0",
+"why is my code failing to find string columns after the update",
+"how to get all string and object columns at once",
+"how to select columns for text processing in pandas 2.0 and 3.0",
+"how to select all string columns regardless of the pandas version",
+"how to fix my select_dtypes for string columns after upgrading"
+],
+"pandas3-020": [
+"why is my string column suddenly showing as object instead of string?",
+"will changing the pandas version break my string columns?",
+"how do i keep using pd.na for missing strings in pandas 3.0?",
+"what's the difference between the old string type and the new one?",
+"do i need to update my code if i'm already using the nullable string type?",
+"why are my strings behaving differently after the update?"
+],
+"pandas3-021": [
+"why is my pandas string column so much slower after the update",
+"does pandas 3.0 use pyarrow for strings by default",
+"how do i check if my strings are using numpy or pyarrow",
+"why did my string memory usage change in pandas 3.0",
+"will my code break if i switch to the new pandas string type",
+"is there a difference in behavior between pyarrow and numpy strings in pandas"
+],
+"pandas3-022": [
+"how do i switch to the new pandas 3 string type early",
+"why is my pandas code breaking with strings after the update",
+"how to enable the new string behavior in pandas 2.3",
+"how to opt into pandas 3 string defaults now",
+"is there a way to make pandas use the new string type ahead of time",
+"how do i fix the string dtype warning in my pandas code"
+],
+"pandas3-023": [
+"why is my pandas code crashing with a surrogate error?",
+"how to store emojis with broken characters in pandas?",
+"why did my strings suddenly start throwing unicodeencodeerrors?",
+"how do i fix \"surrogates not allowed\" in a pandas column?",
+"can i store weird unicode symbols in pandas 3.0?",
+"how to allow invalid characters in a pandas string column?"
+],
+"pandas3-024": [
+"why is my product calculation failing on a string column",
+"how to multiply strings in a pandas series",
+"pandas prod error on text data",
+"why can't i do a product on a string series",
+"how to fix typeerror for prod on strings",
+"why does my code break when multiplying string columns"
+],
+"pandas3-025": [
+"why is my pandas code crashing after upgrading to 3.0?",
+"how do i fix the \"pyarrow_numpy\" storage error?",
+"what replaced the pyarrow_numpy string option in pandas?",
+"why is pandas 3.0 complaining about my string dtype?",
+"how do i set strings to use pyarrow in the new pandas version?",
+"is there a new way to handle string data types in pandas 3.0?"
+],
+"pandas3-026": [
+"why is my datetime column showing microseconds instead of nanoseconds?",
+"why did my pandas upgrade change the date precision?",
+"how do i get nanoseconds back when converting strings to dates?",
+"why is pd.to_datetime returning a different unit than before?",
+"how to force nanoseconds in pandas 3.0?",
+"my dates are losing precision after the update why?"
+],
+"pandas3-027": [
+"why is my integer timestamp staying as seconds instead of nanoseconds?",
+"how to keep seconds precision when converting numbers to dates?",
+"why did pd.to_datetime change how it handles units?",
+"how do i prevent pandas from auto-converting seconds to nanoseconds?",
+"why is my datetime object not showing nanosecond precision?",
+"how to stop pandas from changing the resolution of my timestamp?"
+],
+"pandas3-028": [
+"why is my date range suddenly in seconds instead of nanoseconds?",
+"how do i fix the unit error in my date range code after updating pandas?",
+"why did my datetime range change its precision after the upgrade?",
+"how do i force a date range to use nanoseconds in pandas 3.0?",
+"why is my date range not defaulting to nanoseconds anymore?",
+"how do i specify the unit for a date range in the new pandas version?"
+],
+"pandas3-029": [
+"why is my timezone object now a zoneinfo instead of pytz?",
+"how to get the timezone object from a pandas timestamp?",
+"pandas 3.0 timezone change pytz to zoneinfo?",
+"why is my datetime timezone behaving differently after the update?",
+"how do i access the timezone info in pandas 3.0?",
+"is pandas still using pytz for localizing timestamps?"
+],
+"pandas3-030": [
+"why is my code throwing a valueerror for timezones?",
+"how do i fix the pytz error in pandas 3.0?",
+"why did pandas stop supporting pytz automatically?",
+"how do i get pytz working with my new pandas version?",
+"what happened to pytz in the latest pandas update?",
+"how do i fix my timezone errors after upgrading pandas?"
+],
+"pandas3-031": [
+"why is my code failing to add a day to a datetime",
+"how to add 24 hours vs 1 day in pandas",
+"is pd.offsets.day the same as 24 hours anymore",
+"why does my daily offset break during daylight savings",
+"how to fix \"cannot divide\" error with daily offsets",
+"how to add a calendar day without changing the time"
+],
+"pandas3-032": [
+"why is my datetime conversion failing with mixed timezones",
+"how to fix pandas error when converting dates with different offsets",
+"pandas mixed timezone error after update",
+"why does my date column need utc=true now",
+"how to handle multiple timezones in one dataframe column",
+"pandas 3.0 datetime conversion broken"
+],
+"pandas3-033": [
+"how to get current utc time in pandas 3",
+"why is timestamp utcnow giving me a warning",
+"how to fix pandas utcnow deprecated error",
+"what is the new way to get utc now in pandas",
+"how to get current time in utc without getting a warning",
+"how do i replace utcnow in my pandas code"
+],
+"pandas3-034": [
+"how to fix utcfromtimestamp deprecated error",
+"how to convert unix timestamp to utc in pandas 3.0",
+"pandas utcfromtimestamp replaced by what",
+"why is my utcfromtimestamp code breaking",
+"how to get utc timestamp from unix seconds",
+"pandas 3.0 timestamp utc conversion"
+],
+"pandas3-035": [
+"why did my timestamps change from nanoseconds to microseconds?",
+"how do i get nanosecond precision from a period index in pandas 3.0?",
+"why is my datetime column suddenly showing less precision?",
+"how can i force nanoseconds when converting a period to a timestamp?",
+"did pandas change how it handles timestamp resolution in the new version?",
+"why is my time data rounding differently after the update?"
+],
+"pandas3-036": [
+"why is my code crashing when i try to set the timezone?",
+"how do i fix the valueerror for timezone strings in pandas 3.0?",
+"why won't pandas recognize my local timezone anymore?",
+"how do i handle local timezones since the old way broke?",
+"why is my datetime conversion failing after the update?",
+"how do i convert a string to a local timezone without an error?"
+],
+"pandas3-037": [
+"why is my pandas code breaking with \"m\" frequency?",
+"how do i resample by month end in pandas 3.0?",
+"what replaced \"m\" in pandas date_range?",
+"pandas month end frequency error",
+"how to fix \"invalid frequency\" for month end",
+"is \"m\" still valid in the new pandas version?"
+],
+"pandas3-038": [
+"why is my resample code throwing an error for q",
+"how do i fix quarter end frequency in pandas 3",
+"pandas 3.0 quarter frequency change",
+"is q still valid for quarterly resampling",
+"how to resample by quarter in the new pandas",
+"why did my quarterly data resampling stop working"
+],
+"pandas3-039": [
+"why is my year end resample giving me an error?",
+"how to fix \"invalid frequency\" error in pandas 3.0",
+"what replaced 'y' for yearly resampling?",
+"pandas 3.0 year end frequency change",
+"how to resample by year in the new pandas version",
+"is 'y' still valid for yearly data?"
+],
+"pandas3-040": [
+"why is my pandas code crashing after updating to 3.0?",
+"how do i fix the \"bm\" and \"sm\" offset errors?",
+"what happened to the old business month aliases in pandas?",
+"did pandas remove the \"bq\" and \"by\" frequency codes?",
+"how do i rename my old offset aliases for pandas 3.0?",
+"why is \"cbm\" no longer working in my data processing script?"
+],
+"pandas3-041": [
+"why is my year end frequency string not working in pandas 3",
+"how to fix \"a\" frequency error pandas 3.0",
+"what replaced \"as\" and \"bas\" for year start",
+"pandas 3.0 year end frequency change",
+"how do i change year end frequency in pandas 3",
+"deprecated year end strings in pandas 3.0"
+],
+"pandas3-042": [
+"why is my hourly frequency giving an error?",
+"how to fix \"h\" frequency in pandas 3.0",
+"what is the new code for business hours?",
+"did pandas change the hour frequency alias?",
+"how do i set hourly frequency in the new pandas version?",
+"why is \"h\" not working anymore?"
+],
+"pandas3-043": [
+"why is my pandas code throwing an error with \"t\" for minutes?",
+"how do i fix the \"invalid frequency\" error in pandas 3.0?",
+"what replaced the \"t\" string for minutes in the new pandas version?",
+"is \"l\" still valid for milliseconds in pandas?",
+"how do i change my time strings to work with pandas 3.0?",
+"why did my timedelta units stop working after the update?"
+],
+"pandas3-044": [
+"why is my pandas code throwing an error with 'd'",
+"how to fix lowercase frequency strings in pandas 3.0",
+"pandas 3.0 deprecated 'w' frequency what should i use?",
+"why is 'b' not working in my date range anymore",
+"how to use business days in pandas 3.0",
+"what replaced lowercase frequency codes in the new pandas version"
+],
+"pandas3-045": [
+"why is my pandas code throwing a warning about \"w\" and \"d\" units?",
+"how do i fix the \"timedelta unit string deprecated\" error in pandas 3.0?",
+"should i use lowercase or uppercase for minutes and seconds in pandas?",
+"what is the new way to write weekly and daily time offsets in pandas?",
+"are \"min\" and \"ms\" no longer supported in the new pandas version?",
+"how do i update my time strings to be compatible with pandas 3.0?"
+],
+"pandas3-046": [
+"how do i apply a function to every cell in a dataframe",
+"how to fix applymap removed error",
+"how to map a function to all elements in a dataframe",
+"why is my applymap function not working in pandas 3.0",
+"what replaced applymap in the new pandas version",
+"how to run a custom function on every value in a table"
+],
+"pandas3-047": [
+"why did my code stop working after updating to pandas 3.0?",
+"how do i apply a function to every cell in a dataframe now?",
+"what replaced the old applymap method?",
+"why is my styler object throwing an error on applymap?",
+"how do i format every value in a dataframe individually in pandas 3?",
+"is there a new way to map a function over all cells in a styler?"
+],
+"pandas3-048": [
+"why is my dataframe bool conversion failing in pandas 3",
+"how to convert a single value in a series to a boolean",
+"pandas 3.0 error when calling .bool() on a dataframe",
+"how to get a true or false value from a single cell in pandas",
+"why is .bool() deprecated in the new pandas version",
+"how to extract a single boolean from a pandas series"
+],
+"pandas3-049": [
+"how do i get the first row of a dataframe in pandas 3.0?",
+"why is my code crashing on .first() after updating pandas?",
+"how do i select just the last row of a dataframe now?",
+"is there a new way to grab the top row of a table?",
+"why did my script break when i tried to get the first record?",
+"how to get the very last entry of a dataframe without using .last()?"
+],
+"pandas3-050": [
+"why did my code break after updating to pandas 3.0?",
+"how do i switch rows and columns in a dataframe now?",
+"what replaced the swapaxes function?",
+"how do i flip the axes of my data in the new version?",
+"why is my code throwing an error about swapping axes?",
+"how do i transpose my dataframe without using swapaxes?"
+],
+"pandas3-051": [
+"how do i flatten a pandas series to a 1d array?",
+"why is my code crashing after updating to pandas 3.0?",
+"how do i convert a series to a flat numpy array?",
+"how do i fix the \"ravel is not attribute\" error in pandas?",
+"is there a new way to flatten a series in pandas 3.0?",
+"how do i turn a 2d series into a simple list of values?"
+],
+"pandas3-052": [
+"why is my pandas code crashing after updating to version 3.0?",
+"how do i access the underlying data of a series without copying it?",
+"what replaced the view method in the new pandas version?",
+"why did my code stop working when i upgraded pandas?",
+"how can i get a read-only reference to a dataframe column?",
+"is there a new way to point to a slice of a series instead of copying it?"
+],
+"pandas3-053": [
+"why does int(df['column']) throw an error in pandas 3.0?",
+"how to convert a pandas series to a float now?",
+"pandas 3.0 cast series to int error",
+"how to get a single number from a series in pandas",
+"why is int(series) not working anymore?",
+"how to convert a single column value to an integer in pandas 3.0"
+],
+"pandas3-054": [
+"how to convert pandas index to string after update",
+"why is my pandas index formatting giving an error",
+"how to fix index.format removed error",
+"how to change index labels to strings in pandas 3",
+"pandas 3.0 index string conversion",
+"how to format dataframe index columns now"
+],
+"pandas3-055": [
+"how to convert a categorical column to a list in pandas 3.0",
+"pandas to_list error after upgrade",
+"how to turn categories into a python list",
+"pandas 3.0 categorical to list fix",
+"why is my categorical to_list code breaking",
+"how to convert pandas categories to list now"
+],
+"pandas3-056": [
+"why is my value_counts code throwing an error in pandas 3.0",
+"how do i count occurrences in a dataframe now",
+"pandas 3.0 value_counts removed",
+"how to fix \"attributeerror\" on value_counts",
+"how to count unique values in a column",
+"where did the global value_counts function go"
+],
+"pandas3-057": [
+"how do i read from bigquery in pandas 3.0?",
+"why is my bigquery code breaking after the update?",
+"how do i connect to bigquery now that the old way is gone?",
+"is there a new way to upload dataframes to bigquery?",
+"where did the bigquery functions go in pandas 3.0?",
+"how do i use bigquery with pandas without the built-in functions?"
+],
+"pandas3-058": [
+"why is my code crashing after updating to pandas 3.0?",
+"how do i run sql queries in pandas now?",
+"why is pandas saying execute is no longer available?",
+"how do i fix the error when trying to read from a database?",
+"what is the new way to use sql with pandas?",
+"is there a replacement for the old pandas sql execute method?"
+],
+"pandas3-059": [
+"how do i check if a variable is an interval in pandas 3.0?",
+"why is my code crashing on `is_interval` after updating pandas?",
+"what replaced `is_period` in the new pandas version?",
+"how to check if a column contains period types now?",
+"is `is_interval` still available in pandas 3.0?",
+"how do i check for intervals without using `pandas.api.types`?"
+],
+"pandas3-060": [
+"why is my fillna() failing on a groupby object?",
+"how do i fill missing values in a grouped dataframe?",
+"pandas 3.0 groupby fillna error",
+"how to fix fillna on grouped data",
+"why did my grouped fillna stop working?",
+"how to fill na after a groupby in pandas 3.0"
+],
+"pandas3-061": [
+"why is my code crashing after updating pandas?",
+"how do i handle missing values after resampling?",
+"how to fill nans in a resampled dataframe?",
+"why did my fillna method disappear?",
+"how do i fix the \"resample object has no attribute fillna\" error?",
+"what replaced fillna in the new pandas version?"
+],
+"pandas3-062": [
+"why is fillna method ffill giving me an error?",
+"how do i forward fill values in pandas 3.0?",
+"fillna method argument removed error",
+"how to fix ffill in new pandas version",
+"pandas ffill not working anymore",
+"how to do forward fill without the method keyword"
+],
+"pandas3-063": [
+"how do i replace values in a dataframe without using method and limit?",
+"why is my replace function throwing an error after updating pandas?",
+"how to replace specific values in a column now that method is gone?",
+"what is the new way to limit how many replacements happen in a series?",
+"how do i replace values based on a function in pandas 3.0?",
+"why did my replace code stop working after the latest version?"
+],
+"pandas3-064": [
+"why is my fill forward code failing in pandas 3.0",
+"how do i fill missing values without using interpolate",
+"why did my pad method get removed",
+"how to do forward fill in a dataframe now",
+"why is my interpolation on strings giving an error",
+"how to fix the pandas 3.0 interpolate deprecation"
+],
+"pandas3-065": [
+"why is my mode calculation returning infinity instead of nan?",
+"how do i treat infinity as missing values in pandas 3.0?",
+"pandas mode infinity not working anymore",
+"why did my data cleaning break after the pandas update?",
+"how to ignore infinity in pandas mode?",
+"is infinity still treated as null in pandas 3.0?"
+],
+"pandas3-066": [
+"why is my date conversion crashing with an error",
+"how to handle bad data in to_datetime",
+"pandas 3.0 date conversion error",
+"how to skip invalid dates in a column",
+"why does ignore not work anymore in pandas",
+"how to handle messy strings in to_numeric"
+],
+"pandas3-067": [
+"why is my groupby code throwing an error about the axis parameter?",
+"how do i group by columns in pandas 3.0?",
+"did pandas remove the axis argument from rolling and resample?",
+"how do i do a rolling average on columns now?",
+"why does my groupby operation say axis is no longer supported?",
+"how do i fix the \"axis\" error after updating pandas?"
+],
+"pandas3-068": [
+"why is my apply function throwing an error after updating pandas?",
+"how do i change the data type of a column using apply?",
+"why did the convert_dtype parameter stop working?",
+"how do i fix the \"unexpected keyword argument\" in my dataframe code?",
+"is there a new way to cast types while using apply?",
+"how do i handle data types when processing a column with apply?"
+],
+"pandas3-069": [
+"why did my data alignment code stop working after updating pandas?",
+"how do i join two dataframes with different indexes now?",
+"how to match rows and columns from different dataframes in pandas 3.0?",
+"why is my dataframe alignment throwing an error about missing arguments?",
+"what replaced the old way of aligning dataframes in the new version?",
+"how do i sync two dataframes when they don't have the same labels?"
+],
+"pandas3-070": [
+"why is my percentage change calculation broken after updating pandas?",
+"how do i change the period for pct_change now?",
+"why did the limit argument get removed from pct_change?",
+"how do i calculate percentage change for the last 3 rows?",
+"pandas 3.0 pct_change error limit is an unrecognized argument",
+"how to do a rolling percentage change without the limit parameter?"
+],
+"pandas3-071": [
+"why did my pandas code stop working after updating to 3.0?",
+"how do i handle arrays in pandas 3.0 now?",
+"what replaced the old array manager in pandas?",
+"is there a new way to manage array-based internals?",
+"why is my array handling code throwing an error in the new version?",
+"how do i fix the broken array backend in pandas 3.0?"
+],
+"pandas3-072": [
+"why is my pandas code failing after updating to 3.0",
+"how to check if a column is a number in pandas 3.0",
+"why can't i use .is_numeric anymore",
+"how do i check for integers in a dataframe now",
+"did pandas remove data type checks?",
+"how to check if a column is categorical in the new version"
+],
+"pandas3-073": [
+"why is my resample code throwing an error after the pandas update?",
+"how do i change the frequency of my data in pandas 3.0?",
+"what happened to the kind parameter in resampling?",
+"how do i switch between mean and sum in a resampled dataframe now?",
+"is there a new way to specify the aggregation type in pandas 3.0?",
+"why is my old resampling code not working anymore?"
+],
+"pandas3-074": [
+"why is my datetime index throwing an error about the \"closed\" argument?",
+"how do i handle the removal of \"normalize\" in pandas 3.0?",
+"why did my timedeltas suddenly stop accepting a \"unit\" parameter?",
+"how to fix \"unexpected keyword argument\" when creating a date range?",
+"did pandas remove the \"closed\" option for time indexes?",
+"how to fix my broken code after updating to pandas 3.0?"
+],
+"pandas3-075": [
+"why is my code crashing after updating to pandas 3.0?",
+"how do i fix the \"fastpath\" error in my new pandas version?",
+"is there a new way to optimize category creation in pandas 3.0?",
+"why did my series conversion stop working after the upgrade?",
+"how do i handle the removed fastpath option in pandas?",
+"what replaced the fastpath keyword for categorical data?"
+],
+"pandas3-076": [
+"how do i create a periodindex with specific year month and day?",
+"why is my periodindex code breaking on pandas 3.0?",
+"how do i fix the \"unexpected keyword argument\" error in periodindex?",
+"how do i make a period range from specific dates now?",
+"how do i create a period index from ordinals in the new version?",
+"what replaced the year month and day arguments in periodindex?"
+],
+"pandas3-077": [
+"how to get the duration of a time offset in pandas 3.0",
+"why is my code crashing on tick delta",
+"how do i get the time difference from a pandas offset",
+"pandas 3.0 offset delta error",
+"how to replace tick.delta in my script",
+"how to get the timediff of a pandas offset object"
+],
+"pandas3-078": [
+"why is my code crashing after updating to pandas 3.0?",
+"how do i check if a datetime offset has a fixed start point now?",
+"what replaced the anchored check in the new pandas version?",
+"why is my date offset logic throwing an error in pandas 3.0?",
+"how to check if a frequency is relative or absolute without using is_anchored?",
+"is there a new way to see if a time offset is tied to a specific date?"
+],
+"pandas3-079": [
+"why is my pandas code crashing after the 3.0 update?",
+"how do i close a file connection in pandas 3.0?",
+"what happened to the close method for stata files?",
+"how do i stop the file from staying open after reading?",
+"did pandas remove the way to close data readers?",
+"why is my stata file still locked after i run my script?"
+],
+"pandas3-080": [
+"why is my pandas code breaking after updating to 3.0?",
+"where did the internal data attribute go in the new pandas version?",
+"how do i access the underlying data in a dataframe now?",
+"why is the data attribute missing from my series and arrays?",
+"how do i fix the \"attributeerror\" for internal data in pandas 3.0?",
+"is there a new way to get the raw data from a dataframe?"
+],
+"pandas3-081": [
+"why is my groupby code breaking in pandas 3.0?",
+"how do i access the group keys without using .grouper?",
+"what happened to the .ax and .groups attributes on a groupby object?",
+"why is my groupby object missing the dtypes attribute?",
+"is there a new way to get the index of a grouped object?",
+"how do i fix the error saying \"grouper\" is no longer available?"
+],
+"pandas3-082": [
+"why is my pandas code breaking after upgrading to version 3.0?",
+"how do i replace block and datetimetzblock in pandas?",
+"how to fix \"importerror\" for pandas.core.internals?",
+"what is the new way to create a block manager in pandas 3.0?",
+"how do i fix the make_block deprecation warning?",
+"what happened to the internal block classes in pandas?"
+],
+"pandas3-083": [
+"how to load a file with spaces between columns in pandas 3",
+"why is my read_csv throwing an error about delim_whitespace",
+"how to read a space separated file in pandas 3.0",
+"pandas read_csv space delimiter removed",
+"how to fix delim_whitespace error after update",
+"how to load a file where columns are separated by any whitespace"
+],
+"pandas3-084": [
+"why is my pandas code crashing after updating to version 3.0?",
+"how do i parse dates in read_csv now?",
+"where did the date_parser argument go?",
+"how to fix \"unexpected keyword argument\" in read_excel?",
+"what is the new way to handle date formats in pandas?",
+"how do i load dates from a csv file in the new pandas version?"
+],
+"pandas3-085": [
+"why is my csv date column showing up as a string now",
+"how to fix date formatting error in pandas 3.0",
+"where did infer_datetime_format go",
+"pandas read_csv date not working after update",
+"how do i tell pandas to recognize dates automatically",
+"why is my code breaking on read_csv dates"
+],
+"pandas3-086": [
+"why is my csv read failing after updating pandas?",
+"how do i parse multiple date columns from a csv now?",
+"is keep_date_col still a thing in pandas 3.0?",
+"why won't pandas combine my date columns anymore?",
+"how do i fix the datetime parsing error in my csv import?",
+"what replaced the old way of parsing nested dates in read_csv?"
+],
+"pandas3-087": [
+"why is my csv import giving me a verbose error?",
+"how to fix verbose argument error in pandas 3.0",
+"did pandas remove the verbose flag for reading files?",
+"how do i see the progress of a large csv load now?",
+"why is my read_csv code breaking after the update?",
+"is there a new way to show details while loading data?"
+],
+"pandas3-088": [
+"why is pandas giving me an error when reading a string variable?",
+"how do i load a json string into a dataframe in pandas 3.0?",
+"why does my excel reading code break when i pass a raw string?",
+"how to fix \"expected string or file-like object\" error in pandas?",
+"can i just pass a string to read_csv anymore?",
+"how to read a raw string from a variable into a dataframe?"
+],
+"pandas3-089": [
+"why is my parquet file loading with different types?",
+"how do i fix the error when reading parquet files in pandas 3.0?",
+"how do i handle null values in my parquet data now?",
+"why did my parquet code stop working after the update?",
+"how do i keep my columns from changing types when reading parquet?",
+"what replaced the nullable dtypes option in the new pandas version?"
+],
+"pandas3-090": [
+"why is my old pickle file not loading in pandas 3.0?",
+"how do i fix a \"pickle\" error after updating pandas?",
+"can i still open my old .h5 data files?",
+"why are my old python 2 data files broken now?",
+"how to convert old pandas pickles to the new version?",
+"why won't my old saved dataframes load anymore?"
+],
+"pandas3-091": [
+"why is my sql query throwing a generic pandas error instead of the database error?",
+"how do i see the real error message from the database in pandas 3.0?",
+"why did my database exception change after updating pandas?",
+"how can i get the original driver error instead of databaseerror?",
+"why is pandas 3.0 hiding the specific sql error?",
+"is there a way to bypass the generic databaseerror in the new pandas version?"
+],
+"pandas3-092": [
+"why did my excel headers lose their formatting?",
+"how to style excel headers in pandas 3.0",
+"pandas to_excel header styling not working",
+"how do i keep my excel header colors after update",
+"why is my excel file plain text now",
+"how to apply styles to excel exports in pandas 3.0"
+],
+"pandas3-093": [
+"why is my groupby apply function missing the columns i grouped by?",
+"how do i get the group keys back into my apply function in pandas 3?",
+"why did my apply function stop seeing the grouping columns after the update?",
+"how do i include the group names in my custom apply logic now?",
+"why is my groupby apply only receiving the values and not the labels?",
+"how do i fix the error where groupby apply ignores the grouping columns?"
+],
+"pandas3-094": [
+"why are my group results showing fewer rows after updating pandas?",
+"how do i get all categories back in my groupby?",
+"why are missing categories disappearing from my summary table?",
+"how to include categories with no data in a groupby?",
+"pandas 3.0 groupby missing categories",
+"why did my grouped data change after the library update?"
+],
+"pandas3-095": [
+"how do i fix the stack warning in pandas 3.0?",
+"why is my dataframe structure changing after the update?",
+"how to keep the old behavior for stacking columns?",
+"is there a way to disable the new stacking logic?",
+"why did my multiindex change when i updated pandas?",
+"how to stop pandas from automatically stacking my data?"
+],
+"pandas3-096": [
+"why is my sum calculation slower since the pandas update?",
+"how do i use the fast version of sum in apply?",
+"why is pandas not using the optimized sum anymore?",
+"how do i fix the error when passing \"sum\" to my dataframe?",
+"why did my code get slower after upgrading to pandas 3.0?",
+"how do i call the built-in sum efficiently in a group by?"
+],
+"pandas3-097": [
+"why is my code crashing when i try to find the index of the minimum value in a group?",
+"how do i handle errors when a group in my groupby is all null values?",
+"why did my idxmin function start throwing a valueerror after updating pandas?",
+"how do i find the row with the highest value if some rows have missing data?",
+"why does getting the index of the max value fail on empty groups?",
+"is there a way to skip nulls when looking for the first occurrence of a minimum?"
+],
+"pandas3-098": [
+"why is my group by aggregation failing in pandas 3.0",
+"how to do multiple aggregations on a series groupby",
+"pandas 3.0 dictionary aggregation error",
+"how to fix dict agg error on grouped series",
+"can i still use a dictionary for groupby aggregation",
+"why did my grouped series code break after updating pandas"
+],
+"pandas3-099": [
+"why is my shift function crashing with a valueerror?",
+"how do i move data down a row without getting an error?",
+"why can't i use a frequency and a fill value at the same time?",
+"is there a limit to using fill_value in pandas?",
+"why did my time series shift stop working after the update?",
+"how do i handle missing values when shifting a dataframe?"
+],
+"pandas3-100": [
+"why is my groupby loop giving me tuples instead of strings?",
+"pandas groupby keys are suddenly nested in a list",
+"why is my code breaking when iterating over a groupby object",
+"how to get the key name without the extra brackets in pandas",
+"groupby result is returning a tuple instead of a single value",
+"how to fix pandas 3.0 groupby key change"
+],
+"pandas3-101": [
+"why is my rolling quantile code throwing an error?",
+"how do i fix the quantile argument in pandas 3.0?",
+"did the quantile parameter change in the new pandas version?",
+"why is quantile not a valid keyword anymore?",
+"how do i call quantile on a rolling window in pandas 3.0?",
+"what replaced the quantile keyword in expanding windows?"
+],
+"pandas3-102": [
+"how do i fix the correlation error in pandas 3.0?",
+"why is my grouped correlation code throwing a deprecation warning?",
+"is there a new way to check correlations for grouped data?",
+"how to run correlation on groups in the latest pandas version?",
+"what replaced the old way of doing correlation on groupbys?",
+"how do i calculate correlation for each group in pandas 3?"
+],
+"pandas3-103": [
+"why is my sum() code throwing a positional argument error",
+"how to fix pandas 3.0 aggregation deprecation",
+"why can't i just pass a number to mean() anymore",
+"how to update old pandas code to avoid positional errors",
+"how to fix the sum() warning in pandas 3.0",
+"why is my data aggregation code breaking after the update"
+],
+"pandas3-104": [
+"why is my sum returning a single number instead of a series?",
+"why did my total change after updating pandas?",
+"how do i sum all values in a dataframe at once?",
+"why is my standard deviation only calculating column totals?",
+"did the default behavior for sum change in the new version?",
+"how do i get a grand total of every cell in my table?"
+],
+"pandas3-105": [
+"why is my pandas code suddenly using labels instead of row numbers?",
+"how do i access a row by its position in pandas 3.0?",
+"why did my integer indexing stop working after the update?",
+"is pandas still using positional indexing for integers in brackets?",
+"how do i get the first row of a series without using the index label?",
+"why is pandas treating my integer as a row name instead of a position?"
+],
+"pandas3-106": [
+"why is my slice picking the wrong rows after updating pandas?",
+"how do i select rows by position if my index is floats?",
+"why is pandas treating my integer slice as a position instead of a label?",
+"my dataframe slice is returning different data than before the upgrade.",
+"how do i fix the \"positional vs label\" behavior for float indexes?",
+"why did my row selection change from label-based to index-based?"
+],
+"pandas3-107": [
+"why is my dataframe full of objects instead of numbers after the update?",
+"how do i get pandas to automatically detect my data types again?",
+"why did my strings turn into objects when i loaded the data?",
+"how do i fix the \"object\" dtype issue in pandas 3.0?",
+"why isn't pandas automatically converting my mixed data types anymore?",
+"how do i make pandas figure out the correct types for my list of inputs?"
+],
+"pandas3-108": [
+"why is my pandas code crashing when i try to put a string into a numeric column?",
+"how do i fix the \"cannot cast\" error when updating a dataframe column?",
+"why won't pandas automatically change the column type when i add new data?",
+"how do i update a column with a different data type in pandas 3.0?",
+"why did my dataframe update stop working after the new pandas version?",
+"how do i change a column's type before inserting new values?"
+],
+"pandas3-109": [
+"why is my column still a float after filling missing values?",
+"why did pandas stop automatically changing my numbers to integers?",
+"how do i fix the \"object dtype\" error after using ffill?",
+"why is my data staying as a float when i replace values?",
+"how do i turn off the new automatic type behavior in pandas 3.0?",
+"why is my code breaking when i try to fill nans in an integer column?"
+],
+"pandas3-110": [
+"why is my code crashing when i compare a column to a list?",
+"how to fix \"typeerror\" when using `&` or `|` with a list in pandas?",
+"why can't i use a regular list in a logical operation with a dataframe?",
+"pandas 3.0 list comparison error",
+"how to check if values in a column are in my list without a crash?",
+"fixing pandas error when comparing series to python list"
+],
+"pandas3-111": [
+"why is my filter returning nothing after upgrading to pandas 3.0",
+"why is my date check returning false for strings",
+"how do i check if a date is in a list of strings",
+"why did my date membership check stop working",
+"how to check if a timestamp exists in a column with mixed types",
+"why is my filter failing when comparing dates to integers"
+],
+"pandas3-112": [
+"how do i select rows by index in pandas 3.0?",
+"why is my code failing to slice the dataframe?",
+"how do i get the first 10 rows of my table?",
+"what replaced the take function for slicing?",
+"why does my dataframe slice return an error now?",
+"how do i grab a specific range of rows in the new version?"
+],
+"pandas3-113": [
+"why is my replace function throwing an error when i don't provide a value?",
+"how do i swap values in a column without using a dictionary?",
+"why can't i update categories in my categorical column?",
+"how do i fix the \"replace needs a value\" error after updating pandas?",
+"why is my categorical data not updating when i try to replace a value?",
+"how do i replace a specific value in a series if it's not in a dictionary?"
+],
+"pandas3-114": [
+"why is my categorical data throwing a warning?",
+"how do i handle new values in a categorical column?",
+"why can't i add a new category to my data?",
+"how to fix \"non-na values absent from categories\" error?",
+"what happens if i put a new string into a categorical column?",
+"how do i update the allowed categories in my dataframe?"
+],
+"pandas3-115": [
+"why is my pandas code breaking when i add a list to a series?",
+"how do i fix \"typeerror\" when doing math with a list and a pandas object?",
+"why does pandas 3.0 handle lists differently in arithmetic?",
+"how do i make pandas treat my list as a specific type during addition?",
+"why is my list being wrapped automatically in pandas 3.0?",
+"how do i fix the list inference change in the new pandas version?"
+],
+"pandas3-116": [
+"why is comparing a list of labels to a column returning a series?",
+"how to get a single true or false when comparing index to series?",
+"why does my comparison return a series of booleans instead of one value?",
+"pandas 3.0 comparison between index and series behavior",
+"why is my code breaking when comparing index to a column?",
+"how to check if all values in a series match the index?"
+],
+"pandas3-117": [
+"why is my pandas code breaking when i try to add a dataframe to a series?",
+"how do i subtract a dataframe from a series in pandas 3.0?",
+"why can't i use a dataframe as the second argument in series math?",
+"how do i fix \"typeerror\" when adding a dataframe to a series?",
+"how to add a dataframe to a series without getting a pandas error?",
+"what is the new way to do math between a series and a dataframe?"
+],
+"pandas3-118": [
+"why is my dataframe returning none when i use inplace=true?",
+"how do i get the dataframe back after using inplace?",
+"why did my code stop working after updating pandas?",
+"does inplace=true still return the object in the new version?",
+"how do i assign a result when using inplace?",
+"why is my variable empty after calling replace inplace?"
+],
+"pandas3-119": [
+"why is my dataframe getting sorted automatically after merging?",
+"how to stop pandas from reordering my rows when joining?",
+"why am i getting a warning about the sort parameter in my concat?",
+"how do i keep my original order when combining dataframes?",
+"why did my data order change after updating pandas?",
+"how to disable sorting when combining multiple dataframes?"
+],
+"pandas3-120": [
+"why did my dataframe column type change after merging?",
+"why is my data becoming objects instead of floats?",
+"why does an empty list change the type of my existing data?",
+"how do i stop empty rows from ruining my column types?",
+"why did my code break after updating pandas?",
+"how do i keep my types consistent when joining dataframes?"
+],
+"pandas3-121": [
+"why does concat fail when i try to reset the index and add keys at the same time",
+"how to combine dataframes with custom labels without keeping the old index",
+"why is my pandas code breaking after updating to version 3.0",
+"can i use ignore_index and keys together in a dataframe concat",
+"how do i rename rows while joining multiple dataframes",
+"why does pandas say i can't use both ignore_index and keys at once"
+],
+"pandas3-122": [
+"why is my pandas code crashing after the update",
+"how to fix pandas concat error mismatched lengths",
+"why does concat fail when list lengths are different",
+"pandas 3.0 concat mismatch error",
+"how to join lists of different sizes in pandas",
+"fix pandas error for unequal number of objects"
+],
+"pandas3-123": [
+"why are my value counts out of order after the update",
+"how to keep the original order when counting values",
+"did pandas change how value counts are sorted",
+"why is my grouped count not following the row order",
+"how to stop pandas from sorting the results of value_counts",
+"why are my counts sorted alphabetically now"
+],
+"pandas3-124": [
+"why is my float column showing na instead of nan?",
+"how do i keep nan and na separate in pandas 3.0?",
+"why did dividing by zero change from nan to na?",
+"is there a way to make pandas treat nan and na differently again?",
+"how to stop pandas from converting nans to nas in float columns?",
+"why are my null values behaving differently after the update?"
+],
+"pandas3-125": [
+"why is my pandas code throwing a typeerror instead of a valueerror?",
+"how do i fix period joins with different frequencies in pandas 3.0?",
+"why are my date series turning into objects when i try to add them?",
+"did pandas change how it handles mismatched frequencies?",
+"how do i align math operations on periods with different frequencies?",
+"why is my period arithmetic failing after the latest pandas update?"
+],
+"pandas3-126": [
+"why is my dataframe module showing pandas.core instead of just pandas",
+"how to get the correct module name for a pandas dataframe",
+"why did my dataframe type check start failing after the update",
+"how to check if an object is a pandas dataframe without the core path",
+"why does type(df) show pandas.core.frame.dataframe",
+"how to fix pandas module path mismatch in my tests"
+],
+"pandas3-127": [
+"what python version do i need for pandas 3.0?",
+"why is my pandas install failing on python 3.10?",
+"what is the minimum numpy version for pandas 3.0?",
+"how do i fix the pyarrow version error in pandas 3.0?",
+"which numpy version works with the new pandas?",
+"what are the requirements for pandas 3.0?"
+],
+"pandas3-128": [
+"why is my pandas file export failing with a typeerror?",
+"how do i pass arguments to pandas write functions in version 3?",
+"why do i have to use keywords for everything in pandas now?",
+"did pandas change how to save to csv or excel?",
+"why are my rename and sort arguments causing errors?",
+"how do i fix the positional argument error in pandas 3.0?"
+],
+"pandas3-129": [
+"why is my pandas series returning a list instead of an array of datetimes?",
+"how do i convert a datetime column to standard python datetime objects?",
+"why did my code break after updating to pandas 3.0?",
+"how to turn a series of timedeltas into a list of python objects?",
+"is there a way to get native python datetime objects from a pandas column?",
+"why is to_pydatetime returning a series instead of an ndarray now?"
+],
+"pandas3-130": [
+"how to slice dataframe by date in pandas 3.0",
+"pandas date indexing error after upgrade",
+"why is my datetime slice not working anymore",
+"how to fix datetime index slicing warning",
+"can i use date objects to filter pandas dataframes",
+"pandas 3.0 datetime slicing fix"
+],
+"pandas3-131": [
+"how do i fix the epoch date error in pandas 3.0?",
+"why is my json export failing after the update?",
+"how to export dates as timestamps in the new pandas version?",
+"what replaced date_format epoch?",
+"how do i get json dates to work in pandas 3.0?",
+"pandas json to_json date error fix."
+],
+"pandas3-132": [
+"how to check if my dataframe index has duplicates",
+"dataframe set_index verify_integrity error",
+"pandas 3.0 set_index warning",
+"how to fix duplicate index error in pandas",
+"is my index unique in a dataframe",
+"how to check for duplicate rows in index"
+],
+"pandas3-133": [
+"how do i move data between pandas and arrow without copying?",
+"why is my dataframe interchange code breaking in pandas 3.0?",
+"what is the new way to do zero-copy data sharing in pandas?",
+"is there a replacement for the deprecated dataframe interchange?",
+"how do i share data between pandas and arrow efficiently?",
+"how do i handle the pandas 3.0 dataframe interchange deprecation?"
+],
+"pandas3-134": [
+"how do i perform column operations without executing them immediately",
+"how to do lazy evaluation for pandas columns",
+"how to use expressions in df.assign",
+"how to filter a dataframe using a column reference instead of a series",
+"why is my column math not working in pandas 3.0",
+"how to use string methods on columns without selecting the data first"
+],
+"pandas3-135": [
+"how to convert pyarrow table to dataframe in pandas 3.0",
+"how to load arrow data into a series efficiently",
+"why is my arrow to dataframe conversion slow",
+"is there a way to import pyarrow objects directly into pandas",
+"how to read pyarrow table without using to_pandas",
+"pandas 3.0 arrow import method"
+],
+"pandas3-136": [
+"how do i get rows from one dataframe that don't exist in another?",
+"how to do an anti join in pandas?",
+"how to find the difference between two dataframes based on keys?",
+"how do i keep only the records that aren't in the other table?",
+"why is my merge keeping all rows instead of just the missing ones?",
+"is there a way to do a left anti join in pandas?"
+],
+"pandas3-137": [
+"how do i load an iceberg table into a dataframe?",
+"can pandas read iceberg files directly?",
+"how to save my dataframe to an iceberg table?",
+"why is my iceberg code not working in pandas 3.0?",
+"is there a native way to handle iceberg tables in pandas?",
+"how do i write to iceberg without using spark or pyarrow?"
+],
+"pandas3-138": [
+"how to get the first value in a rolling window in pandas 3.0",
+"how to grab the last item of a rolling window",
+"pandas rolling first value error",
+"how to get the start of a rolling window",
+"how to get the end of a rolling window",
+"how to select the first or last value in a rolling calculation"
+],
+"pandas3-139": [
+"how to count unique values in a rolling window?",
+"how do i get unique counts for an expanding window?",
+"pandas rolling nunique not working",
+"how to count distinct items in a moving window",
+"how to get unique count over a growing window",
+"how to count unique values in a rolling group"
+],
+"pandas3-140": [
+"how do i apply a custom function to a rolling window in pandas 3.0?",
+"why is my rolling apply function not working after updating pandas?",
+"how can i chain a custom calculation onto an expanding window?",
+"is there a way to use .pipe with rolling data?",
+"how do i run a custom function on a rolling mean without extra steps?",
+"how to use a custom function on an expanding window in the new pandas version?"
+],
+"pandas3-141": [
+"how to ignore nulls when grouping and summing",
+"how to skip nan values in groupby mean",
+"why is my groupby sum including nulls",
+"how to handle missing data in a groupby calculation",
+"can i use skipna on a grouped dataframe",
+"how to exclude nans from groupby median"
+],
+"pandas3-142": [
+"how to replace nulls in a numeric column without changing the type",
+"why does fillna work differently on my new pandas version",
+"how to fill missing values with a dictionary across rows",
+"how to use a series to fill values horizontally",
+"how to handle nans in integer columns automatically",
+"why is my row-wise fillna throwing an error now"
+],
+"pandas3-143": [
+"how do i automatically add filters to all columns when exporting to excel?",
+"how do i merge only the top level of my multi-index headers in an excel file?",
+"why is my code crashing when saving a dataframe with long text to excel?",
+"is there a way to turn on filters for every column in my output file?",
+"how do i merge cells in a multi-index header without affecting the data rows?",
+"why am i getting a \"userwarning\" about character limits when exporting to excel?"
+],
+"pandas3-144": [
+"how do i read parquet maps as dictionaries in pandas 3.0?",
+"why did my parquet map column change format after updating pandas?",
+"how do i pass custom arguments to the pyarrow engine in read_parquet?",
+"can i change how pandas handles parquet map types?",
+"how to keep parquet maps as dicts instead of tuples?",
+"how do i use pyarrow options inside the pandas read_parquet function?"
+],
+"pandas3-145": [
+"how to clear a table before inserting a dataframe?",
+"how do i wipe the sql table but keep the columns?",
+"pandas to_sql delete all rows before insert",
+"how to refresh a sql table with new data without dropping the table?",
+"why did my sql insert fail after updating pandas?",
+"how to overwrite existing records in sql using pandas?"
+],
+"pandas3-146": [
+"how to check if a column has non-ascii characters",
+"how to find rows with emojis or special symbols",
+"how to detect unicode in a pandas series",
+"why is my text column failing ascii validation",
+"how to filter out non-english characters in a dataframe",
+"how to see if a string contains only standard keyboard characters"
+],
+"pandas3-147": [
+"how do i replace multiple different words in a column at once?",
+"can i pass a dictionary to replace text in a pandas series?",
+"why is my get_dummies code throwing an error after the update?",
+"how do i change the data type of the output from get_dummies?",
+"is there a way to map multiple replacements in one go?",
+"how do i specify the output type for dummy variables?"
+],
+"pandas3-148": [
+"how to do half year offsets in pandas 3.0",
+"how to get the start of the next half year",
+"pandas half year frequency support",
+"how to calculate half year business days",
+"how to handle half year intervals in pandas",
+"pandas 3.0 half year date math"
+],
+"pandas3-149": [
+"how to sum columns but skip the text columns in pandas 3.0",
+"why is my cumulative sum failing on mixed data types",
+"how to do a running max on categorical data",
+"how to calculate cumulative product only on numbers",
+"pandas 3.0 cumulative sum error on strings",
+"how to ignore non-numeric columns in running totals"
+],
+"pandas3-150": [
+"how to ignore rows with missing values in a correlation?",
+"how do i set a minimum number of observations for correlation?",
+"why is my correlation calculation changing with the new pandas update?",
+"is there a way to filter out noise in my correlation results?",
+"how do i handle small sample sizes when correlating columns?",
+"how do i make corrwith behave like corr regarding missing data?"
+],
+"pandas3-151": [
+"how do i change multiple pandas settings at once?",
+"can i pass a dict to set_option to update everything at once?",
+"how do i set multiple pandas display options in one line?",
+"is there a way to batch update pandas global settings?",
+"why is my pandas config code failing after the 3.0 update?",
+"how do i configure multiple pandas options without calling the function every time?"
+],
+"pandas3-152": [
+"how to turn off pandas performance warnings",
+"how to hide the warning about copying data in pandas",
+"pandas 3.0 performance warning disabled",
+"how to stop pandas from complaining about performance",
+"how to silence pandas warnings globally",
+"how to stop the \"settingwithcopy\" performance warning"
+],
+"pandas3-153": [
+"why am i getting new warnings after updating pandas?",
+"what happens to pandas warnings in version 4.0?",
+"how does pandas handle deprecation warnings now?",
+"will my pandas code break in the next major release?",
+"what is the new warning system in pandas 3.0?",
+"why is pandas changing how it handles deprecations?"
+],
+"pandas3-154": [
+"how do i use numba or bodo with my pandas apply calls?",
+"can i pass extra arguments directly into a series map function?",
+"why is my pandas apply suddenly asking for an execution engine?",
+"how do i speed up my row-wise operations using jit?",
+"is there a way to run my custom map function on a different backend?",
+"how do i pass extra parameters to my map function without using a lambda?"
+],
+"pandas3-155": [
+"why is my map function throwing a deprecation warning?",
+"how to fix pandas series map error after update",
+"how do i pass a function to series map now",
+"pandas map argument changed in version 3",
+"how to use the new func parameter in map",
+"why is pandas complaining about the arg parameter"
+],
+"pandas3-156": [
+"how to filter a dataframe using a boolean list with iloc",
+"why does iloc no longer accept my boolean mask",
+"how do i use a true false array to select rows by position",
+"can i use a boolean mask with .iloc in pandas 3.0",
+"how to fix \" 못 filter with boolean index in iloc\" error",
+"how do i filter rows by index position using a condition"
+],
+"pandas3-157": [
+"why is pandasarray giving me an error in version 3.0",
+"how to fix pandasarray not found error",
+"what replaced pandasarray in pandas 3",
+"how to use numpy extension arrays instead of pandasarray",
+"pandas 3.0 arrays.pandasarray removed",
+"why did my pandasarray code break after the update"
+],
+"pandas3-158": [
+"why is my code crashing on datetime columns after updating pandas",
+"how to fix pandas error on summary functions for dates",
+"why can't i use .any() or .all() on my datetime series",
+"pandas 3.0 datetime error when checking if all dates are valid",
+"how to check if all dates in a column are not null without getting an error",
+"fix for \"reduction not supported\" error on datetime columns"
+],
+"pandas3-159": [
+"why is my filter returning an error with null values?",
+"how to handle nan values in string contains?",
+"why does my startswith check fail on empty rows?",
+"pandas 3.0 string search error with na",
+"how to fix \"na argument must be boolean\" error?",
+"why is my string filter crashing on missing data?"
+],
+"polars-001": [
+"how do i enable streaming in polars?",
+"why is my collect function giving me an error for streaming=true?",
+"how do i use the streaming engine with a lazy frame?",
+"how do i switch to streaming mode in polars?",
+"what is the correct way to run a lazy query in streaming mode?",
+"how do i tell polars to use streaming for my collection?"
+],
+"polars-002": [
+"how to get row count in polars",
+"why is my count function giving me a warning",
+"how to get total number of rows",
+"how to get length of a dataframe",
+"how to count rows without nulls",
+"why did my count code stop working"
+],
+"polars-003": [
+"how do i pivot my columns into rows in polars 1.0?",
+"why is my melt function giving me an error after the update?",
+"how do i unpivot a dataframe in the new version of polars?",
+"what happened to the melt method in polars?",
+"how do i change columns to rows in polars 1.0?",
+"how do i fix the melt error in my polars code?"
+],
+"polars-004": [
+"how do i pivot a dataframe in polars 1.0",
+"why is my pivot code throwing an error after updating",
+"where did the columns argument go in polars pivot",
+"how to change columns in polars pivot now",
+"how to use pivot in polars 1.0",
+"how to fix pivot error polars upgrade"
+],
+"polars-005": [
+"how do i group by in polars now?",
+"why is my apply function giving an error?",
+"what is the new name for map?",
+"how do i run a custom function on rows?",
+"did polars change the groupby syntax?",
+"how do i use a lambda function on a group?"
+],
+"polars-006": [
+"how do i pass arguments to scan_parquet?",
+"why is my scan_parquet call giving a positional argument error?",
+"is n_rows a positional or keyword argument in scan_parquet?",
+"how do i set the cache option in scan_parquet?",
+"can i pass multiple options to scan_parquet after the file path?",
+"why does scan_parquet require keywords for everything except the source?"
+],
+"polars-007": [
+"why is my polars code crashing on mixed data types?",
+"how do i fix the typeerror when creating a dataframe from a list?",
+"why does polars now fail if my columns have different types?",
+"how do i make polars ignore type mismatches in the constructor?",
+"why is my polars dataframe failing to load my data?",
+"how do i allow mixed types in a polars series?"
+],
+"polars1-001": [
+"why is polars complaining about mixed types in my dataframe?",
+"how do i fix the dataframe constructor error after updating?",
+"polars dataframe mixed types error",
+"how to make polars accept a list of lists with different types",
+"dataframe constructor error row orientation",
+"polars dataframe list of lists error"
+],
+"polars1-002": [
+"why is my cast failing with invalidoperationerror instead of computeerror?",
+"how do i catch errors when converting columns in polars 1.0?",
+"why is my try-except block not catching polars conversion errors?",
+"did polars change the error type for failed casts?",
+"how to handle errors when changing data types in the new polars version?",
+"why am i getting invalidoperationerror on a column cast?"
+],
+"polars1-003": [
+"why is my parquet folder not showing all the columns?",
+"how do i get polars to read my partitioned parquet files?",
+"why did my parquet reading stop working after the update?",
+"how do i include the partition folder names in my dataframe?",
+"why is polars ignoring my hive partitions?",
+"how do i fix the \"missing columns\" issue when reading a partitioned dataset?"
+],
+"polars1-004": [
+"why is my reshape column returning an array instead of a list",
+"how to turn polars array type back into a list",
+"reshape is giving me an array type how do i fix it",
+"polars 1.0 reshape change list to array",
+"how to get list behavior from a reshaped column",
+"why did my list column become an array after the update"
+],
+"polars1-005": [
+"why is my numpy array becoming a fixed shape array instead of a list?",
+"how do i keep polars from converting 2d numpy arrays into array types",
+"why did my polars code break after upgrading to 1.0?",
+"how do i get a list column from a 2d numpy array in polars",
+"why is polars treating my 2d numpy array as a fixed shape?",
+"how do i stop polars from automatically making 2d arrays into a specific shape?"
+],
+"polars1-006": [
+"why is my replace not changing the column type to string",
+"how do i change a column from int to string using replace",
+"why does replace keep the original data type",
+"how do i fix my code after updating to polars 1.0",
+"how to replace numbers with letters in a polars column",
+"how to change types while replacing values in polars"
+],
+"polars1-007": [
+"why are there nulls in my ewm_mean results",
+"how to fix polars ewm_mean returning nulls",
+"why did my moving average change after updating polars",
+"how to fill missing values in ewm_mean",
+"polars ewm_mean ignoring nulls vs keeping them",
+"how to get old ewm_mean behavior in polars 1.0"
+],
+"polars1-008": [
+"why is my null value still there after clipping?",
+"why didn't the nulls turn into nulls when i capped the values?",
+"how do i make clip() return null if the original value was null?",
+"why is polars keeping the nulls instead of filtering them out?",
+"how to handle nulls when using clip?",
+"why did my nulls persist after the polars upgrade?"
+],
+"polars1-009": [
+"why is my date string losing precision after updating polars?",
+"how to get nanoseconds when using a custom date format in polars?",
+"why is my datetime only showing microseconds now?",
+"polars datetime format %.f precision change",
+"how to keep nanosecond precision with custom format strings",
+"polars 1.0 datetime precision bug"
+],
+"polars1-010": [
+"how do i load a json file that isn't row-based?",
+"why is my json file not loading after updating polars?",
+"how do i read a serialized dataframe from a file?",
+"polars read_json is giving me an error on my data format.",
+"how do i open a binary json file in polars?",
+"how to load a data frame saved with serde?"
+],
+"polars1-011": [
+"how do i save a dataframe to json in polars 1.0",
+"why is my json export no longer column oriented",
+"how to get json output in a row format",
+"polars json export changed after upgrade",
+"how to write json as a list of objects instead of columns",
+"why did my json file structure change in the new polars version"
+],
+"polars1-012": [
+"why is my polars equality check returning true even though the column names are different?",
+"how do i make polars compare column names when checking if two series are equal?",
+"did polars change how it compares series names in the new version?",
+"why does .equals() ignore the header name?",
+"how do i force polars to check if the names match during an equality comparison?",
+"my code broke after upgrading polars, it's not checking series names anymore."
+],
+"polars1-013": [
+"how to get the first value of a column in polars",
+"why does pl.nth(1, 'column_name') throw an error",
+"how to select an element by index in polars",
+"polars nth function changed in 1.0",
+"how to get a specific row value from a column",
+"polars get nth value of a column syntax"
+],
+"polars1-014": [
+"why did my run length encoding columns change names?",
+"how do i access the lengths in polars rle?",
+"why is my code failing on the rle values column?",
+"did the output of run length encoding change in the new version?",
+"how do i fix the 'lengths' column error in polars?",
+"what are the new column names for run length encoding?"
+],
+"polars1-015": [
+"how to set sorted columns in polars",
+"polars set_sorted multiple columns",
+"polars set_sorted error 2 arguments",
+"how to mark multiple columns as sorted in polars",
+"polars set_sorted only accepts one column",
+"polars set_sorted multiple columns chain"
+],
+"polars1-016": [
+"why is my polars code crashing on a list index?",
+"how to get null instead of error for out of bounds list index",
+"polars list get out of bounds error",
+"how to fix polars list index error after update",
+"polars list get return null if missing",
+"why does polars list.get raise an error now?"
+],
+"polars1-017": [
+"how do i read excel files in polars 1.0?",
+"why did my excel import stop working after updating polars?",
+"how to change the excel engine in polars?",
+"what replaced xlsx2csv for reading excel files?",
+"polars excel read error after upgrade",
+"how to fix \"engine_options\" error in polars excel?"
+],
+"polars1-018": [
+"how do i join two dataframes using sql in polars",
+"why can't i reference other dataframes in a polars sql query",
+"polars sql cross join multiple dataframes",
+"how to run sql on multiple dataframes at once",
+"polars sql \"table not found\" error for local variables",
+"how to use sql with multiple dataframes in polars 1.0"
+],
+"polars1-019": [
+"how do i fix \"polarsdatatype is not defined\" error?",
+"where did pl.polarsdatatype go in polars 1.0?",
+"why is my code breaking after updating polars?",
+"how do i check the data type of a column in the new version?",
+"what is the new way to reference polars data types?",
+"how to import polarsdatatype after the latest update?"
+],
+"polars1-020": [
+"why did my time windows shift after updating polars?",
+"how do i fix my grouped data starting at the wrong time?",
+"why is my dynamic group starting at the beginning of the interval instead of the end?",
+"how do i get the old behavior where windows were offset backwards?",
+"why did my time series buckets move by one step?",
+"how do i make my grouped windows align with the previous period?"
+],
+"polars1-021": [
+"why is polars serialize returning bytes instead of a string?",
+"how do i save a lazy frame to a json file?",
+"polars serialize json error: expected string but got bytes",
+"how to get json output from polars lazyframe?",
+"polars 1.0 serialize not working like before",
+"how to convert polars lazyframe to json string?"
+],
+"polars1-022": [
+"why is polars giving me a performance warning on schema?",
+"how do i get the column types from a lazy frame?",
+"polars schema property deprecated error",
+"how to check columns in lazy mode without warnings",
+"how to see the data types of a lazy frame",
+"how do i fix the lazyframe schema warning?"
+],
+"polars1-023": [
+"why is my datetime timezone changing when i create a new column?",
+"how do i keep the original timezone when making a new series?",
+"why did my dates suddenly switch to utc after the update?",
+"how do i prevent polars from converting my timezones automatically?",
+"why is my datetime column losing its local timezone info?",
+"how do i create a datetime series without it forcing a timezone conversion?"
+],
+"polars1-024": [
+"how do i install polars with excel support now",
+"why is polars[fastexcel] giving me an error",
+"how do i get matplotlib working with polars 1.0",
+"what replaced the fastexcel extra in polars",
+"how to install polars with plotting features",
+"polars 1.0 excel dependency name change"
+],
+"polars1-025": [
+"how do i join two dataframes with different numbers of rows?",
+"why is my concat function giving me a deprecation warning?",
+"how do i fill missing rows when combining tables side by side?",
+"how do i handle different lengths in a horizontal join?",
+"how do i fix the error when joining dataframes of different heights?",
+"what replaced the strict parameter in polars concat?"
+],
+"polars1-026": [
+"how to convert string to date in polars",
+"why is my string to datetime cast failing",
+"how to fix polars string to date error",
+"how to parse dates from strings in polars",
+"polars cast string to date deprecated",
+"converting text columns to dates in polars"
+],
+"polars1-027": [
+"why is my polars code giving me a warning after updating?",
+"how do i stop the warning when expanding a list column?",
+"what happens to empty lists when i explode a column?",
+"should empty rows stay as empty or become nulls?",
+"how do i fix the polars warning for expanding lists?",
+"does exploding an empty list turn it into a null value?"
+],
+"polars1-028": [
+"how do i fix the polars string cache warning?",
+"why is my categorical data not joining correctly after the update?",
+"how do i handle categories between different dataframes now?",
+"how to fix polars categorical errors after upgrading to 1.41?",
+"what replaced the string cache in polars?",
+"why are my strings not matching across different tables anymore?"
+],
+"polars1-029": [
+"why is my polars cloud read failing with a retries error?",
+"how do i fix the retries parameter in polars?",
+"did polars change how to handle connection retries?",
+"how do i set max retries for a remote file in polars?",
+"why is my polars code breaking after the latest update?",
+"where did the retries argument go in polars cloud readers?"
+],
+"polars1-030": [
+"why is my polars install failing on python 3.9?",
+"what python version do i need for the latest polars?",
+"is polars still compatible with python 3.9?",
+"why can't i install polars on my old python version?",
+"how to fix polars installation error on python 3.9?",
+"polars python version requirements?"
+],
+"polars1-031": [
+"how do i group by and aggregate in polars now",
+"why is my polars code breaking after updating",
+"how to do a group by aggregation without the old method",
+"what replaced the old grouping functions in polars",
+"how do i fix the deprecated group by error",
+"is there a new way to do group aggregates in polars"
+],
+"polars1-032": [
+"why is my code failing after updating to polars 1.33?",
+"how do i fix the error saying atol is not a valid argument?",
+"did polars change the names for the tolerance settings?",
+"what are the new names for atol and rtol?",
+"how do i fix the \"unexpected keyword argument\" in my polars join?",
+"which parameters replaced atol and rtol in the latest version?"
+],
+"polars1-033": [
+"why am i getting a warning about categorical ordering in polars?",
+"how do i fix the deprecationwarning with categories?",
+"did polars change how categories are handled in the new update?",
+"why is my code complaining about physical ordering for categories?",
+"how to stop the warning when using categorical data?",
+"is passing physical order to categories still allowed in polars?"
+],
+"polars1-034": [
+"why is my polars code suddenly running in memory instead of streaming?",
+"how do i turn on streaming mode in polars 1.31?",
+"did polars change how streaming works in the latest update?",
+"my polars script is crashing with out of memory errors after the update.",
+"how do i make polars use the new streaming engine?",
+"why is my polars query not streaming anymore?"
+],
+"polars1-035": [
+"how do i fix the error where my parquet file is missing columns in polars?",
+"why is polars complaining about allow_missing_columns?",
+"how do i tell polars to ignore columns that aren't in my parquet file anymore?",
+"polars scan_parquet error after updating version 1.31",
+"what replaced allow_missing_columns in the latest polars?",
+"how do i handle missing columns when reading parquet files now?"
+],
+"polars1-036": [
+"why is my dataframe conversion failing in polars 1.40?",
+"how do i fix the dataframe interchange protocol error?",
+"what happened to the double underscore dataframe method?",
+"how do i convert a dataframe to another library in the new version?",
+"why did my polars to pandas conversion stop working?",
+"how do i migrate away from the deprecated dataframe protocol?"
+],
+"polars1-037": [
+"why is my code breaking after updating polars?",
+"how do i fix the scan_ipc warning?",
+"what happened to the cache settings in polars?",
+"is there a new way to handle caching for ipc files?",
+"why is polars complaining about my scan_ipc arguments?",
+"how do i update my code to be compatible with the new polars version?"
+],
+"polars1-038": [
+"why is my rolling correlation calculation changing?",
+"how to fix rolling correlation error after updating polars?",
+"does polars still support ddof in rolling correlation?",
+"why is my correlation result different in polars 1.40?",
+"how to remove the ddof argument from my rolling correlation code?",
+"is the ddof parameter deprecated in polars rolling correlation?"
+],
+"polars1-039": [
+"how do i skip the first few rows of a csv file in polars?",
+"can i change the delimiter from a comma to a semicolon?",
+"how do i specify which columns to load from a big file?",
+"how do i handle custom null values like \"n/a\" or \"none\"?",
+"can i rename the columns while reading the file?",
+"how do i ignore lines that start with a specific character?"
+],
+"polars1-040": [
+"how do i skip lines after the header in read_csv?",
+"why is my csv import failing on some rows?",
+"how can i change the default encoding for my file?",
+"is there a way to stop the low memory warning?",
+"how do i tell pandas to try parsing dates automatically?",
+"can i limit the number of rows i'm loading?"
+],
+"polars1-041": [
+"how do i change column types in polars read_csv",
+"why is my dtypes argument giving an error in polars",
+"how to fix polars read_csv schema error after update",
+"how to specify data types when reading a csv in polars",
+"polars read_csv column type mapping",
+"how do i define types for columns in polars csv"
+],
+"polars1-042": [
+"why is my polars read_csv giving a column name error",
+"how to rename row_count_name in polars",
+"polars read_csv row_count_offset changed",
+"how to fix row_count_name not found error",
+"polars 1.0 read_csv breaking changes",
+"what replaced row_count_name in polars?"
+],
+"polars1-043": [
+"why is my sample_size not changing the schema in polars?",
+"how do i limit the rows used for data type detection?",
+"why is polars ignoring my sample size setting?",
+"is there a way to only scan a few rows to guess the columns?",
+"how do i fix schema inference issues after updating polars?",
+"does polars still use sample_size to figure out data types?"
+],
+"polars1-044": [
+"why are my empty cells showing up as nulls in polars?",
+"how do i make empty strings stay as strings instead of becoming null?",
+"why did my csv import change after updating polars?",
+"how to keep empty strings as empty strings in read_csv?",
+"how do i stop polars from converting blank csv fields to null?",
+"how do i fix the missing_utf8_is_empty_string error?"
+],
+"polars1-045": [
+"how do i stop pandas from guessing my column types",
+"why are my numbers being read as strings in the csv",
+"how do i provide a custom schema for reading a csv",
+"how do i tell the csv reader to treat everything as text",
+"how do i fix the csv schema detection breaking my code",
+"how do i change how many rows are used to guess the data types"
+],
+"polars1-046": [
+"why is my nan showing up as a value instead of a null?",
+"how do i handle missing values in an integer column?",
+"why can't i put nulls in my float column?",
+"is nan the same as null in polars?",
+"how do i convert nan to null in a dataframe?",
+"why is my null count not including nans?"
+],
+"polars1-047": [
+"is checking for nulls slow on big datasets?",
+"how does polars handle null values internally?",
+"why is null counting so fast in polars?",
+"does checking for nulls take up a lot of memory?",
+"how does polars keep track of missing values?",
+"is it expensive to filter out nulls in a large dataframe?"
+],
+"polars1-048": [
+"how do i fill missing values with a specific number?",
+"how do i carry the last known value forward?",
+"why are the first and last rows still null after interpolating?",
+"how do i fill gaps with a calculation instead of a constant?",
+"how do i handle nulls at the start and end of my data?",
+"can i use a custom rule to fill missing data points?"
+],
+"polars1-049": [
+"how do i replace nan values in a float column",
+"why are my nan values still showing up after fill_null",
+"how to count nan values in a dataframe",
+"why is null_count not picking up my nan values",
+"how do i fix nan values in my data",
+"why did my nan values stay there after filling nulls"
+],
+"polars1-050": [
+"why is my mean still nan even though there are nulls",
+"how to ignore nan values in polars sum",
+"why does polars keep nan in my aggregation results",
+"how do i exclude nan from calculations in polars",
+"why is my average result nan when some rows are empty",
+"how to treat nan as null for group by operations"
+],
+"polars1-051": [
+"how do i keep only rows that match in both tables?",
+"how do i keep all rows from my main table even if there's no match?",
+"what is the difference between a semi and an anti join?",
+"how do i do a cross join to get every possible combination?",
+"why is my join failing with an invalid join type error?",
+"can i keep only the rows that don't have a match in the other table?"
+],
+"polars1-052": [
+"why am i getting two columns for the same id after a full join?",
+"how do i combine the keys into one column in a full join?",
+"why did my join start returning duplicate columns?",
+"how do i merge the join keys into a single column?",
+"why is one key null on the other side of my full join?",
+"how do i get a single key column back after a full outer join?"
+],
+"polars1-053": [
+"how do i handle duplicate column names in a join?",
+"why did my column names suddenly change after a join?",
+"how to rename columns that exist in both tables?",
+"polars join duplicate columns with a suffix?",
+"how to get rid of the _right suffix on joined columns?",
+"why are my columns getting renamed automatically?"
+],
+"polars1-054": [
+"how do i do a join on greater than or less than?",
+"how to join tables using inequality conditions?",
+"how do i join with multiple conditions that arent equals?",
+"how do i do a join with a > b filter?",
+"can i join using a range or inequality?",
+"how to join two tables where one column is bigger than another?"
+],
+"polars1-055": [
+"how do i join two dataframes that don't have exact matching timestamps?",
+"how can i merge data where i need the closest previous value?",
+"how do i join time series data with different frequencies?",
+"why is my join returning the wrong row when the times are slightly off?",
+"how do i limit the time window for finding the nearest match in a join?",
+"how can i make sure my data is sorted before doing a fuzzy time join?"
+],
+"polars1-056": [
+"how to do a cartesian product in polars",
+"how to join two dataframes without a key",
+"how to join every row of df1 with every row of df2",
+"polars cross join syntax",
+"how to do a many to many join with no common column",
+"why is my join failing when i don't have a join key"
+],
+"polars1-057": [
+"how do i join two tables if the column names are different?",
+"can i join on a modified column like lowercase or trimmed text?",
+"how do i join two dataframes when i need to transform a column first?",
+"why is my join failing because the keys aren't an exact match?",
+"is there a way to do a join on a calculated value?",
+"how do i join on a column that needs a string function applied to it?"
+],
+"polars1-058": [
+"how do i actually run the query i just wrote",
+"why is my csv not loading into a dataframe",
+"how do i make polars actually execute the file read",
+"why is my code returning a lazy object instead of data",
+"how do i convert the scan result into a real table",
+"why is it not reading the file until i call collect"
+],
+"polars1-059": [
+"why is my memory usage so high when reading a huge csv?",
+"how do i only load specific columns from a parquet file?",
+"is there a way to filter data before it actually loads into memory?",
+"how can i make my data processing faster and more efficient?",
+"why is my script crashing with an out of memory error on a large dataset?",
+"how do i optimize my query to only process the rows i actually need?"
+],
+"polars1-060": [
+"how do i see what happens under the hood of my query?",
+"why is my data processing so slow?",
+"can i see the execution plan for this operation?",
+"how do i check if the filters are actually being applied?",
+"is the library actually optimizing my joins and selects?",
+"how do i debug the query execution steps?"
+],
+"polars1-061": [
+"how do i get a list of values for each category in a column?",
+"how do i group rows and keep all the data in a single cell?",
+"why is my window function returning multiple rows instead of one list?",
+"how do i aggregate values into a list without collapsing the rows?",
+"how do i keep the original row count while doing a group calculation?",
+"how do i change the default behavior of the windowing function?"
+],
+"polars1-062": [
+"how do i turn a list of items into individual rows?",
+"how do i stop my list results from showing up as a single cell?",
+"why is my data repeating for every item in the list?",
+"how do i flatten a nested list into separate rows?",
+"why did my rows suddenly get so much longer after the update?",
+"how do i make the grouped results appear as new rows instead of a list?"
+],
+"polars1-063": [
+"how do i get the average speed for each type back into every row?",
+"why is my group mean only showing up on one row?",
+"how do i spread a calculated group total across the whole group?",
+"how do i keep the original row count after calculating a group average?",
+"can i join a group mean back onto my original dataframe?",
+"why does my window calculation only return one value per category?"
+],
+"polars1-064": [
+"how do i stop my data from crashing when it has bad formatting?",
+"why did my code suddenly start failing on invalid numbers?",
+"how do i make invalid values become null instead of throwing an error?",
+"can i ignore errors when converting data types?",
+"how do i handle messy strings without the script breaking?",
+"is there a way to keep the conversion going if some rows are broken?"
+],
+"polars1-065": [
+"why is my date column turning into a huge number when i cast it to integer?",
+"how do i get the actual number of days since 1970 from a date column?",
+"why is my datetime becoming a 16-digit number when i change the type?",
+"how do i see the underlying integer value of a polars date?",
+"is there a way to convert a datetime to a raw integer?",
+"why does my time column look like a random big number instead of a clock time?"
+],
+"polars1-066": [
+"how do i group data into monthly buckets?",
+"how to aggregate by time windows in polars?",
+"how to do a rolling sum by month?",
+"how do i group by a date column with a specific frequency?",
+"how to fix grouping by time intervals?",
+"how to resample a dataframe into fixed periods?"
+],
+"polars1-067": [
+"how do i change the window size for my dynamic grouping?",
+"does the start date include the actual day?",
+"how do i make the end date inclusive in my time buckets?",
+"why are my boundaries skipping the first day of the period?",
+"how do i group by a custom duration instead of the default?",
+"is the start of the interval included in the result?"
+],
+"polars1-068": [
+"how do i write a duration string for 1 year and 6 months?",
+"what format should i use for time offsets in polars?",
+"can i mix days and months in a duration string?",
+"how do i represent a 2-year tolerance?",
+"why is my duration string throwing an error?",
+"is there a shorthand for \"one day\" in the period parameter?"
+],
+"polars1-069": [
+"how do i get the start and end values for each group?",
+"how can i see the range of the windows in my results?",
+"why did new columns for boundaries suddenly appear in my dataframe?",
+"how do i include the min and max for each dynamic group?",
+"is there a way to see the boundaries of each window?",
+"how do i get the first and last values of my grouped windows?"
+],
+"polars1-070": [
+"why does my rolling average have more rows than i expected?",
+"how do i group data into fixed time blocks instead of per-row windows?",
+"why is my rolling window moving with every single row instead of every day?",
+"how do i get a result for every month instead of every timestamp?",
+"why does my rolling calculation keep including the same data points?",
+"how do i make sure my windows start at regular intervals?"
+],
+"polars1-071": [
+"how do i change a column type when reading a csv",
+"how do i stop polars from making everything a string",
+"how do i force a column to be an integer",
+"how do i change the data types in my schema",
+"why is my age column showing up as a float",
+"how do i override the default types in polars"
+],
+"polars1-072": [
+"how do i check the data types of my columns?",
+"is a polars string actually utf-8?",
+"how do i see the structure of my dataframe?",
+"why is my column list showing different types?",
+"how do i get the schema for this table?",
+"is a series just one column of data?"
+],
+"polars1-073": [
+"how do i restrict a column to only specific string values",
+"how to create a custom category type for a list of strings",
+"how to map strings to categories in a series",
+"how to fix error when string is not in allowed list",
+"how to define a fixed set of options for a column",
+"how do i use a predefined list of labels for my data"
+],
+"polars1-074": [
+"why is my code crashing when i pass a string to an enum?",
+"how do i handle values that aren't in my enum list?",
+"why can't i add new categories to an enum at runtime?",
+"how do i fix \"conversion from str to enum failed\" error?",
+"does enum allow for dynamic categories like categorical does?",
+"why does my enum throw an error for unexpected input strings?"
+],
+"polars1-075": [
+"why is my code slow when filtering on a column with many repeating strings?",
+"how do i make string columns faster for grouping and sorting?",
+"why are my categories changing order every time i run the script?",
+"is there a way to use fixed labels instead of raw strings for performance?",
+"should i use a specific type for columns with a set list of options?",
+"how do i optimize memory for a column that only has a few unique values?"
+],
+"polars1-076": [
+"how do i store a list of different lengths in a column?",
+"why is my array shape giving me an error?",
+"can i have a column with variable length integers?",
+"is there a way to store a list of strings of different sizes?",
+"why is the array type so much faster than the list type?",
+"how do i define a fixed-size array in my schema?"
+],
+"polars1-077": [
+"how do i get the first few items from a list column?",
+"how do i sort the values in an array column?",
+"how do i get the sum of all numbers in a list?",
+"how do i check if a value exists inside an array?",
+"how do i take a chunk out of the middle of a list?",
+"why is my array sorting code not working after the update?"
+],
+"polars1-078": [
+"how do i apply a function to every item inside a list column",
+"how to check if any values in a list are null",
+"how to cast elements inside a list column to integers",
+"how to run an expression on every element of a list",
+"how to filter or modify values inside a nested list",
+"how to map a calculation over a list of objects"
+],
+"polars1-079": [
+"why is my string length different than the byte count?",
+"how to get the length of a string in bytes?",
+"why does my database error say the string is too long?",
+"how many bytes is a unicode string?",
+"how to count characters vs bytes in python?",
+"why is \"pêra\" coming back as 5 instead of 4?"
+],
+"polars1-080": [
+"how do i search for a string that has special characters like dots or brackets",
+"why is my substring search failing on a string with a plus sign",
+"how to check if a string contains a specific phrase without using regex",
+"does contains handle literal text or regular expressions",
+"how do i check if a string starts with a specific word exactly",
+"why does my starts_with check work but my contains check doesn't"
+],
+"polars1-081": [
+"how to get just one specific part of a string using regex",
+"how to get every single match in a column instead of just the first",
+"why is my regex only returning the first result",
+"how to get a list of all matches from a text string",
+"how do i extract multiple occurrences of a pattern",
+"how to get a single capture group from a regex match"
+],
+"polars1-082": [
+"how do i replace all occurrences of a string",
+"why is only the first word changing",
+"how to replace every instance of a substring",
+"how do i replace all matches in a string",
+"why isn't my replace function hitting every match",
+"how to replace all text instead of just the first one"
+],
+"polars1-083": [
+"how do i remove all leading and trailing whitespace?",
+"why is my string still having some letters left after strip?",
+"how to remove a specific word from the start of a string?",
+"does strip remove every character in a list?",
+"how to remove only the exact prefix i want?",
+"why does strip remove more than just the first few characters?"
+],
+"polars1-084": [
+"why is my regex not working in polars but it works in pandas?",
+"does polars support lookaheads and lookbehinds?",
+"why did my regex break after updating polars?",
+"is polars using the same regex engine as python?",
+"how do i write a regex in polars that uses backreferences?",
+"why is my regular expression throwing an error in my polars query?"
+],
+"polars1-085": [
+"how do i get the first 10 characters of a string?",
+"how do i grab a substring from a specific position?",
+"how do i take the last 5 letters of a column?",
+"how do i cut a string using a column value as the starting point?",
+"how do i slice a string by length instead of index?",
+"how do i get the end of a string in polars?"
+],
+"polars1-086": [
+"how do i filter by multiple conditions at once?",
+"do i need to use \"and\" between my filter arguments?",
+"how do i check if a row matches several different columns?",
+"why is my filter only looking at the first condition i provided?",
+"how do i filter by a column value and a custom function at the same time?",
+"is there a way to combine multiple criteria in one filter call?"
+],
+"polars1-087": [
+"why are my rows turning into nulls in the chain?",
+"how do i keep the original value if no conditions match?",
+"why did my data disappear after adding a when/then?",
+"is there a way to default to the original value?",
+"how do i stop the chain from returning nulls?",
+"why is my query returning empty results for some rows?"
+],
+"polars1-088": [
+"how do i pick the first non-null value from a list of options?",
+"how do i do a fallback value for a conditional check?",
+"why is my code picking the first true condition and skipping the rest?",
+"how do i find the first match in a chain of conditions?",
+"how do i set a default value if all my previous checks fail?",
+"how do i write a \"if this, else if that, else default\" logic in one line?"
+],
+"polars1-089": [
+"how do i get the count and the first value of a column at the same time?",
+"how can i group by multiple columns like state and party?",
+"is there a way to get the last row's value for each category?",
+"how do i perform different calculations on different columns in a group?",
+"how do i count rows and find the maximum value in one step?",
+"why is my group by only looking at one column instead of two?"
+],
+"polars1-090": [
+"how do i filter rows inside a group by and count them?",
+"can i sort values within a group before picking the first one?",
+"how to get the first name sorted alphabetically for each party?",
+"how do i do a conditional count inside a groupby?",
+"is there a way to sort by a different column inside an aggregation?",
+"how to filter specific rows during a group by without using a separate filter?"
+],
+"polars1-091": [
+"why is my polars group_by running so slowly?",
+"how do i make polars aggregations faster?",
+"why is my group_by not using all my cpu cores?",
+"is there a way to avoid using functions in polars groups?",
+"how do i speed up a custom calculation in a group by?",
+"why is my polars code hanging on a large group by?"
+],
+"polars1-092": [
+"how do i join two tables side by side instead of one on top of the other?",
+"how can i stack two sets of rows into a single column?",
+"is there a way to merge columns where the names don't match exactly?",
+"how do i add a new column to my result without it being empty?",
+"why are my columns being stacked vertically when i want them next to each other?",
+"how do i combine two dataframes so the shorter one gets nulls at the end?"
+],
+"polars1-093": [
+"how to join two dataframes side by side with different numbers of rows",
+"why does my horizontal concat fail when the dataframes are different lengths",
+"how to merge dataframes horizontally and fill missing rows with nulls",
+"how to fix error when joining dataframes with overlapping column names",
+"how to concat dataframes side by side without getting a shape mismatch error",
+"how to pad dataframes with nulls when merging them horizontally"
+],
+"polars1-094": [
+"why is my dataframe so fragmented after joining?",
+"how do i make my data contiguous in memory?",
+"is there a way to merge the chunks of my joined data?",
+"why is my memory usage so high after a concat?",
+"how do i consolidate my data into one block?",
+"is there an option to fix memory fragmentation on join?"
+],
+"polars1-095": [
+"how do i combine multiple columns into a single object?",
+"how can i rename a key inside a nested object?",
+"how do i turn a struct field back into its own column?",
+"how do i group these columns together into one?",
+"how do i change the name of a field in a struct?",
+"how do i flatten a struct into separate columns?"
+],
+"polars1-096": [
+"how do i get a flat table from value_counts instead of a struct?",
+"why is my value_counts result nested?",
+"how to expand the count and value columns into separate columns?",
+"how do i unnest the result of value_counts?",
+"how do i get a simple count table without the struct?",
+"why is value_counts returning a struct instead of two columns?"
+],
+"polars1-097": [
+"how to check for duplicate rows across multiple columns",
+"how to find duplicate pairs in a dataframe",
+"how to verify if a combination of columns is unique",
+"how to check if two columns together have repeating values",
+"how to handle multi-column uniqueness in polars",
+"why is my duplicate check only looking at one column"
+],
+"polars1-098": [
+"how do i convert a column of strings to dates in polars?",
+"how to parse date strings with a specific format?",
+"why is my date parsing failing in polars?",
+"how to use strftime format for dates in polars?",
+"how do i turn this string column into a datetime?",
+"what is the correct format for parsing dates in polars?"
+],
+"polars1-099": [
+"how do i automatically parse dates in polars csv",
+"how to get polars to recognize date columns automatically",
+"polars csv dates stay as strings how to fix",
+"how to auto detect dates when reading a csv",
+"make polars convert date columns on import",
+"how to change csv date strings to datetime objects automatically"
+],
+"polars1-100": [
+"how do i handle mixed timezones in a polars column",
+"why are my mixed utc offsets showing up as the wrong time",
+"how to convert a datetime column to a specific timezone in polars",
+"polars datetime mixed offsets to local time",
+"how to fix polars datetime timezone conversion errors",
+"how do i change a polars timestamp to brussels time"
+],
+"polars1-101": [
+"how do i get just the year from a date column?",
+"how to extract month and day from a datetime object?",
+"why isn't my date component extraction working?",
+"how to pull the day out of a timestamp?",
+"can i use the same method for both dates and datetimes?",
+"how to get the year from a date field in pandas?"
+],
+"polars1-102": [
+"how do i read a parquet file without loading the whole thing into memory?",
+"why is my parquet read so slow on s3?",
+"how can i filter my parquet data before it hits my dataframe?",
+"is there a way to only select specific columns from a parquet file?",
+"why is my app crashing with out of memory when reading large parquet files?",
+"how do i optimize parquet reads for cloud storage?"
+]
+}

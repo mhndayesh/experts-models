@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "factbank"
+version = "0.1.0"
+description = "A frozen, editable fact bank + code-driven retrieval loop around any local OpenAI-compatible model. Facts stay text; the model stays stock; knowledge stays yours."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.26",
+    "rank-bm25==0.2.2",
+]
+
+[project.optional-dependencies]
+# `factbank bake` (writing a bank into a GGUF's metadata) needs the gguf package.
+# It is optional so the core serve/loop path installs without it.
+bake = ["gguf>=0.9"]
+
+[project.scripts]
+factbank = "factbank.cli:main"
+
+[tool.setuptools.package-data]
+factbank = ["facts_v2.jsonl", "factbank.toml"]
+
+[tool.setuptools.packages.find]
+include = ["factbank*"]

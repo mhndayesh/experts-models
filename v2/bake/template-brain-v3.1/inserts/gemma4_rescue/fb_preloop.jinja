@@ -1,0 +1,31 @@
+{#- GEMMA4 / INDEX (v5.0). The bank is now an INVERTED INDEX, not a per-fact
+    keyword list. Data layout, chosen by measurement in jinja_lab:
+      fb_post : {term -> "factid:weight factid:weight ..."} - keys stored ONCE
+                globally instead of repeated on every fact (809 KB vs 949 KB)
+      fb_txt  : a LIST of fact sentences, addressed by integer id. minja builds
+                lists fast and dicts slowly - moving the facts out of a dict cut
+                the per-request cost from 1318 ms to 291 ms (measured).
+      fb_lib  : parallel list, fact id -> library
+      FB_NCUR : facts are sorted CURATED FIRST, so "is this a curated migration
+                fact?" is just `id < FB_NCUR` and costs zero bytes.
+    Engine-verified subset only (probe_minja.py): dict lookup by variable key,
+    `in` on dicts, .split()/.split(":"), |int, integer math, namespace. -#}
+{%- set fbns = namespace(fb_tools=false, fb_id="", exch_key="", libs="", hits="", tot="", seen="", picked="", notes="", intent=0, m=false) -%}
+{%- if tools is defined and tools -%}
+  {%- for t in tools -%}
+    {%- if t.function is defined and t.function.name == "factbank_search" -%}
+      {%- set fbns.fb_tools = true -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- set FB_MAX = __FBMAX__ -%}
+{%- set FB_NCUR = __NCUR__ -%}
+{%- set fb_post = __POST__ -%}
+{%- set fb_txt = __TXT__ -%}
+{%- set fb_lib = __LIB__ -%}
+{%- set fb_names = __NAMES__ -%}
+{%- set fb_trig = __TRIG__ -%}
+{%- set FB_STOP = __STOPW__ -%}
+{%- set FB_INTENT = __INTENT__ -%}
+{%- set fb_alias = __ALIAS__ -%}
+{%- set fb_rescue = __RESCUE__ -%}

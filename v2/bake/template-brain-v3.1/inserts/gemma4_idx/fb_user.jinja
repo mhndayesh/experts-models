@@ -1,0 +1,10 @@
+{#- GEMMA4 FAMILY (v3.2). This insert now ONLY captures the current user
+    text (used by fb_hook's exchange key and fb_gen's match key). Fact
+    delivery moved to fb_gen: the default-native lane forges a tool
+    exchange at generation time instead of appending prose notes here
+    (prose + thinking measured unbounded on glyph-heavy topics; the
+    native channel measured bounded - stage-0 F-025 and the live BQN
+    test, 2026-07-13). -#}
+{%- if role == 'user' -%}
+{%- set fbns.cur_user = captured_content -%}
+{%- endif -%}

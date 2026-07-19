@@ -1,0 +1,88 @@
+# --- model weights: never in git -------------------------------------------
+# Model weights never belong in version control. (The cancelled Qwen3-0.6B
+# stage was removed 2026-07-19 — it is a public, re-downloadable base model.)
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth
+
+# --- legacy pre-v2 tree (v2 is the canonical tree) --------------------------
+# The pre-v2 layout is LEGACY and not needed for release. It is KEPT ON DISK
+# (archive/ is the F-001..F-065 evidence/proof base per CLAUDE.md) but is NOT
+# tracked: it is ~139k files, several under all-rights-reserved third-party
+# licences (corpus). Track v2/ as the project; keep the proof base off git.
+/archive/
+
+# --- the collected corpus ---------------------------------------------------
+# 2.2 GB / 139k files of third-party documentation and code, several under
+# all-rights-reserved licences (NVIDIA docs, AMD ISA PDFs, rcon slides).
+# It is REPRODUCIBLE: every source is pinned by commit in corpus/*/SOURCES.md
+# and re-fetchable with corpus/_tools/. Track the provenance and the tools,
+# not the payload.
+corpus/*
+!corpus/README.md
+!corpus/REPORT.md
+!corpus/_manifest.json
+!corpus/_stats.json
+!corpus/_tools/
+!corpus/*/
+corpus/*/*
+!corpus/*/SOURCES.md
+
+# --- delivery snapshots -----------------------------------------------------
+# Frozen zips. Stale by design (archive/README.md: never unzip over the tree).
+*.zip
+
+# --- python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# --- scratch ----------------------------------------------------------------
+_manual*.txt
+_m_a.txt
+_m_b.txt
+*.tmp
+/CHANGES.md
+
+appsec-corpus/
+
+# --- generated bake/publish artifacts (regeneratable; canonical copies live on HF) ---
+# baked templates: reproduce via bake_index.py from FINAL_v3.jsonl + inserts + family_bases
+v2/bake/template-brain-v3.1/*_baked_*.jinja
+# adapt_v3 outputs: reproduce via `python adapt_v3.py FINAL_v3.jsonl appsec_v3`
+v2/bake/template-brain-v3.1/appsec_v3_bank.jsonl
+v2/bake/template-brain-v3.1/appsec_v3_taskwords.json
+v2/bake/template-brain-v3.1/appsec_v3_lang.json
+v2/bake/template-brain-v3.1/appsec_v3_concept.json
+# publish artifacts: reproduce via build_publish.py / write_cards.py (cards README.md ARE tracked)
+v2/publish/security-appsec/*/chat-template.jinja
+v2/publish/security-appsec/*/chat-template-thinking.jinja
+v2/publish/security-appsec/*/model.yaml
+v2/publish/security-appsec/*/model-thinking.yaml
+
+# --- stray/junk at root ---
+/dev/
+/claude-reports/
+/experts_securityeval.jsonl
+
+# --- appsec build pipeline: inputs are TRACKED (reproducible via build_v3_assemble2 + REBUILD.md) ---
+# The v3 pipeline is committed & verified (rebuilds 91% of FINAL_v3.jsonl exactly), so its inputs are
+# tracked: FINAL.jsonl (audited base facts) + v3_llm/v3_tier1/v3_usecases (LLM enrichments). Only these
+# true throwaways stay off git (regeneratable stage output / superseded / audit change-logs):
+v2/extractor/experts/appsec/facts/v3_pass1.jsonl
+v2/extractor/experts/appsec/facts/FINAL_anchored.jsonl
+v2/extractor/experts/appsec/facts/FINAL.removed.jsonl
+v2/extractor/experts/appsec/facts/_audit_changes.json
+v2/extractor/experts/appsec/facts/_audit_confirmed.json
+
+# CLAUDE.md is local-only assistant guidance — never pushed
+/CLAUDE.md
+
+# TICKETS.md is the local-only working tracker — stays on disk, never pushed online
+/TICKETS.md

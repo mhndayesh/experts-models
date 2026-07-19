@@ -1,0 +1,7 @@
+{
+  "expert": "appsec",
+  "release": ["FINAL.jsonl"],
+  "note": "Explicit release selection (audit #4). ONLY the merged, audited FINAL bank ships. NEVER glob facts/*.jsonl — that sweeps in the 7 pre-merge source banks, reject files, FINAL.removed, and intermediates (e.g. FINAL_anchored), baking rejected facts (unique ids escape id-dedup) into the GGUF.",
+  "excluded_intermediates": ["*.rejects.jsonl", "FINAL.removed.jsonl", "FINAL_anchored.jsonl", "cwe.jsonl", "codeql.jsonl", "sast.jsonl", "mastg.jsonl", "rustsec.jsonl", "crypto_net.jsonl", "owasp_cs.jsonl"],
+  "index_fields": ["truth", "subject", "door", "lang", "anchors", "code_good", "code_bad", "keywords", "lib", "version", "type"]
+}

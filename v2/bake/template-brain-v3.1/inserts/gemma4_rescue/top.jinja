@@ -1,0 +1,6 @@
+{#- factbank v3 top config, GEMMA4 FAMILY: deliberately a no-op.
+    The reference top.jinja forces enable_thinking=true, but the gemma-4
+    source template keys thinking off enable_thinking with safe guards
+    (`is defined`, `| default(false)`), and the repo serves this model
+    THINK-OFF by owner rule (F-035: a thinking extractor burns the whole
+    budget). Forcing true here would flip the served default. -#}

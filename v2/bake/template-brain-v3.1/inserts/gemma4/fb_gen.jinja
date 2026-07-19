@@ -1,0 +1,134 @@
+{#- GEMMA4 FAMILY, FB_GEN (v3.4.0: default-native lane, weighted rank,
+    GROUPED bank). Anchored inside the message loop, immediately before a
+    turn header renders; fires ONLY for the LAST user message (the source's
+    own ns_turn.last_user_idx pre-scan identifies it). The forged exchange -
+    a completed model turn in gemma's native tool syntax - therefore renders
+    BEFORE the user's question text: upstream of every echo mechanism LM
+    Studio's undocumented reply-splitting layer could use (F-042), and
+    present in both with/without-generation-prompt renders. Model experience:
+    lookup result arrives, user asks, model answers. Guards: never when
+    factbank_search is really declared (real Lane 1 owns delivery), never for
+    non-string (multimodal) content, renders NOTHING when no facts match.
+
+    v3.4.0 GROUPED BANK: fb_bank is now a list of {lib, f:[facts]} groups.
+    Each pass skips an unmatched library with ONE check instead of testing
+    every fact in it - the scan is O(matched libs' facts), not O(bank), which
+    is what makes a 25k-fact bank affordable per request.
+
+    RANKED SCAN (v3.3.0, unchanged semantics): per fact, dead-name hit +10
+    (f.d: renamed/removed APIs, the highest-signal evidence, rarity-filtered
+    at enrich time - F-044), strong hit +4, weak/task phrase +1. Eligibility
+    unchanged (question-specific = sc>1 or wc>0; floor = lib-name-only).
+    Selection by score with flat loops only, no sort(): pass 0 finds the best
+    score; the tie band (score == best) emits UNCAPPED so ties are never cut
+    in bank order (finish-the-band); two descending bands fill to FB_MAX;
+    floor facts take leftovers. Scores are recomputed per pass - storing them
+    would need list-building, the one construct that risks the engines. Band
+    edges use score + 5 >= best, so no subtraction enters the template. -#}
+{%- if message['role'] == 'user' and loop.index0 == ns_turn.last_user_idx and not fbns.fb_tools and message['content'] is string -%}
+{%- set fbns.cur_user = message['content'] -%}
+{%- set fb_k2 = (" " + fbns.cur_user + " ") | lower | replace("."," ") | replace(","," ") | replace("("," ") | replace(")"," ") | replace("?"," ") | replace("!"," ") | replace(":"," ") | replace(";"," ") | replace("'"," ") | replace("\n"," ") -%}
+{%- set fbns.libs = "" -%}
+{%- for g in fb_gate -%}
+  {%- set fbns.m = false -%}
+  {%- for k in g.trig -%}{%- if k in fb_k2 -%}{%- set fbns.m = true -%}{%- endif -%}{%- endfor -%}
+  {%- if fbns.m -%}{%- set fbns.libs = fbns.libs + g.lib -%}{%- endif -%}
+{%- endfor -%}
+{%- set fbns.hits = 0 -%}
+{%- set fbns.best = 0 -%}
+{%- set fbns.notes = "verified documentation lookup results (versions and sources included; use only where they apply):" -%}
+{#- pass 0: best score among question-specific facts (one number kept) -#}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}{%- set fbns.score = 0 -%}
+  {%- for k in f.s -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 4 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fb_k2 -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.d -%}{%- if k in fb_k2 -%}{%- set fbns.score = fbns.score + 10 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 1 or fbns.wc > 0) and fbns.score > fbns.best -%}
+    {%- set fbns.best = fbns.score -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{#- pass 1: tie band (score == best), UNCAPPED - finish the band -#}
+{%- if fbns.best > 0 -%}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}{%- set fbns.score = 0 -%}
+  {%- for k in f.s -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 4 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fb_k2 -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.d -%}{%- if k in fb_k2 -%}{%- set fbns.score = fbns.score + 10 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 1 or fbns.wc > 0) and fbns.score == fbns.best and fbns.hits < FB_TIE_MAX -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + f.txt -%}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{#- pass 2: upper band (best > score, score + 5 >= best), capped -#}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- if fbns.hits < FB_MAX -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}{%- set fbns.score = 0 -%}
+  {%- for k in f.s -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 4 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fb_k2 -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.d -%}{%- if k in fb_k2 -%}{%- set fbns.score = fbns.score + 10 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 1 or fbns.wc > 0) and fbns.score < fbns.best and fbns.score + 5 >= fbns.best -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + f.txt -%}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{#- pass 3: lower band (score + 5 < best), capped -#}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- if fbns.hits < FB_MAX -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}{%- set fbns.score = 0 -%}
+  {%- for k in f.s -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 4 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fb_k2 -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- set fbns.score = fbns.score + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.d -%}{%- if k in fb_k2 -%}{%- set fbns.score = fbns.score + 10 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 1 or fbns.wc > 0) and fbns.score > 0 and fbns.score + 5 < fbns.best -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + f.txt -%}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{#- pass 4: floor filler (lib-name-only facts), capped -#}
+{%- for grp in fb_bank -%}
+{%- if grp.lib in fbns.libs -%}
+{%- for f in grp.f -%}
+  {%- if fbns.hits < FB_MAX -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}
+  {%- for k in f.s -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.c -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fb_k2 -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- if fbns.sc == 1 and fbns.wc == 0 -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + f.txt -%}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor -%}
+{%- if fbns.hits > 0 -%}
+{#- the forged query must NOT quote the user's text verbatim: a copy of
+    the question upstream of the real user turn could become a false
+    split point for LM Studio's reply-boundary search (F-042). -#}
+{{- '<|turn>model\n<|tool_call>call:factbank_search{query:<|"|>current' + fbns.libs + 'documentation<|"|>}<tool_call|>' -}}
+{{- format_tool_response_block('factbank_search', fbns.notes) -}}
+{{- '<turn|>\n' -}}
+{%- endif -%}
+{%- endif -%}

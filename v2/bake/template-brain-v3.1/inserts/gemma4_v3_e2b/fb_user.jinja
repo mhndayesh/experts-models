@@ -1,0 +1,12 @@
+{#- GEMMA4 E2B FAMILY (v3.2, e2b variant). e2b has NO `captured_content`
+    capture block (12b/26b wrap user/assistant rendering in {%- set
+    captured_content -%}...{%- endset -%}; e2b emits content inline). So we
+    read message['content'] directly. Only strings are captured - a
+    multimodal content-list is a sequence and is not a text match key
+    (and `is string` also protects llama.cpp's load-time template probe).
+    fbns.cur_user feeds ONLY the real-tool Lane-1 exchange key (fb_hook /
+    fb_toolmsg); the default-native lane (fb_gen) reads message['content']
+    itself, so it is unaffected. -#}
+{%- if role == 'user' and message['content'] is string -%}
+{%- set fbns.cur_user = message['content'] -%}
+{%- endif -%}

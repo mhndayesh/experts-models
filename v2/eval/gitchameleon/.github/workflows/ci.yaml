@@ -1,0 +1,98 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags:
+      - 'v*.*.*' # Matches tags like v1.0.0, v1.2.3
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Configure Poetry
+        run: |
+          poetry config virtualenvs.in-project true
+
+      - name: Install dependencies with Poetry
+        run: |
+          poetry install
+
+      - name: Run linters
+        run: |
+          make lint-all
+
+      - name: Validate Dataset
+        run: poetry run python gitchameleon/dataset_checker.py
+
+  docker-build:
+    permissions:
+        contents: read # Needed for actions/checkout
+        packages: write # Needed to push to GitHub Container Registry
+    runs-on: ubuntu-latest
+    needs: ci 
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Log in to Docker Hub
+        # This action handles logging into the registry using your secrets
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Prepare Docker Image Tags
+        id: docker_tags
+        run: |
+          IMAGE_NAME="${{ secrets.DOCKER_HUB_USERNAME }}/gitchameleon"
+          TAGS="${IMAGE_NAME}:${{ github.sha }}" # Always tag with commit SHA
+
+          # Add 'latest' tag for pushes to main branch
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]]; then
+            TAGS="${TAGS},${IMAGE_NAME}:latest"
+            echo "Added latest tag for main branch push."
+          fi
+
+          # Add PR tag for pull requests
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            PR_NUMBER="${{ github.event.number }}"
+            TAGS="${TAGS},${IMAGE_NAME}:pr-${PR_NUMBER}-${{ github.sha }}"
+            echo "Added PR tag: pr-${PR_NUMBER}-${{ github.sha }}"
+          fi
+
+          # Add semantic version tag if triggered by a Git tag (e.g., v1.0.0 -> 1.0.0)
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == refs/tags/v* ]]; then
+            VERSION_TAG=$(echo "${{ github.ref }}" | sed 's/refs\/tags\/v//') # Removes 'refs/tags/v' prefix
+            TAGS="${TAGS},${IMAGE_NAME}:${VERSION_TAG}"
+            echo "Added version tag: ${VERSION_TAG}"
+          fi
+
+          # Set the output variable for the build-push-action
+          echo "DOCKER_IMAGE_TAGS=${TAGS}" >> "$GITHUB_OUTPUT"
+          echo "Final tags: ${TAGS}"
+
+      - name: Build and push Docker image to Docker Hub
+        # This action builds the image from your Dockerfile and pushes it
+        uses: docker/build-push-action@v5
+        with:
+          context: . # '.' assumes your Dockerfile is in the root of your repo
+          push: true
+          tags: ${{ steps.docker_tags.outputs.DOCKER_IMAGE_TAGS }}

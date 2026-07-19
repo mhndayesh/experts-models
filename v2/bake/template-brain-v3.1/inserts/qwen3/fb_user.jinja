@@ -1,0 +1,38 @@
+{#- QWEN3 FAMILY (ns -> fbns, msg -> message), anchored against the
+    template EMBEDDED IN THE SHIPPED GGUF (which differs from the HF
+    tokenizer_config one: it renders message.content directly, with no
+    local `content` variable to append to). So Lane 2 notes are emitted
+    as their OWN user turn right after the real one - the same shape
+    qwen3 itself uses for tool responses (rendered as user turns).
+    Anchored AFTER the user/system render expression; guarded to
+    role=="user" because qwen3 shares that branch with non-first system
+    messages. -#}
+{%- if message.role == "user" -%}
+{%- if message.content is string -%}{%- set fbns.cur_user = message.content -%}{%- endif -%}
+{%- if loop.last and not fbns.fb_tools -%}
+{%- set fb_k2 = (" " + fbns.cur_user + " ") | lower | replace("."," ") | replace(","," ") | replace("("," ") | replace(")"," ") | replace("?"," ") | replace("!"," ") | replace(":"," ") | replace(";"," ") | replace("'"," ") | replace("\n"," ") -%}
+{%- set fbns.libs = "" -%}
+{%- for g in fb_gate -%}
+  {%- set fbns.m = false -%}
+  {%- for k in g.trig -%}{%- if k in fb_k2 -%}{%- set fbns.m = true -%}{%- endif -%}{%- endfor -%}
+  {%- if fbns.m -%}{%- set fbns.libs = fbns.libs + g.lib -%}{%- endif -%}
+{%- endfor -%}
+{%- set fbns.hits = 0 -%}
+{%- set fbns.notes = "" -%}
+{%- for f in fb_bank -%}
+  {%- if f.lib in fbns.libs -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}
+  {%- for k in f.s -%}{%- if k in fb_k2 -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fb_k2 -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 0 or fbns.wc > 1) and fbns.hits < FB_MAX -%}
+    {%- if fbns.hits == 0 -%}{%- set fbns.notes = "Trusted notes from local docs that may apply (use only where relevant):" -%}{%- endif -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + f.txt -%}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if fbns.notes -%}
+{{- '<|im_start|>user\n' + fbns.notes + '<|im_end|>\n' -}}
+{%- endif -%}
+{%- endif -%}
+{%- endif -%}

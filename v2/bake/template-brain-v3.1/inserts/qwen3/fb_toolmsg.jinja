@@ -1,0 +1,30 @@
+{#- QWEN3 FAMILY (ns -> fbns, msg -> message), GGUF-template variant.
+    The source renders `{{- message.content }}` directly in the tool
+    branch and jinja cannot rebind a message attribute, so the raw
+    content CANNOT be blanked here. The Lane 1 client contract covers
+    it instead: the bounce sends content="" (see harness.py), which
+    renders nothing after the dressed block this insert emits. Other
+    tools' messages pass through raw as before. Pairs strictly by id. -#}
+{%- if fbns.fb_id and message.tool_call_id is defined and message.tool_call_id == fbns.fb_id -%}
+{{- "factbank_search results (verified; versions and sources included; use only where they apply):" -}}
+{%- set fbns.libs = "" -%}
+{%- for g in fb_gate -%}
+  {%- set fbns.m = false -%}
+  {%- for k in g.trig -%}{%- if k in fbns.exch_key -%}{%- set fbns.m = true -%}{%- endif -%}{%- endfor -%}
+  {%- if fbns.m -%}{%- set fbns.libs = fbns.libs + g.lib -%}{%- endif -%}
+{%- endfor -%}
+{%- set fbns.hits = 0 -%}
+{%- for f in fb_bank -%}
+  {%- if f.lib in fbns.libs -%}
+  {%- set fbns.sc = 0 -%}{%- set fbns.wc = 0 -%}
+  {%- for k in f.s -%}{%- if k in fbns.exch_key -%}{%- set fbns.sc = fbns.sc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fbns.exch_key -%}{%- set fbns.wc = fbns.wc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- if (fbns.sc > 0 or fbns.wc > 1) and fbns.hits < FB_MAX %}
+- {{ f.txt }}
+    {%- set fbns.hits = fbns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if fbns.hits == 0 %} no matching entries; proceed with standard best practices.{%- endif -%}
+{%- set fbns.fb_id = "" -%}
+{%- endif -%}

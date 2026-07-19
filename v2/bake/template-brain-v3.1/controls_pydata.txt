@@ -1,0 +1,22 @@
+what is the correct api?
+write a haiku about the sea
+explain how a for loop works
+what is the difference between a list and a tuple
+help me name my new project
+tell me about the history of computers
+what should i eat for dinner
+summarize this paragraph for me
+how do i stay motivated to study
+write a short story about a robot
+what time zone is new york in
+give me tips for a job interview
+explain what a closure is in python, briefly.
+write a python function that returns the nth fibonacci number.
+what does the yield keyword do in python?
+explain the difference between processes and threads in a short paragraph.
+write a python function that flattens a nested list of arbitrary depth.
+explain big-o notation briefly and give two examples.
+how do i connect to a postgres database from python
+sort a python dictionary by value
+whats the average of a list of numbers
+write a sql query to join two tables

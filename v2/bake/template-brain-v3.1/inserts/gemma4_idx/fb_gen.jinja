@@ -1,0 +1,112 @@
+{#- GEMMA4 / INDEX (v5.0) FB_GEN - default-native lane.
+    Fires only for the LAST user message, renders the forged factbank_search
+    exchange BEFORE the user's question (the F-042 echo fix), and stands down
+    when a client really declares the tool (real Lane 1 owns delivery) or the
+    content is multimodal. `is string` also protects llama.cpp's load-time
+    template probe, which renders synthetic inputs and REJECTS the whole model
+    if the template throws. -#}
+{%- if message['role'] == 'user' and loop.index0 == ns_turn.last_user_idx and not fbns.fb_tools and message['content'] is string -%}
+{%- set fbns.notes = "verified documentation lookup results (versions and sources included; use only where they apply):" -%}
+
+{%- set q = (" " + message['content'] + " ") | lower | replace("."," ") | replace(","," ") | replace("("," ") | replace(")"," ") | replace("?"," ") | replace("!"," ") | replace(":"," ") | replace(";"," ") | replace("'"," ") | replace("\n"," ") -%}
+{%- set fbns.libs = "" -%}{%- set fbns.hits = "" -%}{%- set fbns.tot = "" -%}
+{%- set fbns.seen = "" -%}{%- set fbns.picked = "" -%}{%- set fbns.intent = 0 -%}
+{#- gate: a NAMED library wins; only if none is named do inferred tabs open -#}
+{%- for lib in fb_names -%}
+  {%- if (" " + lib + " ") in q -%}{%- set fbns.libs = fbns.libs + lib + " " -%}{%- endif -%}
+{%- endfor -%}
+{%- if fbns.libs == "" -%}
+  {%- for lib in fb_names -%}
+    {%- set fbns.m = false -%}
+    {%- for t in fb_trig[lib].split("|") -%}
+      {%- if (" " + t + " ") in q -%}{%- set fbns.m = true -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if fbns.m -%}{%- set fbns.libs = fbns.libs + lib + " " -%}{%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- if fbns.libs != "" -%}
+{%- for w in q.split(" ") -%}
+  {%- if w in FB_INTENT -%}{%- set fbns.intent = 1 -%}{%- endif -%}
+{%- endfor -%}
+{#- query terms: content words + adjacent bigrams -#}
+{%- set qn = namespace(s="") -%}
+{%- for w in q.split(" ") -%}
+  {%- if w != "" and w|length > 2 and w not in FB_STOP -%}{%- set qn.s = qn.s + w + " " -%}{%- endif -%}
+{%- endfor -%}
+{%- set qw = qn.s.split(" ") -%}
+{%- set qc = namespace(s="") -%}
+{%- for w in qw -%}{%- if w != "" -%}{%- set qc.s = qc.s + w + " " -%}{%- endif -%}{%- endfor -%}
+{%- set qw = qc.s.split(" ") -%}
+{%- set tn = namespace(s="") -%}
+{%- for w in qw -%}
+  {%- if w != "" -%}
+    {%- set tn.s = tn.s + w + " " -%}
+    {#- squash: "t-test" -> "ttest", "scikit-learn" -> "scikitlearn" -#}
+    {%- set sq = w | replace("-", "") | replace("_", "") -%}
+    {%- if sq != w and sq|length > 3 -%}{%- set tn.s = tn.s + sq + " " -%}{%- endif -%}
+    {#- identifier parts: "t-test" -> "test", "train_test_split" -> train/test/split -#}
+    {%- for part in w.replace("-", "_").split("_") -%}
+      {%- if part|length > 3 and part != w and part not in FB_STOP -%}
+        {%- set tn.s = tn.s + part + " " -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {#- alias -> canonical ("scikit-learn" -> "sklearn", "np" -> "numpy") -#}
+    {%- if w in fb_alias -%}{%- set tn.s = tn.s + fb_alias[w] + " " -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- for i in range(qw|length - 1) -%}{%- if qw[i] != "" and qw[i+1] != "" -%}{%- set tn.s = tn.s + qw[i] + "_" + qw[i+1] + " " -%}{%- endif -%}{%- endfor -%}
+{#- postings lookup -#}
+{%- for t in tn.s.split(" ") -%}
+  {%- if t in fb_post -%}
+    {%- for p in fb_post[t].split() -%}
+      {%- if ":" in p -%}
+        {%- set pid = p.split(":")[0] | int -%}
+        {%- if (" " + fb_lib[pid] + " ") in (" " + fbns.libs) -%}
+          {%- set fbns.hits = fbns.hits + p + " " -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+{#- total per fact (minja has no dict assignment: re-walk the hit string) -#}
+{%- for p in fbns.hits.split(" ") -%}
+  {%- set fid = p.split(":")[0] -%}
+  {%- if (" " + fid + " ") not in (" " + fbns.seen) -%}
+    {%- set fbns.seen = fbns.seen + fid + " " -%}
+    {%- set acc = namespace(v=0) -%}
+    {%- for p2 in fbns.hits.split(" ") -%}
+      {%- if ":" in p2 and p2.split(":")[0] == fid -%}
+        {%- set acc.v = acc.v + (p2.split(":")[1] | int) -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if (fid | int) < FB_NCUR -%}
+      {%- set acc.v = acc.v + (12 if fbns.intent == 1 else 6) -%}
+    {%- endif -%}
+    {%- set fbns.tot = fbns.tot + fid + ":" + (acc.v | string) + " " -%}
+  {%- endif -%}
+{%- endfor -%}
+{#- top-FB_MAX by max-selection (no sort assumed; engine-safe) -#}
+{%- for slot in range(FB_MAX) -%}
+  {%- set sel = namespace(id="", sc=0) -%}
+  {%- for p in fbns.tot.split(" ") -%}
+    {%- if ":" in p -%}
+      {%- set fid = p.split(":")[0] -%}
+      {%- set sc = p.split(":")[1] | int -%}
+      {%- if sc > sel.sc and (" " + fid + " ") not in (" " + fbns.picked) -%}
+        {%- set sel.id = fid -%}{%- set sel.sc = sc -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if sel.id != "" -%}
+    {%- set fbns.picked = fbns.picked + sel.id + " " -%}
+    {%- set fbns.notes = fbns.notes + "\n- " + fb_txt[sel.id | int] -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+
+{%- if fbns.picked != "" -%}
+{{- '<|turn>model\n<|tool_call>call:factbank_search{query:<|"|>current' + fbns.libs + 'documentation<|"|>}<tool_call|>' -}}
+{{- format_tool_response_block('factbank_search', fbns.notes) -}}
+{{- '<turn|>\n' -}}
+{%- endif -%}
+{%- endif -%}

@@ -1,0 +1,5 @@
+[probe-vol-26b] AUTO-TRIAGE 3/3 pass (HAND-VERIFY required)
+
+q17b volatility3  [PASS] new_ok=True old_hit=[]
+q18b volatility3  [PASS] new_ok=True old_hit=[]
+q19b volatility3  [PASS] new_ok=True old_hit=[]

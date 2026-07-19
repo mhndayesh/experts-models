@@ -1,0 +1,7 @@
+{#- factbank v3 top config, QWEN3 FAMILY: deliberately a no-op.
+    The reference top.jinja forces enable_thinking=true, but on qwen3 the
+    empty-think fast path (<think>\n\n</think>) is selected by the SERVER
+    via enable_thinking=false; forcing true in-template would break
+    think-off operation (repo F-018/F-035: thinking is a global toggle).
+    The source template guards enable_thinking with `is defined`, so no
+    definition is needed here. -#}

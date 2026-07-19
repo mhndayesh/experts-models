@@ -1,0 +1,20 @@
+{#- GEMMA4 FAMILY. Namespace renamed ns -> fbns: the gemma-4 source
+    template defines its own `ns = namespace(prev_message_type=...)`,
+    which would silently wipe the factbank fields. Engine-safe subset
+    only: for / if / in / lower / tojson / replace / is string /
+    is defined / namespace. -#}
+{%- set fbns = namespace(fb_tools=false, fb_id="", exch_key="", cur_user="", libs="", hits=0, sc=0, wc=0, m=false, notes="", score=0, best=0) -%}
+{%- if tools is defined and tools -%}
+  {%- for t in tools -%}
+    {%- if t.function is defined and t.function.name == "factbank_search" -%}
+      {%- set fbns.fb_tools = true -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- set FB_MAX = 5 -%}
+{#- ceiling on the UNCAPPED tie band: real ties are 2-6 facts and should all
+    be honoured (finish-the-band), but a pathological tie (280 scipy facts all
+    scoring 8 on 'scipy'+'stats') must never flood the prompt - F-047. -#}
+{%- set FB_TIE_MAX = 8 -%}
+{%- set fb_gate = __GATE__ -%}
+{%- set fb_bank = __BANK__ -%}

@@ -1,0 +1,29 @@
+{#- Place inside the family's USER-message branch, AFTER the user
+    content renders, still inside the same turn. `msg` = the family's
+    loop variable. Two-stage: gate pass opens library tabs, deep pass
+    scans only facts behind open tabs. -#}
+{%- if msg.content is string -%}{%- set ns.cur_user = msg.content -%}{%- endif -%}
+{%- if loop.last and not ns.fb_tools -%}
+{%- set fb_k2 = (" " + ns.cur_user + " ") | lower | replace("."," ") | replace(","," ") | replace("("," ") | replace(")"," ") | replace("?"," ") | replace("!"," ") | replace(":"," ") | replace(";"," ") | replace("'"," ") | replace("\n"," ") -%}
+{%- set ns.libs = "" -%}
+{%- for g in fb_gate -%}
+  {%- set ns.m = false -%}
+  {%- for k in g.trig -%}{%- if k in fb_k2 -%}{%- set ns.m = true -%}{%- endif -%}{%- endfor -%}
+  {%- if ns.m -%}{%- set ns.libs = ns.libs + g.lib -%}{%- endif -%}
+{%- endfor -%}
+{%- set ns.hits = 0 -%}
+{%- for f in fb_bank -%}
+  {%- if f.lib in ns.libs -%}
+  {%- set ns.sc = 0 -%}{%- set ns.wc = 0 -%}
+  {%- for k in f.s -%}{%- if k in fb_k2 -%}{%- set ns.sc = ns.sc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in fb_k2 -%}{%- set ns.wc = ns.wc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- if (ns.sc > 0 or ns.wc > 1) and ns.hits < FB_MAX -%}
+    {%- if ns.hits == 0 %}
+
+Trusted notes from local docs that may apply (use only where relevant):{% endif %}
+- {{ f.txt }}
+    {%- set ns.hits = ns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- endif -%}

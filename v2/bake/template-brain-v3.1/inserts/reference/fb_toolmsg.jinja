@@ -1,0 +1,29 @@
+{#- Place inside the family's TOOL-message branch, replacing content
+    rendering. `msg` = the family's loop variable. Pairs strictly by id;
+    other tools pass through untouched. Same two-stage match, keyed by
+    the frozen per-exchange key. -#}
+{%- if ns.fb_id and msg.tool_call_id is defined and msg.tool_call_id == ns.fb_id -%}
+{{- "factbank_search results (verified; versions and sources included; use only where they apply):" -}}
+{%- set ns.libs = "" -%}
+{%- for g in fb_gate -%}
+  {%- set ns.m = false -%}
+  {%- for k in g.trig -%}{%- if k in ns.exch_key -%}{%- set ns.m = true -%}{%- endif -%}{%- endfor -%}
+  {%- if ns.m -%}{%- set ns.libs = ns.libs + g.lib -%}{%- endif -%}
+{%- endfor -%}
+{%- set ns.hits = 0 -%}
+{%- for f in fb_bank -%}
+  {%- if f.lib in ns.libs -%}
+  {%- set ns.sc = 0 -%}{%- set ns.wc = 0 -%}
+  {%- for k in f.s -%}{%- if k in ns.exch_key -%}{%- set ns.sc = ns.sc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- for k in f.w -%}{%- if k in ns.exch_key -%}{%- set ns.wc = ns.wc + 1 -%}{%- endif -%}{%- endfor -%}
+  {%- if (ns.sc > 0 or ns.wc > 1) and ns.hits < FB_MAX %}
+- {{ f.txt }}
+    {%- set ns.hits = ns.hits + 1 -%}
+  {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if ns.hits == 0 %} no matching entries; proceed with standard best practices.{%- endif -%}
+{%- set ns.fb_id = "" -%}
+{%- else -%}
+{{- msg.content -}}
+{%- endif -%}

@@ -1,0 +1,14 @@
+{#- REFERENCE JINJA. Adapt variable names to the family's loop when
+    anchoring (see README). Engine-safe subset only: for / if / in /
+    lower / tojson / replace / is string / is defined / namespace. -#}
+{%- set ns = namespace(fb_tools=false, fb_id="", exch_key="", cur_user="", libs="", hits=0, sc=0, wc=0, m=false) -%}
+{%- if tools is defined and tools -%}
+  {%- for t in tools -%}
+    {%- if t.function is defined and t.function.name == "factbank_search" -%}
+      {%- set ns.fb_tools = true -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- set FB_MAX = 5 -%}
+{%- set fb_gate = __GATE__ -%}
+{%- set fb_bank = __BANK__ -%}

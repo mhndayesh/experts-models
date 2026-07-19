@@ -1,0 +1,2078 @@
+{
+"polars1-001": [
+"build a dataframe from a list of rows",
+"create frame from nested lists",
+"row wise construction error",
+"why does my list of lists fail"
+],
+"polars1-002": [
+"which exception for a failed cast",
+"catching conversion errors",
+"error type when a cast fails",
+"handle invalid type conversion"
+],
+"polars1-003": [
+"read partitioned parquet folders",
+"hive style partition columns missing",
+"partition keys not showing up",
+"load parquet with directory partitions"
+],
+"polars1-004": [
+"reshape a column into rows of pairs",
+"change series shape",
+"what type does reshaping return",
+"turn flat column into nested"
+],
+"polars1-005": [
+"load a 2d numpy matrix",
+"convert numpy array to a column",
+"what dtype for multidimensional input",
+"numpy matrix becomes which type"
+],
+"polars1-006": [
+"swap values in a column using a mapping",
+"map old values to new ones",
+"substitute values and change type",
+"remap column entries with a dict"
+],
+"polars1-007": [
+"exponential moving average with missing values",
+"ewm over a column that has gaps",
+"smoothing ignores missing entries",
+"moving average null handling"
+],
+"polars1-008": [
+"limit values between bounds",
+"cap a column at min and max",
+"clamp values when a bound is missing",
+"restrict range with missing limit"
+],
+"polars1-009": [
+"parse timestamps with fractional seconds",
+"subsecond precision when reading dates",
+"milliseconds lost parsing datetime",
+"fractional second format default"
+],
+"polars1-010": [
+"load a json file into a table",
+"read serialized frame back",
+"restore a saved dataframe from json",
+"json input orientation"
+],
+"polars1-011": [
+"save a table as json",
+"pretty print json output",
+"column oriented json export",
+"dump dataframe to json file"
+],
+"polars1-012": [
+"compare two columns for equality",
+"check if two series are identical",
+"series comparison ignores name",
+"test whether columns match exactly"
+],
+"polars1-013": [
+"get the nth element of a column",
+"grab second value from a column",
+"select item by position",
+"index into a column by number"
+],
+"polars1-014": [
+"run length encoding output fields",
+"compress repeated values into runs",
+"consecutive value runs",
+"field names of run lengths"
+],
+"polars1-015": [
+"mark several columns as sorted",
+"tell the engine data is presorted",
+"declare sortedness for speed",
+"flag ordered columns"
+],
+"polars1-016": [
+"grab an element from each nested value",
+"index into list column",
+"out of range index in nested column",
+"pick item beyond list end"
+],
+"polars1-017": [
+"load an excel spreadsheet",
+"which engine reads xlsx",
+"default spreadsheet reader",
+"open xlsx workbook"
+],
+"polars1-018": [
+"run sql joining two dataframes",
+"query multiple frames with sql",
+"sql cross join between tables",
+"sql cannot see my other frame"
+],
+"polars1-019": [
+"type hint for any polars dtype",
+"annotate a function taking dtypes",
+"typing alias for data types",
+"where did the dtype alias go"
+],
+"polars1-020": [
+"time window start position",
+"windows shifted compared to before",
+"grouping by time buckets alignment",
+"dynamic window default shift"
+],
+"polars1-021": [
+"save a lazy query plan to disk",
+"persist a query for later",
+"serialize a lazy computation",
+"store query plan as text"
+],
+"polars1-022": [
+"get column names of a lazy frame",
+"inspect lazy frame types",
+"performance warning reading schema",
+"how many columns in lazy query"
+],
+"polars1-023": [
+"build a series with timezone aware datetimes",
+"constructor changes my timezone",
+"creating datetime column with zone",
+"timezone shifted during creation"
+],
+"polars1-024": [
+"install with excel support",
+"pip extras for plotting",
+"optional dependencies changed",
+"which extras to install"
+],
+"polars1-025": [
+"stack frames of different lengths side by side",
+"combine mismatched height tables",
+"strict flag when combining frames",
+"pad shorter table when stacking"
+],
+"polars1-026": [
+"cast a text column to dates",
+"convert strings to timestamps directly",
+"string column into datetime type",
+"deprecated string date conversion"
+],
+"polars1-027": [
+"expand list column into rows",
+"flatten nested values to rows",
+"empty lists when expanding",
+"explode warning about empty lists"
+],
+"polars1-028": [
+"share categories across dataframes",
+"global category cache",
+"categorical columns across frames",
+"string cache deprecated"
+],
+"polars1-029": [
+"retry failed cloud reads",
+"set retry count for s3",
+"network retries when scanning remote files",
+"configure max retries cloud storage"
+],
+"polars1-030": [
+"minimum python version supported",
+"install fails on old python",
+"which python do i need",
+"python 3 9 support"
+],
+"polars1-031": [
+"get group indices in aggregation",
+"row positions of each group",
+"deprecated group index helpers",
+"indices of rows per group"
+],
+"polars1-032": [
+"absolute and relative tolerance names",
+"closeness comparison parameters",
+"tolerance argument renamed",
+"approximate equality settings"
+],
+"polars1-033": [
+"order categories by appearance",
+"physical ordering of categories",
+"categorical ordering warning",
+"category sort order option"
+],
+"polars1-034": [
+"old streaming mode removed",
+"legacy out of core engine",
+"streaming execution changed",
+"process bigger than memory data"
+],
+"polars1-035": [
+"scan parquet files with different schemas",
+"some files missing a column",
+"tolerate absent columns when scanning",
+"schema mismatch across parquet files"
+],
+"polars1-036": [
+"dataframe interchange protocol",
+"exchange data with other libraries",
+"interoperability protocol deprecated",
+"convert via dataframe protocol"
+],
+"polars1-037": [
+"caching when scanning ipc files",
+"arrow ipc scan options",
+"cache argument feather scan",
+"ipc reader cache deprecated"
+],
+"polars1-038": [
+"rolling correlation degrees of freedom",
+"moving correlation parameter ignored",
+"windowed correlation setting",
+"rolling corr extra argument"
+],
+"polars1-039": [
+"read a csv file with options",
+"csv loading arguments",
+"set delimiter and header when loading csv",
+"csv reader parameter order"
+],
+"polars1-040": [
+"csv encoding and row limits",
+"skip rows after the header",
+"handle ragged csv lines",
+"comma as decimal separator",
+"read only first n csv rows"
+],
+"polars1-041": [
+"set column types when reading csv",
+"force dtypes while loading csv",
+"override inferred csv types",
+"specify csv column types"
+],
+"polars1-042": [
+"add a row number column when reading",
+"row count column while loading",
+"index column from csv reader",
+"number rows during load"
+],
+"polars1-043": [
+"csv schema inference sample size",
+"rows sampled to guess types",
+"sample size argument does nothing",
+"tune csv type guessing"
+],
+"polars1-044": [
+"empty csv cells as missing",
+"blank strings become null",
+"treat empty fields as missing values",
+"empty string handling csv"
+],
+"polars1-045": [
+"turn off csv type guessing",
+"read everything as text",
+"control schema inference length",
+"csv types guessed wrong"
+],
+"polars1-046": [
+"difference between missing and not a number",
+"nan versus missing value",
+"how missing data is represented",
+"is nan considered missing"
+],
+"polars1-047": [
+"count missing values fast",
+"how many nulls in a column",
+"cost of checking missing data",
+"validity bitmap memory"
+],
+"polars1-048": [
+"fill missing values forward",
+"replace nulls with previous value",
+"interpolate gaps in data",
+"fill missing with expression"
+],
+"polars1-049": [
+"replace nan in float column",
+"filling nulls leaves nan behind",
+"nan not counted as missing",
+"clean not a number values"
+],
+"polars1-050": [
+"mean comes out as nan",
+"aggregation ruined by nan",
+"exclude nan from average",
+"sum with not a number values"
+],
+"polars1-051": [
+"join strategies available",
+"types of table joins",
+"left versus outer join options",
+"valid join kinds"
+],
+"polars1-052": [
+"outer join duplicate key columns",
+"merge key columns after full join",
+"combine both join keys into one",
+"full join extra column"
+],
+"polars1-053": [
+"duplicate column names after joining",
+"suffix added to right table columns",
+"overlapping columns when merging",
+"renamed columns after join"
+],
+"polars1-054": [
+"join on inequality condition",
+"match rows where value greater than",
+"non equi join",
+"conditional join between tables"
+],
+"polars1-055": [
+"join on nearest timestamp",
+"match trades to latest quote",
+"asof merge with tolerance",
+"nearest key join by group"
+],
+"polars1-056": [
+"cartesian product of two tables",
+"all combinations of rows",
+"cross product join",
+"pair every row with every other"
+],
+"polars1-057": [
+"join on computed key",
+"match after lowercasing keys",
+"expression as join column",
+"transform key while joining"
+],
+"polars1-058": [
+"difference between scan and read",
+"when does a lazy query run",
+"deferred execution basics",
+"trigger lazy computation",
+"csv lazily",
+"lazy csv",
+"read csv without loading"
+],
+"polars1-059": [
+"why lazy is faster",
+"filters pushed into the file scan",
+"only load needed columns",
+"lazy query optimizations"
+],
+"polars1-060": [
+"see the query plan",
+"inspect optimizations applied",
+"print execution plan",
+"debug a lazy query"
+],
+"polars1-061": [
+"aggregate per group without collapsing rows",
+"window function by partition",
+"group statistic on every row",
+"partitioned calculation default mapping"
+],
+"polars1-062": [
+"sort rows within each group",
+"window results as a list per row",
+"faster window regrouping",
+"window mapping options"
+],
+"polars1-063": [
+"group average shown on each row",
+"broadcast group mean to rows",
+"per group scalar repeated",
+"add group statistic column"
+],
+"polars1-064": [
+"convert column type safely",
+"cast fails on bad values",
+"invalid values become missing on cast",
+"error handling during type change"
+],
+"polars1-065": [
+"dates stored as integers",
+"underlying representation of timestamps",
+"days since epoch conversion",
+"datetime to integer meaning"
+],
+"polars1-066": [
+"group data into monthly buckets",
+"aggregate by time window",
+"temporal grouping every interval",
+"resample time series"
+],
+"polars1-067": [
+"window length versus interval",
+"closed boundaries of time windows",
+"which edge of window is included",
+"overlapping time windows"
+],
+"polars1-068": [
+"specify one day interval",
+"duration string format",
+"eighteen month window",
+"interval notation for windows"
+],
+"polars1-069": [
+"show window start and end",
+"boundary columns for time buckets",
+"window edges in output",
+"inspect time window limits"
+],
+"polars1-070": [
+"window anchored to each row",
+"sliding window over timestamps",
+"per row lookback window",
+"difference rolling versus dynamic grouping"
+],
+"polars1-071": [
+"default integer type inferred",
+"which float type is used",
+"override guessed column types",
+"type inference on creation"
+],
+"polars1-072": [
+"text column type name",
+"one dimensional column structure",
+"inspect table column types",
+"mapping of names to types"
+],
+"polars1-073": [
+"fixed set of categories",
+"define allowed category values",
+"ordered categories declared upfront",
+"create enumeration column"
+],
+"polars1-074": [
+"value not in allowed categories",
+"unknown category raises error",
+"strict category membership",
+"invalid category conversion"
+],
+"polars1-075": [
+"categorical or fixed categories which to use",
+"compare category column to string",
+"alphabetical category comparison",
+"choosing between category types"
+],
+"polars1-076": [
+"variable length nested values",
+"fixed size vector column",
+"nested column with known shape",
+"which nested type to pick"
+],
+"polars1-077": [
+"operate on nested column values",
+"sum inside each nested entry",
+"methods for list like columns",
+"namespace for nested data"
+],
+"polars1-078": [
+"apply expression to each list element",
+"transform every item inside lists",
+"elementwise operation on nested values",
+"reference current element in nested op"
+],
+"polars1-079": [
+"string length in characters",
+"byte length versus character count",
+"unicode length of text column",
+"measure text length"
+],
+"polars1-080": [
+"check substring in column",
+"pattern treated as regex",
+"plain text match not regex",
+"search text for literal string"
+],
+"polars1-081": [
+"pull capture group from text",
+"extract number from string column",
+"regex groups from text",
+"get all pattern matches"
+],
+"polars1-082": [
+"substitute text in a column",
+"only first occurrence replaced",
+"replace every match in string",
+"swap pattern everywhere"
+],
+"polars1-083": [
+"trim characters from both ends",
+"remove leading characters",
+"strip exact prefix from strings",
+"character set versus literal trim"
+],
+"polars1-084": [
+"regex flavor used",
+"python regex features missing",
+"unsupported lookbehind pattern",
+"which regex engine"
+],
+"polars1-085": [
+"substring by position",
+"first few characters of text",
+"last characters of a string",
+"cut string at offset"
+],
+"polars1-086": [
+"conditional value with several conditions",
+"multiple predicates combined",
+"if else expression with equality shortcut",
+"build conditional column"
+],
+"polars1-087": [
+"conditional without a default",
+"what if no branch matches",
+"missing fallback in conditional",
+"default value of if else chain"
+],
+"polars1-088": [
+"order of chained conditions",
+"which branch wins",
+"several conditions true at once",
+"first matching rule applies"
+],
+"polars1-089": [
+"count rows per group",
+"first value in each group",
+"group by several columns",
+"summary statistics by group"
+],
+"polars1-090": [
+"count matching rows per group",
+"conditional count in aggregation",
+"sort inside groups",
+"top value per group by another column"
+],
+"polars1-091": [
+"custom python function in groupby slow",
+"lambda kills parallelism",
+"avoid python callbacks in aggregation",
+"keep aggregation parallel"
+],
+"polars1-092": [
+"stack tables on top of each other",
+"combine tables side by side",
+"union of tables with different columns",
+"ways to combine dataframes"
+],
+"polars1-093": [
+"combine tables of different heights",
+"error stacking unequal frames",
+"pad missing rows with null",
+"side by side concat fails"
+],
+"polars1-094": [
+"memory layout after combining",
+"defragment after concatenation",
+"contiguous memory for speed",
+"chunked data after append"
+],
+"polars1-095": [
+"bundle columns into one",
+"nested record column",
+"extract field from nested record",
+"expand record into columns"
+],
+"polars1-096": [
+"frequency table of values",
+"count occurrences of each value",
+"value frequencies output format",
+"tally unique values"
+],
+"polars1-097": [
+"duplicate rows across several columns",
+"find repeated combinations",
+"uniqueness over column pair",
+"detect duplicates multi column"
+],
+"polars1-098": [
+"parse text dates with a format",
+"convert string column to date",
+"custom date format parsing",
+"strptime style parsing"
+],
+"polars1-099": [
+"auto parse dates from csv",
+"csv dates come in as text",
+"detect datetime columns while loading",
+"automatic date detection"
+],
+"polars1-100": [
+"timestamps with different utc offsets",
+"daylight saving parse problem",
+"convert parsed times to local zone",
+"mixed timezone strings"
+],
+"polars1-101": [
+"get year from date column",
+"extract month and day",
+"date parts as columns",
+"component of a timestamp"
+],
+"polars1-102": [
+"load parquet lazily or eagerly",
+"avoid downloading whole parquet",
+"parquet from cloud storage efficiently",
+"defer parquet parsing"
+],
+"pandas3-001": [
+"copy on write",
+"cow mode",
+"disable copy write",
+"view copy behavior"
+],
+"pandas3-002": [
+"chained assignment",
+"modify a slice",
+"assign to subset",
+"update filtered rows"
+],
+"pandas3-003": [
+"settingwithcopy warning",
+"setting with copy",
+"copy warning gone"
+],
+"pandas3-004": [
+"inplace on column",
+"replace not working",
+"inplace no effect"
+],
+"pandas3-005": [
+"modifying a view",
+"column mutates parent",
+"side effect dataframe",
+"change propagates back"
+],
+"pandas3-006": [
+"lazy copy",
+"reset index copy",
+"cheap method copies"
+],
+"pandas3-007": [
+"readonly numpy array",
+"cannot write array",
+"writable numpy copy"
+],
+"pandas3-008": [
+"constructor copies array",
+"series from numpy",
+"shared array mutation"
+],
+"pandas3-009": [
+"avoid unnecessary copies",
+"defensive copy",
+"extra references slow"
+],
+"pandas3-010": [
+"copy keyword deprecated",
+"astype copy false",
+"reindex copy argument"
+],
+"pandas3-011": [
+"merge copy argument",
+"merge returns copy",
+"join copy keyword"
+],
+"pandas3-012": [
+"default string dtype",
+"object dtype strings",
+"text column type"
+],
+"pandas3-013": [
+"string missing value",
+"missing value sentinel",
+"nan versus na"
+],
+"pandas3-014": [
+"check string dtype",
+"dtype equals object",
+"detect text column"
+],
+"pandas3-015": [
+"none becomes nan",
+"check missing string",
+"compare against none"
+],
+"pandas3-016": [
+"assign number string",
+"setitem type error",
+"mixed types column"
+],
+"pandas3-017": [
+"values not ndarray",
+"get numpy array",
+"series underlying array"
+],
+"pandas3-018": [
+"nan becomes text",
+"convert column string",
+"stringify missing values"
+],
+"pandas3-019": [
+"select text columns",
+"filter columns type",
+"portable dtype selection"
+],
+"pandas3-020": [
+"string versus str",
+"nullable string dtype",
+"which string type"
+],
+"pandas3-021": [
+"pyarrow not installed",
+"string dtype backend",
+"arrow backed strings"
+],
+"pandas3-022": [
+"opt in early",
+"future string option",
+"test new strings"
+],
+"pandas3-023": [
+"surrogates not allowed",
+"invalid unicode error",
+"store weird characters"
+],
+"pandas3-024": [
+"reduce string column",
+"product of strings",
+"aggregation type error"
+],
+"pandas3-025": [
+"pyarrow numpy storage",
+"stringdtype storage option",
+"string storage backend"
+],
+"pandas3-026": [
+"datetime resolution changed",
+"nanosecond default gone",
+"parse dates unit"
+],
+"pandas3-027": [
+"epoch seconds dtype",
+"unit seconds resolution",
+"integer timestamps"
+],
+"pandas3-028": [
+"date range resolution",
+"generate date index",
+"range unit inference"
+],
+"pandas3-029": [
+"timezone object type",
+"pytz replaced",
+"localize timezone"
+],
+"pandas3-030": [
+"pytz missing",
+"ambiguous time error",
+"timezone extra install"
+],
+"pandas3-031": [
+"add day dst",
+"day offset changed",
+"daylight saving shift"
+],
+"pandas3-032": [
+"mixed timezones error",
+"parse different offsets",
+"utc true required"
+],
+"pandas3-033": [
+"current utc time",
+"now in utc",
+"utc timestamp"
+],
+"pandas3-034": [
+"epoch to utc",
+"timestamp from epoch",
+"unix time convert"
+],
+"pandas3-035": [
+"period to timestamp",
+"period end time",
+"period resolution"
+],
+"pandas3-036": [
+"unknown timezone string",
+"local timezone parsing",
+"invalid tz name"
+],
+"pandas3-037": [
+"monthly resample",
+"month end frequency",
+"resample by month"
+],
+"pandas3-038": [
+"quarterly resample",
+"quarter end frequency",
+"group by quarter"
+],
+"pandas3-039": [
+"yearly resample",
+"year end frequency",
+"annual aggregation"
+],
+"pandas3-040": [
+"business month end",
+"semi month frequency",
+"business quarter alias"
+],
+"pandas3-041": [
+"annual frequency string",
+"year start alias",
+"resample yearly old"
+],
+"pandas3-042": [
+"hourly frequency",
+"resample per hour",
+"hour alias uppercase"
+],
+"pandas3-043": [
+"minute frequency alias",
+"resample per minute",
+"millisecond frequency"
+],
+"pandas3-044": [
+"daily frequency lowercase",
+"weekly frequency string",
+"business day alias"
+],
+"pandas3-045": [
+"timedelta unit string",
+"duration unit case",
+"minutes unit spelling"
+],
+"pandas3-046": [
+"apply function elementwise",
+"map every cell",
+"elementwise transform"
+],
+"pandas3-047": [
+"style each cell",
+"conditional cell styling",
+"styler elementwise"
+],
+"pandas3-048": [
+"single boolean value",
+"truth value series",
+"convert to bool"
+],
+"pandas3-049": [
+"first days rows",
+"last week rows",
+"select initial period"
+],
+"pandas3-050": [
+"swap rows columns",
+"flip axes",
+"transpose data frame"
+],
+"pandas3-051": [
+"flatten series",
+"ravel values",
+"series one dimensional"
+],
+"pandas3-052": [
+"reinterpret series dtype",
+"view other dtype",
+"series raw view"
+],
+"pandas3-053": [
+"series to int",
+"cast series scalar",
+"float of series"
+],
+"pandas3-054": [
+"format index labels",
+"index to strings",
+"render index text"
+],
+"pandas3-055": [
+"categorical to list",
+"categories as list",
+"plain python list"
+],
+"pandas3-056": [
+"count unique values",
+"frequency of values",
+"tally occurrences"
+],
+"pandas3-057": [
+"bigquery read",
+"google bigquery export",
+"query bigquery table"
+],
+"pandas3-058": [
+"execute raw sql",
+"run sql statement",
+"direct sql execution"
+],
+"pandas3-059": [
+"check interval type",
+"check period type",
+"type predicate removed"
+],
+"pandas3-060": [
+"groupwise fill missing",
+"groupby fill values",
+"impute within groups"
+],
+"pandas3-061": [
+"fill resampled gaps",
+"resample missing values",
+"missing after resampling"
+],
+"pandas3-062": [
+"forward fill missing",
+"fill nan method",
+"propagate last value",
+"backward fill"
+],
+"pandas3-063": [
+"replace with padding",
+"replace method keyword",
+"limit replacements"
+],
+"pandas3-064": [
+"interpolate padding",
+"fill gaps interpolation",
+"interpolate object column"
+],
+"pandas3-065": [
+"treat inf missing",
+"infinity as nan",
+"inf na option"
+],
+"pandas3-066": [
+"ignore parse errors",
+"skip bad dates",
+"convert without failing"
+],
+"pandas3-067": [
+"groupby along columns",
+"rolling axis argument",
+"resample axis"
+],
+"pandas3-068": [
+"apply keep dtype",
+"apply conversion flag",
+"apply result dtype"
+],
+"pandas3-069": [
+"align two frames",
+"align fill method",
+"align with padding"
+],
+"pandas3-070": [
+"percent change limit",
+"pct change missing",
+"pct change fill"
+],
+"pandas3-071": [
+"array manager backend",
+"internals data manager",
+"columnar internals option"
+],
+"pandas3-072": [
+"check index type",
+"index is numeric",
+"index type predicates"
+],
+"pandas3-073": [
+"resample kind timestamp",
+"resample as period",
+"resample output index"
+],
+"pandas3-074": [
+"datetimeindex closed",
+"timedeltaindex unit",
+"index constructor keywords"
+],
+"pandas3-075": [
+"fastpath constructor",
+"series fastpath",
+"internal constructor flag"
+],
+"pandas3-076": [
+"build period index",
+"periodindex from parts",
+"periods from fields"
+],
+"pandas3-077": [
+"offset to timedelta",
+"tick delta attribute",
+"frequency step duration"
+],
+"pandas3-078": [
+"offset anchored check",
+"is anchored",
+"anchored frequency test"
+],
+"pandas3-079": [
+"close stata reader",
+"stata file handle",
+"stata reader cleanup"
+],
+"pandas3-080": [
+"internal block manager",
+"underscore data attribute",
+"private data attribute"
+],
+"pandas3-081": [
+"grouper internals",
+"groupby grouper attribute",
+"groupby dtypes"
+],
+"pandas3-082": [
+"internals block classes",
+"make block deprecated",
+"low level blocks"
+],
+"pandas3-083": [
+"whitespace separated file",
+"read space delimited",
+"csv whitespace separator"
+],
+"pandas3-084": [
+"custom date parser",
+"parse dates format",
+"csv date parsing"
+],
+"pandas3-085": [
+"infer datetime format",
+"fast date parsing",
+"speed up parsing"
+],
+"pandas3-086": [
+"combine date columns",
+"keep original date",
+"multi column dates"
+],
+"pandas3-087": [
+"verbose csv reading",
+"csv parser output",
+"csv import logging"
+],
+"pandas3-088": [
+"parse html string",
+"json string parse",
+"literal content read"
+],
+"pandas3-089": [
+"parquet nullable dtypes",
+"read parquet types",
+"nullable parquet columns"
+],
+"pandas3-090": [
+"load old pickle",
+"legacy hdf file",
+"unpickle ancient dataframe"
+],
+"pandas3-091": [
+"sql read error",
+"database exception type",
+"driver exception wrapped"
+],
+"pandas3-092": [
+"excel header bold",
+"excel default style",
+"styled excel export"
+],
+"pandas3-093": [
+"apply group column",
+"groupby apply columns",
+"grouping column missing"
+],
+"pandas3-094": [
+"categorical groups missing",
+"empty category groups",
+"observed default"
+],
+"pandas3-095": [
+"stack columns multiindex",
+"wide to long",
+"stack new implementation"
+],
+"pandas3-096": [
+"numpy function aggregate",
+"agg with builtin",
+"sum alias performance"
+],
+"pandas3-097": [
+"idxmax all nan",
+"argmax missing values",
+"index of maximum"
+],
+"pandas3-098": [
+"dict aggregation series",
+"agg with dict",
+"aggregate with mapping"
+],
+"pandas3-099": [
+"shift with frequency",
+"shift fill value",
+"lag time series"
+],
+"pandas3-100": [
+"group name tuple",
+"loop over groups",
+"single key groupby"
+],
+"pandas3-101": [
+"rolling quantile argument",
+"window percentile",
+"rolling median keyword"
+],
+"pandas3-102": [
+"correlation per group",
+"groupby corrwith",
+"grouped correlation frame"
+],
+"pandas3-103": [
+"positional arguments aggregation",
+"sum axis positional",
+"keyword only reductions"
+],
+"pandas3-104": [
+"sum whole dataframe",
+"grand total",
+"axis none reduction"
+],
+"pandas3-105": [
+"integer index lookup",
+"series position access",
+"getitem integer key"
+],
+"pandas3-106": [
+"slice float index",
+"positional slice",
+"float index slicing"
+],
+"pandas3-107": [
+"object dtype stays",
+"constructor type inference",
+"infer better dtypes"
+],
+"pandas3-108": [
+"assignment changes dtype",
+"upcast on setitem",
+"float into int"
+],
+"pandas3-109": [
+"result dtype changed",
+"silent downcasting",
+"fillna changes dtype"
+],
+"pandas3-110": [
+"boolean and list",
+"compare with list",
+"logical op sequence"
+],
+"pandas3-111": [
+"isin dates strings",
+"membership datetime column",
+"dates contain values"
+],
+"pandas3-112": [
+"take with slice",
+"select rows take",
+"take row range"
+],
+"pandas3-113": [
+"replace without value",
+"replace categorical new",
+"replace missing value"
+],
+"pandas3-114": [
+"values outside categories",
+"categorical unknown values",
+"categorical cast invalid"
+],
+"pandas3-115": [
+"multiply series list",
+"arithmetic with list",
+"series times list"
+],
+"pandas3-116": [
+"compare index series",
+"comparison return type",
+"index versus series"
+],
+"pandas3-117": [
+"series plus dataframe",
+"flex arithmetic dataframe",
+"add frame series"
+],
+"pandas3-118": [
+"inplace returns none",
+"chain inplace call",
+"inplace return value"
+],
+"pandas3-119": [
+"concat sorts index",
+"combine time series",
+"concat axis order"
+],
+"pandas3-120": [
+"concat empty dataframe",
+"concat nan dtype",
+"empty frames dtype"
+],
+"pandas3-121": [
+"concat keys ignore",
+"hierarchical concat index",
+"concat labels reset"
+],
+"pandas3-122": [
+"concat keys mismatch",
+"keys length different",
+"wrong keys count"
+],
+"pandas3-123": [
+"value counts order",
+"count combinations unsorted",
+"unsorted value counts"
+],
+"pandas3-124": [
+"nan in nullable",
+"divide zero na",
+"float64dtype missing"
+],
+"pandas3-125": [
+"incompatible frequency error",
+"period freq mismatch",
+"period arithmetic error"
+],
+"pandas3-126": [
+"class module path",
+"pandas core frame",
+"repr module name"
+],
+"pandas3-127": [
+"minimum python version",
+"supported dependency versions",
+"upgrade requirements"
+],
+"pandas3-128": [
+"positional arguments writer",
+"to csv positional",
+"keyword only arguments"
+],
+"pandas3-129": [
+"python datetime objects",
+"convert to pydatetime",
+"datetime column convert"
+],
+"pandas3-130": [
+"slice date object",
+"datetime date indexing",
+"partial date selection"
+],
+"pandas3-131": [
+"json date format",
+"epoch timestamps json",
+"dates in json"
+],
+"pandas3-132": [
+"unique index check",
+"set index duplicates",
+"duplicate index guard"
+],
+"pandas3-133": [
+"dataframe interchange protocol",
+"exchange data libraries",
+"zero copy interchange"
+],
+"pandas3-134": [
+"column expression syntax",
+"avoid lambda assign",
+"polars style expressions",
+"filter without lambda"
+],
+"pandas3-135": [
+"import arrow table",
+"from pyarrow data",
+"arrow interchange import"
+],
+"pandas3-136": [
+"anti join",
+"rows not matching",
+"exclude matching keys"
+],
+"pandas3-137": [
+"iceberg table read",
+"lakehouse format",
+"write iceberg"
+],
+"pandas3-138": [
+"first value window",
+"rolling last value",
+"window first observation"
+],
+"pandas3-139": [
+"unique count window",
+"rolling distinct values",
+"window unique count"
+],
+"pandas3-140": [
+"pipe rolling window",
+"chain window function",
+"window method chaining"
+],
+"pandas3-141": [
+"groupby include nan",
+"group sum missing",
+"skip missing groupby"
+],
+"pandas3-142": [
+"fill with none",
+"fillna across columns",
+"row wise fill"
+],
+"pandas3-143": [
+"excel auto filter",
+"excel merged headers",
+"export excel options"
+],
+"pandas3-144": [
+"parquet conversion options",
+"read parquet maps",
+"arrow to pandas"
+],
+"pandas3-145": [
+"truncate table insert",
+"sql replace rows",
+"overwrite table data"
+],
+"pandas3-146": [
+"detect ascii strings",
+"non ascii check",
+"ascii only check"
+],
+"pandas3-147": [
+"multiple string replacements",
+"replace mapping strings",
+"dummies output dtype"
+],
+"pandas3-148": [
+"half year frequency",
+"semiannual offset",
+"six month periods"
+],
+"pandas3-149": [
+"cumulative sum numeric",
+"cumsum mixed columns",
+"cumsum numeric only"
+],
+"pandas3-150": [
+"correlation minimum observations",
+"pairwise correlation threshold",
+"corr min periods"
+],
+"pandas3-151": [
+"set multiple options",
+"configure pandas settings",
+"bulk option setting"
+],
+"pandas3-152": [
+"silence performance warnings",
+"disable fragmentation warning",
+"suppress perf warnings"
+],
+"pandas3-153": [
+"deprecation warning classes",
+"filter pandas warnings",
+"future removal warning"
+],
+"pandas3-154": [
+"map extra arguments",
+"apply execution engine",
+"jit compiled apply"
+],
+"pandas3-155": [
+"map function argument",
+"map arg rename",
+"series map func"
+],
+"pandas3-156": [
+"iloc boolean mask",
+"positional boolean filter",
+"boolean mask iloc"
+],
+"pandas3-157": [
+"pandasarray alias",
+"numpy extension array",
+"old array class"
+],
+"pandas3-158": [
+"any all datetime",
+"truthiness of dates",
+"boolean reduce datetime"
+],
+"pandas3-159": [
+"contains na argument",
+"startswith missing fill",
+"na fill contains"
+],
+"numpy2-001": [
+"old float alias attribute error",
+"default float scalar type removed",
+"trailing underscore float type gone",
+"numpy has no attribute for float type"
+],
+"numpy2-002": [
+"old complex alias attribute error",
+"double precision complex type removed",
+"trailing underscore complex type gone"
+],
+"numpy2-003": [
+"uppercase not a number constant",
+"missing value constant capitalized",
+"old nan spelling attribute error",
+"camelcase nan constant removed"
+],
+"numpy2-004": [
+"capitalized infinity constant gone",
+"old infinity aliases removed",
+"infinity constant attribute error",
+"positive infinity old spelling"
+],
+"numpy2-005": [
+"negative infinity constant removed",
+"shortcut for minus infinity",
+"positive infinity shorthand constant gone"
+],
+"numpy2-006": [
+"positive zero constant removed",
+"negative zero constant gone",
+"signed zero shorthand constants"
+],
+"numpy2-007": [
+"old byte string scalar type",
+"bytes scalar alias removed",
+"fixed width byte string type error"
+],
+"numpy2-008": [
+"old unicode scalar type",
+"text string scalar alias removed",
+"unicode type attribute error"
+],
+"numpy2-009": [
+"old rounding function with underscore",
+"round values legacy alias",
+"rounding alias attribute error"
+],
+"numpy2-010": [
+"multiply all elements legacy name",
+"old long name for product",
+"product of array elements alias removed"
+],
+"numpy2-011": [
+"running product legacy name",
+"cumulative multiplication old alias",
+"old long name for cumulative product"
+],
+"numpy2-012": [
+"check every element is true old name",
+"legacy all elements true function",
+"test whether all values pass"
+],
+"numpy2-013": [
+"check any element is true old name",
+"legacy any value true function",
+"test whether some values pass"
+],
+"numpy2-014": [
+"shortcut to build matrix object",
+"matrix constructor alias removed",
+"make matrix from array old name"
+],
+"numpy2-015": [
+"convert array to float type helper",
+"coerce values to floating point",
+"cast anything to float array old helper"
+],
+"numpy2-016": [
+"extended precision float alias",
+"long double old name",
+"high precision float type removed"
+],
+"numpy2-017": [
+"c style complex float alias",
+"old complex double name",
+"legacy complex float type"
+],
+"numpy2-018": [
+"single precision complex alias removed",
+"small complex type old name",
+"32 bit complex float legacy alias"
+],
+"numpy2-019": [
+"extended precision complex aliases",
+"long double complex old names",
+"biggest complex type legacy alias"
+],
+"numpy2-020": [
+"check dtype is subtype old helper",
+"test scalar type hierarchy legacy",
+"dtype subclass check removed"
+],
+"numpy2-021": [
+"numpy wrapper around subclass check",
+"class hierarchy test helper removed",
+"legacy subclass checking function"
+],
+"numpy2-022": [
+"check object is scalar type",
+"list of all scalar types removed",
+"largest scalar type of a kind",
+"legacy scalar type registry"
+],
+"numpy2-023": [
+"get character code for dtype",
+"convert object to scalar type",
+"dtype character lookup helpers removed"
+],
+"numpy2-024": [
+"customize how arrays print",
+"override array string output",
+"custom repr for arrays legacy hook"
+],
+"numpy2-025": [
+"override arithmetic operators globally",
+"replace numeric operations hook",
+"swap out ufunc implementations legacy"
+],
+"numpy2-026": [
+"show source code of function",
+"print implementation of numpy function",
+"inspect function source helper removed"
+],
+"numpy2-027": [
+"search docs from interpreter",
+"list variables in session helper",
+"keyword search over documentation removed",
+"interactive help utilities gone"
+],
+"numpy2-028": [
+"low level error state objects",
+"get and set floating error buffer",
+"control error handling old api",
+"error object accessors removed"
+],
+"numpy2-029": [
+"mark function as deprecated helper",
+"emit deprecation warning wrapper",
+"decorator for obsolete functions removed"
+],
+"numpy2-030": [
+"safely evaluate string expression",
+"parse literal from string helper",
+"eval replacement utility removed"
+],
+"numpy2-031": [
+"read csv into record array",
+"load text file as records",
+"record array from delimited file helpers"
+],
+"numpy2-032": [
+"display message utility removed",
+"print helper function gone",
+"legacy output display function"
+],
+"numpy2-033": [
+"bytes per dtype lookup dict",
+"size in bytes of each type",
+"dtype byte size mapping removed"
+],
+"numpy2-034": [
+"memory bounds of array data",
+"pointer range of array buffer",
+"low level memory extent helper moved"
+],
+"numpy2-035": [
+"compare arrays of strings elementwise",
+"string array comparison helper moved",
+"char array comparison function"
+],
+"numpy2-036": [
+"parse structured dtype format strings",
+"record dtype format parser moved",
+"build record dtype from formats"
+],
+"numpy2-037": [
+"sort along first axis helper",
+"merge sort convenience function removed",
+"column wise sorting shortcut"
+],
+"numpy2-038": [
+"download or open remote data files",
+"abstract file opener class moved",
+"data source path handling class"
+],
+"numpy2-039": [
+"attach docstring to object",
+"add documentation at runtime helpers moved",
+"docstring injection utilities"
+],
+"numpy2-040": [
+"dict of casting functions removed",
+"cast array via lookup table",
+"legacy type casting mapping"
+],
+"numpy2-041": [
+"find common dtype of mixed types",
+"resolve result type of scalars and arrays",
+"common type resolution helper removed"
+],
+"numpy2-042": [
+"fast transpose and copy helper",
+"transposed copy shortcut removed",
+"copy array transposed legacy function"
+],
+"numpy2-043": [
+"memory tracing domain constant moved",
+"tracemalloc integration constant",
+"allocation tracking id relocated"
+],
+"numpy2-044": [
+"python 2 compatibility module removed",
+"compat shims gone",
+"legacy python 2 helpers deleted"
+],
+"numpy2-045": [
+"zero suffix dtype names removed",
+"legacy dtype string codes gone",
+"old numbered type aliases error"
+],
+"numpy2-046": [
+"single letter a dtype code",
+"old bytes dtype character",
+"string dtype letter code changed"
+],
+"numpy2-047": [
+"separate array api submodule removed",
+"standard array namespace module gone",
+"strict standard api package"
+],
+"numpy2-048": [
+"warning classes moved to exceptions module",
+"import complex cast warning",
+"deprecation warning class relocated"
+],
+"numpy2-049": [
+"internal core module renamed private",
+"importing core submodule warns",
+"core namespace now private underscore"
+],
+"numpy2-050": [
+"peak to peak method on array",
+"range of values method removed",
+"max minus min method gone"
+],
+"numpy2-051": [
+"swap byte order method removed",
+"change endianness of array method",
+"byte order conversion on arrays"
+],
+"numpy2-052": [
+"test membership of elements",
+"which elements are in another array",
+"set membership check old name removed"
+],
+"numpy2-053": [
+"stack arrays as rows old name",
+"vertical stacking alias deprecated",
+"row wise stacking helper"
+],
+"numpy2-054": [
+"numerical integration trapezoid rule",
+"integrate curve under points old name",
+"area under curve function renamed"
+],
+"numpy2-055": [
+"array to raw bytes old method",
+"serialize array data legacy method",
+"convert array to byte string removed"
+],
+"numpy2-056": [
+"round towards zero helper deprecated",
+"truncate away from decimals function",
+"round to nearest integer towards zero"
+],
+"numpy2-057": [
+"reshape keyword argument renamed",
+"old parameter name for new shape",
+"reshape argument removed"
+],
+"numpy2-058": [
+"percentile interpolation option renamed",
+"quantile interpolation keyword removed",
+"choose quantile estimation method"
+],
+"numpy2-059": [
+"save file python 2 pickle option",
+"legacy pickle compatibility flag removed",
+"save keyword for old imports"
+],
+"numpy2-060": [
+"testing helper for expected warnings",
+"suppress warnings in tests deprecated",
+"assert a warning is raised numpy testing"
+],
+"numpy2-061": [
+"set strides attribute directly",
+"manually change array strides",
+"stride assignment deprecated"
+],
+"numpy2-062": [
+"assign new shape attribute in place",
+"change shape without reshape call",
+"mutate array shape directly deprecated"
+],
+"numpy2-063": [
+"sum over a generator expression",
+"reduce lazy iterator directly",
+"aggregate generator without materializing"
+],
+"numpy2-064": [
+"correlation matrix normalization arguments",
+"degrees of freedom in correlation removed",
+"correlation coefficient bias option gone"
+],
+"numpy2-065": [
+"count occurrences minimum length none",
+"histogram of integers minimum bins",
+"bin count minimum length argument"
+],
+"numpy2-066": [
+"parse binary string into array",
+"array from raw binary text",
+"binary mode string parsing removed"
+],
+"numpy2-067": [
+"dtype from abstract base class",
+"generic floating dtype construction error",
+"abstract scalar class as dtype fails"
+],
+"numpy2-068": [
+"private linalg submodule import fails",
+"fft helper module removed",
+"deep import of linear algebra internals"
+],
+"numpy2-069": [
+"set docstring on ufunc helper",
+"add documentation to ufunc deprecated",
+"override ufunc doc attribute"
+],
+"numpy2-070": [
+"mixed dtype arithmetic result type",
+"why did precision drop after upgrade",
+"promotion rules changed values ignored",
+"small int plus float32 result dtype"
+],
+"numpy2-071": [
+"avoid copying when converting to array",
+"no copy flag now raises",
+"view without copy conversion error",
+"copy argument semantics changed"
+],
+"numpy2-072": [
+"custom object to array conversion hook",
+"protocol method new keyword",
+"duck array conversion signature changed"
+],
+"numpy2-073": [
+"default int size on windows",
+"windows integer overflow after upgrade",
+"array of ints different dtype windows",
+"32 bit default integer changed"
+],
+"numpy2-074": [
+"scalar printing shows type name",
+"doctests broke scalar output",
+"why does repr show type wrapper",
+"restore old scalar printing"
+],
+"numpy2-075": [
+"check if cast is safe with python number",
+"casting query with plain scalar fails",
+"type error passing int to cast check"
+],
+"numpy2-076": [
+"sign of complex number changed",
+"signum for complex values",
+"direction of complex number unit"
+],
+"numpy2-077": [
+"any or all over object array",
+"boolean reduction on mixed objects",
+"truth testing object arrays changed"
+],
+"numpy2-078": [
+"functions now return tuple not list",
+"meshgrid output type changed",
+"cannot append to broadcast result",
+"list result became immutable"
+],
+"numpy2-079": [
+"least squares default cutoff changed",
+"rank tolerance in linear solve",
+"restore old least squares behavior"
+],
+"numpy2-080": [
+"string zero converts to true",
+"casting text to boolean changed",
+"truthiness of string arrays"
+],
+"numpy2-081": [
+"cross product of 2d vectors fails",
+"two dimensional cross product removed",
+"cross product now needs three components"
+],
+"numpy2-082": [
+"text loading encoding default changed",
+"converters get text not bytes",
+"reading files returns unicode now"
+],
+"numpy2-083": [
+"truth value of empty array",
+"if statement on empty array error",
+"check array emptiness properly"
+],
+"numpy2-084": [
+"floor of integer array dtype",
+"ceiling keeps integer type now",
+"rounding functions stopped returning floats"
+],
+"numpy2-085": [
+"nonzero on a scalar fails",
+"indices of zero dimensional array",
+"find nonzero of single value error"
+],
+"numpy2-086": [
+"copy value into array overflow error",
+"filling array with large number raises",
+"assigning out of range integer"
+],
+"numpy2-087": [
+"unique values no longer sorted",
+"distinct elements order changed",
+"deduplicated output unsorted"
+],
+"numpy2-088": [
+"rounding returns copy not view",
+"round integer array memory behavior",
+"in place rounding assumption broken"
+],
+"numpy2-089": [
+"take along axis default axis",
+"gather by indices last axis default",
+"index selection axis now optional"
+],
+"numpy2-090": [
+"norm of empty array behavior",
+"vector norm empty input zero",
+"matrix norm on no elements"
+],
+"numpy2-091": [
+"comparing number to string result type",
+"incompatible dtype equality returns numpy bool",
+"mismatched type comparison boolean"
+],
+"numpy2-092": [
+"float of multi element array error",
+"convert whole array to single number",
+"scalar conversion of array raises now"
+],
+"numpy2-093": [
+"no gil python support",
+"free threading thread safety",
+"parallel threads sharing arrays",
+"concurrent mutation crashes"
+],
+"numpy2-094": [
+"new namespace for string operations",
+"fast vectorized string functions",
+"string ufuncs replace char module",
+"where did string routines move",
+"string arrays",
+"strings elementwise"
+],
+"numpy2-095": [
+"uppercase lowercase array of strings",
+"search substring in string array",
+"length of each string element",
+"strip pad justify string arrays",
+"check string array is numeric",
+"string arrays elementwise",
+"operate on string arrays"
+],
+"numpy2-096": [
+"slice every string in array",
+"substring by position vectorized",
+"negative step string slicing"
+],
+"numpy2-097": [
+"variable length string dtype",
+"utf8 native string array type",
+"replace object arrays of strings",
+"real string dtype instead of fixed width"
+],
+"numpy2-098": [
+"c long integer type name",
+"platform long mapped type",
+"unsigned long dtype added"
+],
+"numpy2-099": [
+"canonical boolean type name",
+"plain bool name restored",
+"boolean dtype naming change"
+],
+"numpy2-100": [
+"classify dtype kind check",
+"is this dtype a float kind",
+"standard way to convert dtype function"
+],
+"numpy2-101": [
+"unique with counts standard variant",
+"distinct values and inverse indices",
+"deduplicate array standard functions"
+],
+"numpy2-102": [
+"transpose last two axes only",
+"batch matrix transpose attribute",
+"swap final dimensions of stack"
+],
+"numpy2-103": [
+"dot product along last axis",
+"batched vector inner product",
+"row wise dot of two arrays"
+],
+"numpy2-104": [
+"matrix times stack of vectors",
+"vector times matrix product",
+"batched matrix vector multiplication",
+"conjugate convention in products"
+],
+"numpy2-105": [
+"count set bits in integers",
+"popcount over array",
+"number of one bits elementwise"
+],
+"numpy2-106": [
+"short trig function names",
+"arc cosine new spelling",
+"concatenate shorter alias",
+"power function alias",
+"standard api function aliases"
+],
+"numpy2-107": [
+"singular values without vectors",
+"norm of matrix stack",
+"strict outer product function",
+"new linear algebra helpers"
+],
+"numpy2-108": [
+"weighted percentile calculation",
+"quantile with observation weights",
+"weighted median style statistics"
+],
+"numpy2-109": [
+"variance delta degrees of freedom alias",
+"standard deviation with precomputed mean",
+"std correction keyword"
+],
+"numpy2-110": [
+"device argument for array creation",
+"move array to device method",
+"cpu device compatibility keyword"
+],
+"numpy2-111": [
+"split array into tuple along axis",
+"inverse of stacking arrays",
+"separate stacked slices back out"
+],
+"numpy2-112": [
+"running total with initial value",
+"cumulative product new standard name",
+"prefix sum including starting zero"
+],
+"numpy2-113": [
+"reshape keyword arguments added",
+"convert subclass preserving array with copy option",
+"reshape with copy control"
+],
+"numpy2-114": [
+"clip with keyword bounds",
+"limit values new argument names",
+"clamp array without bounds copy"
+],
+"numpy2-115": [
+"request stable sorting order",
+"keep equal elements order when sorting",
+"stable flag for sort"
+],
+"numpy2-116": [
+"upper triangular cholesky option",
+"relative tolerance for rank",
+"pseudo inverse tolerance keyword"
+],
+"numpy2-117": [
+"skip sorting unique values",
+"faster deduplication hash based",
+"unique without sorted output"
+],
+"numpy2-118": [
+"force array result from ufunc",
+"prevent scalar return zero dimensional",
+"ellipsis as output argument"
+],
+"numpy2-119": [
+"cast only if values preserved",
+"error when cast changes values",
+"lossless cast checking option"
+],
+"numpy2-120": [
+"supported python versions",
+"which python works with latest numpy",
+"minimum python version required"
+],
+"polars-001": [
+"streaming collect",
+"lazyframe collect",
+"engine streaming"
+],
+"polars-002": [
+"count rows",
+"row count",
+"length of dataframe"
+],
+"polars-003": [
+"unpivot",
+"wide to long",
+"reshape dataframe"
+],
+"polars-004": [
+"pivot",
+"long to wide",
+"pivot columns"
+],
+"polars-005": [
+"groupby renamed",
+"group by",
+"apply renamed",
+"map elements"
+],
+"polars-006": [
+"scan parquet",
+"lazy parquet",
+"read parquet lazily"
+],
+"polars-007": [
+"mixed types",
+"strict constructor",
+"typeerror strict"
+]
+}

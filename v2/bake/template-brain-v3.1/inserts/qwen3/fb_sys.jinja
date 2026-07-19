@@ -1,0 +1,12 @@
+{#- QWEN3 FAMILY. The source renders a system turn only inside its two
+    branches (tools / messages[0].role=='system'), and each render is a
+    single output expression that an anchor cannot split. So this insert
+    emits its OWN complete system turn right after the source's system
+    block — qwen3's format already supports multiple system turns (the
+    message loop renders non-first system messages as turns). Lane-aware
+    wording as in the reference. -#}
+{%- if fbns.fb_tools -%}
+{{- "<|im_start|>system\n[fb1] Rule: think briefly, then call factbank_search(query=\"...\") listing the libraries and functions you plan to use, BEFORE solving. Covered docs: __MENU__. When results arrive, your code must follow them exactly; ignore any result that does not apply.<|im_end|>\n" -}}
+{%- else -%}
+{{- "<|im_start|>system\n[fb1] Note: verified documentation notes may be included below. Your code must follow them exactly; ignore any note that does not apply. Covered docs: __MENU__.<|im_end|>\n" -}}
+{%- endif -%}
